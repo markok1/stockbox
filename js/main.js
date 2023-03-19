@@ -1,10 +1,11 @@
-if (window.location.pathname == "/stockbox/packages.html") {
+if ($("body").hasClass("packagesBody")) {
   $(".box").click(function () {
     $(".box").removeClass("selectedBox");
     $(this).addClass("selectedBox");
   });
 }
-if (window.location.pathname == "/signup3.html") {
+
+if ($("body").hasClass("signup3Body")) {
   $(".sliderHolder").slick({
     arrows: false,
 
@@ -68,16 +69,17 @@ if (window.location.pathname == "/signup3.html") {
   });
 }
 
-if (window.location.pathname == "/signup4.html") {
+if ($("body").hasClass("signup4Body")) {
   $(".radio").click(function () {
     $(".radio").removeClass("selectedRadio");
     $(this).addClass("selectedRadio");
   });
 }
+
 if (
-  window.location.pathname == "/dashboardStockbox.html" ||
-  window.location.pathname == "/dashboardRolex.html" ||
-  window.location.pathname == "/dashboardWos.html"
+  $("body").hasClass("dashboardRolexBody") ||
+  $("body").hasClass("dashboardWosBody") ||
+  $("body").hasClass("dashboardStockboxBody")
 ) {
   $(".formobile ul li a").click(function (e) {
     if (!$(this).parent().parent().hasClass("dropdown-menu")) {
