@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stockbox - Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="leftDecDash"></div>
+    <div class="topDecDash"></div>
+
+    <div class="wrapperDashboard">
+      <nav class="navbar">
+        <div class="navHolder">
+          <img src="img/logo.png" alt="Logo" />
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div
+            style="border: 1px solid var(--stockBoxBorder-color)"
+            class="formobile"
+          >
+            <p class="stockbox-color">Welcome <span>Elliott</span></p>
+            <ul class="stockboxActiveColor">
+              <li class="activeNav">
+                <a href="#">Dashboard</a>
+                <div
+                  style="background-color: var(--stockBoxBorder-color)"
+                  class="triangleForNav"
+                ></div>
+              </li>
+              <li>
+                <a href="#">Pages</a>
+                <div
+                  style="background-color: var(--stockBoxBorder-color)"
+                  class="triangleForNav"
+                ></div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Products</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Product1</a>
+                    <div
+                      style="background-color: var(--stockBoxBorder-color)"
+                      class="triangleForNav"
+                    ></div>
+                  </li>
+                  <li>
+                    <a href="#">Product2</a>
+                    <div
+                      style="background-color: var(--stockBoxBorder-color)"
+                      class="triangleForNav"
+                    ></div>
+                  </li>
+                  <li>
+                    <a href="#">Product3</a>
+                    <div
+                      style="background-color: var(--stockBoxBorder-color)"
+                      class="triangleForNav"
+                    ></div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Customers</a>
+                <div
+                  style="background-color: var(--stockBoxBorder-color)"
+                  class="triangleForNav"
+                ></div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Orders</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Sales</a>
+                    <div
+                      style="background-color: var(--stockBoxBorder-color)"
+                      class="triangleForNav"
+                    ></div>
+                  </li>
+                  <li>
+                    <a href="#">Point Of Sale</a>
+                    <div
+                      style="background-color: var(--stockBoxBorder-color)"
+                      class="triangleForNav"
+                    ></div>
+                  </li>
+                  <li>
+                    <a href="#">Buy In</a>
+                    <div
+                      style="background-color: var(--stockBoxBorder-color)"
+                      class="triangleForNav"
+                    ></div>
+                  </li>
+                  <li>
+                    <a href="#">Repairs</a>
+                    <div
+                      style="background-color: var(--stockBoxBorder-color)"
+                      class="triangleForNav"
+                    ></div>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Marketing</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Marketing1</a>
+                    <div
+                      style="background-color: var(--stockBoxBorder-color)"
+                      class="triangleForNav"
+                    ></div>
+                  </li>
+                  <li>
+                    <a href="#">Marketing2</a>
+                    <div
+                      style="background-color: var(--stockBoxBorder-color)"
+                      class="triangleForNav"
+                    ></div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Messages</a>
+                <div
+                  style="background-color: var(--stockBoxBorder-color)"
+                  class="triangleForNav"
+                ></div>
+                <div><p>3</p></div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Settings</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Settings1</a>
+                  </li>
+                  <li>
+                    <a href="#">Settings2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="dashRightHolder">
+        <div class="topRow">
+          <h1 class="stockbox-color">Dashboard</h1>
+          <div>
+            <input type="text" />
+            <div class="profile">
+              <div id="triangle"></div>
+              <a href="#">
+                <h2>Ellliott</h2>
+              </a>
+
+              <a href="#">
+                <div>
+                  <img src="img/profilePhoto1.png" alt="Profile Photo" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="middleRow">
+          <div class="activity">
+            <div
+              style="border: 0.7px solid var(--stockBoxBorder-color)"
+              class="activityDesktop"
+            >
+              <h3 class="stockbox-color">Activity</h3>
+              <div>
+                <p>(59 minutes ago)</p>
+                <h2>
+                  <span>OR4215</span>Marie Origin status change to Paid & Gone
+                </h2>
+              </div>
+              <div>
+                <p>(59 minutes ago)</p>
+                <h2>
+                  <span>OR4215</span>Melad paid £500 on 07 Mar, 2023 12:57 PM
+                  via Cardnet
+                </h2>
+              </div>
+              <div>
+                <p>(59 minutes ago)</p>
+                <h2><span>OR4215</span>Melad added new order</h2>
+              </div>
+              <div>
+                <p>(59 minutes ago)</p>
+                <h2>
+                  <span>prod5270</span>Melad changed status to out of stock
+                </h2>
+              </div>
+            </div>
+            <div class="activityMobile">
+              <div
+                style="border: 0.7px solid var(--stockBoxBorder-color)"
+                class="card content_opened"
+              >
+                <div class="cardTitle">
+                  <h3 class="stockbox-color">Activity</h3>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangle_icon"
+                  ></div>
+                </div>
+                <div class="contentShow">
+                  <div class="inside">
+                    <div class="activeMobContent">
+                      <div>
+                        <p>(59 minutes ago)</p>
+                        <h2>
+                          <span>OR4215</span>Marie Origin status change to Paid
+                          & Gone
+                        </h2>
+                      </div>
+                      <div>
+                        <p>(59 minutes ago)</p>
+                        <h2>
+                          <span>OR4215</span>Melad paid £500 on 07 Mar, 2023
+                          12:57 PM via Cardnet
+                        </h2>
+                      </div>
+                      <div>
+                        <p>(59 minutes ago)</p>
+                        <h2><span>OR4215</span>Melad added new order</h2>
+                      </div>
+                      <div>
+                        <p>(59 minutes ago)</p>
+                        <h2>
+                          <span>prod5270</span>Melad changed status to out of
+                          stock
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dailyPerformance">
+            <div
+              style="border: 0.7px solid var(--stockBoxBorder-color)"
+              class="dailyPerfDesktop"
+            >
+              <div>
+                <h3 class="stockbox-color">Daily Performance</h3>
+                <img src="img/eyeCrossed.png" alt="crossed eye" />
+              </div>
+              <div>
+                <h4><span>£125,300.00</span> <br />generated today</h4>
+                <h4>
+                  <span>6</span> <br />
+                  sales today
+                </h4>
+              </div>
+              <div>
+                <h4><span>214</span> <br />visitors today</h4>
+                <h4>
+                  <span>3</span> <br />
+                  new products
+                </h4>
+              </div>
+              <div style="border-top: 0.7px solid var(--stockBoxBorder-color)">
+                <h4>
+                  <span>5</span> <br />
+                  website
+                </h4>
+                <h4>
+                  <span>2</span> <br />
+                  shop
+                </h4>
+                <h4>
+                  <span>2</span> <br />
+                  <img src="img/ebay.png" alt="ebay" />
+                </h4>
+                <h4>
+                  <span>3</span> <br />
+                  <img src="img/chrono.png" alt="chrono" />
+                </h4>
+              </div>
+            </div>
+            <div class="dailyPrefMobile">
+              <div
+                style="border: 0.7px solid var(--stockBoxBorder-color)"
+                class="card"
+              >
+                <div class="cardTitle">
+                  <h3 class="stockbox-color">Daily Performance</h3>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangle_icon"
+                  ></div>
+                </div>
+                <div class="contentShow">
+                  <div class="inside">
+                    <div class="dailyMobContent">
+                      <div>
+                        <h4><span>£125,300.00</span> <br />generated today</h4>
+                        <h4>
+                          <span>6</span> <br />
+                          sales today
+                        </h4>
+                      </div>
+                      <div>
+                        <h4><span>214</span> <br />visitors today</h4>
+                        <h4>
+                          <span>3</span> <br />
+                          new products
+                        </h4>
+                      </div>
+                      <div
+                        style="
+                          border-top: 0.7px solid var(--stockBoxBorder-color);
+                        "
+                      >
+                        <h4>
+                          <span>5</span> <br />
+                          website
+                        </h4>
+                        <h4>
+                          <span>2</span> <br />
+                          shop
+                        </h4>
+                        <h4>
+                          <span>2</span> <br />
+                          <img src="img/ebay.png" alt="ebay" />
+                        </h4>
+                        <h4>
+                          <span>3</span> <br />
+                          <img src="img/chrono.png" alt="chrono" />
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tipsandtricks">
+            <div
+              style="border: 0.7px solid var(--stockBoxBorder-color)"
+              class="tipsDesktop"
+            >
+              <h3 class="stockbox-color">Tips & Tricks</h3>
+              <div>
+                <h4>
+                  How to rank higher on Google for your brand named products
+                </h4>
+                <p>posted on 15th February 2023</p>
+              </div>
+              <div>
+                <h4>Integrate your shopping channel with the German market</h4>
+                <p>posted on 4th February 2023</p>
+              </div>
+              <div>
+                <h4>Better product photography leads to more clicks</h4>
+                <p>posted on 21st January 2023</p>
+              </div>
+            </div>
+            <div class="tipsMobile">
+              <div
+                style="border: 0.7px solid var(--stockBoxBorder-color)"
+                class="card"
+              >
+                <div class="cardTitle">
+                  <h3 class="stockbox-color">Tips & Tricks</h3>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangle_icon"
+                  ></div>
+                </div>
+                <div class="contentShow">
+                  <div class="inside">
+                    <div class="tipsMobContent">
+                      <div>
+                        <h4>
+                          How to rank higher on Google for your brand named
+                          products
+                        </h4>
+                        <p>posted on 15th February 2023</p>
+                      </div>
+                      <div>
+                        <h4>
+                          Integrate your shopping channel with the German market
+                        </h4>
+                        <p>posted on 4th February 2023</p>
+                      </div>
+                      <div>
+                        <h4>Better product photography leads to more clicks</h4>
+                        <p>posted on 21st January 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="customerActivity">
+            <div
+              style="border: 0.7px solid var(--stockBoxBorder-color)"
+              class="customerDesktop"
+            >
+              <div>
+                <h3 class="stockbox-color">Customer Activity</h3>
+                <img src="img/messageIcon.png" alt="messageIcon" />
+              </div>
+              <div>
+                <p>(4 minutes ago)</p>
+                <h4>
+                  Hi, What will the circumference of a wrist be to fit 11 Links
+                  Jim
+                </h4>
+                <h5>Enquired on Rolex Day Date 36mm 18ct Yellow Gold Oyster</h5>
+              </div>
+              <div>
+                <p>(4 minutes ago)</p>
+                <h4>What’s the weight of this? and can i be sized to a S</h4>
+                <h5>Enquired on Contact Page</h5>
+              </div>
+              <div>
+                <p>(3 days ago)</p>
+                <h4>What diamonds are these</h4>
+                <h5>Enquired on Bling Stones</h5>
+              </div>
+            </div>
+            <div class="customerMobile">
+              <div
+                style="border: 0.7px solid var(--stockBoxBorder-color)"
+                class="card"
+              >
+                <div class="cardTitle">
+                  <h3 class="stockbox-color">Customer Activity</h3>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangle_icon"
+                  ></div>
+                </div>
+                <div class="contentShow">
+                  <div class="inside">
+                    <div class="customerMobContent">
+                      <div>
+                        <p>(4 minutes ago)</p>
+                        <h4>
+                          Hi, What will the circumference of a wrist be to fit
+                          11 Links Jim
+                        </h4>
+                        <h5>
+                          Enquired on Rolex Day Date 36mm 18ct Yellow Gold
+                          Oyster
+                        </h5>
+                      </div>
+                      <div>
+                        <p>(4 minutes ago)</p>
+                        <h4>
+                          What’s the weight of this? and can i be sized to a S
+                        </h4>
+                        <h5>Enquired on Contact Page</h5>
+                      </div>
+                      <div>
+                        <p>(3 days ago)</p>
+                        <h4>What diamonds are these</h4>
+                        <h5>Enquired on Bling Stones</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="addedAndViewed">
+            <div
+              style="border: 0.7px solid var(--stockBoxBorder-color)"
+              class="addedDesktop"
+            >
+              <div class="recentlyAdded">
+                <h3 class="stockbox-color">Recently Added Products</h3>
+                <div class="addeditem">
+                  <div>
+                    <img src="img/watch.png" alt="rolex watch" />
+                  </div>
+                  <div>
+                    <p>Rolex Yacht-Master 40mm Stainless Steel Blue Dial</p>
+                    <h4>£25,500.00</h4>
+                  </div>
+                </div>
+                <div class="addeditem">
+                  <div>
+                    <img src="img/cross.png" alt="rolex watch" />
+                  </div>
+                  <div>
+                    <p>Rolex Yacht-Master 40mm Stainless Steel Blue Dial</p>
+                    <h4>£25,500.00</h4>
+                  </div>
+                </div>
+                <div class="addeditem">
+                  <div>
+                    <img src="img/watch2.png" alt="rolex watch" />
+                  </div>
+                  <div>
+                    <p>Rolex Yacht-Master 40mm Stainless Steel Blue Dial</p>
+                    <h4>£25,500.00</h4>
+                  </div>
+                </div>
+                <div class="addeditem">
+                  <div>
+                    <img src="img/watch.png" alt="rolex watch" />
+                  </div>
+                  <div>
+                    <p>Rolex Yacht-Master 40mm Stainless Steel Blue Dial</p>
+                    <h4>£25,500.00</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="mostViewed">
+                <h3 class="stockbox-color">Most Viewed Products</h3>
+                <div class="vieweditem">
+                  <div>
+                    <img src="img/watch.png" alt="rolex watch" />
+                  </div>
+                  <div>
+                    <p>Rolex Yacht-Master 40mm Stainless Steel Blue Dial</p>
+                    <h4>1032 page views</h4>
+                  </div>
+                </div>
+                <div class="vieweditem">
+                  <div>
+                    <img src="img/watch.png" alt="rolex watch" />
+                  </div>
+                  <div>
+                    <p>Rolex Yacht-Master 40mm Stainless Steel Blue Dial</p>
+                    <h4>564 page views</h4>
+                  </div>
+                </div>
+                <div class="vieweditem">
+                  <div>
+                    <img src="img/watch.png" alt="rolex watch" />
+                  </div>
+                  <div>
+                    <p>Rolex Yacht-Master 40mm Stainless Steel Blue Dial</p>
+                    <h4>334 page views</h4>
+                  </div>
+                </div>
+                <div class="vieweditem">
+                  <div>
+                    <img src="img/watch.png" alt="rolex watch" />
+                  </div>
+                  <div>
+                    <p>Rolex Yacht-Master 40mm Stainless Steel Blue Dial</p>
+                    <h4>34 page views</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="addedMobile">
+              <div
+                style="border: 0.7px solid var(--stockBoxBorder-color)"
+                class="card"
+              >
+                <div class="cardTitle">
+                  <h3 class="stockbox-color">Recent & Most Viewed Products</h3>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangle_icon"
+                  ></div>
+                </div>
+                <div class="contentShow">
+                  <div class="inside">
+                    <div class="addedMobContent">
+                      <div class="recentlyAddedMob">
+                        <h3 class="stockbox-color">Recently Added Products</h3>
+                        <div class="addeditem">
+                          <div>
+                            <img src="img/watch.png" alt="rolex watch" />
+                          </div>
+                          <div>
+                            <p>
+                              Rolex Yacht-Master 40mm Stainless Steel Blue Dial
+                            </p>
+                            <h4>£25,500.00</h4>
+                          </div>
+                        </div>
+                        <div class="addeditem">
+                          <div>
+                            <img src="img/cross.png" alt="rolex watch" />
+                          </div>
+                          <div>
+                            <p>
+                              Rolex Yacht-Master 40mm Stainless Steel Blue Dial
+                            </p>
+                            <h4>£25,500.00</h4>
+                          </div>
+                        </div>
+                        <div class="addeditem">
+                          <div>
+                            <img src="img/watch2.png" alt="rolex watch" />
+                          </div>
+                          <div>
+                            <p>
+                              Rolex Yacht-Master 40mm Stainless Steel Blue Dial
+                            </p>
+                            <h4>£25,500.00</h4>
+                          </div>
+                        </div>
+                        <div class="addeditem">
+                          <div>
+                            <img src="img/watch.png" alt="rolex watch" />
+                          </div>
+                          <div>
+                            <p>
+                              Rolex Yacht-Master 40mm Stainless Steel Blue Dial
+                            </p>
+                            <h4>£25,500.00</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mostViewedMob">
+                        <h3 class="stockbox-color">Most Viewed Products</h3>
+                        <div class="vieweditem">
+                          <div>
+                            <img src="img/watch.png" alt="rolex watch" />
+                          </div>
+                          <div>
+                            <p>
+                              Rolex Yacht-Master 40mm Stainless Steel Blue Dial
+                            </p>
+                            <h4>1032 page views</h4>
+                          </div>
+                        </div>
+                        <div class="vieweditem">
+                          <div>
+                            <img src="img/watch.png" alt="rolex watch" />
+                          </div>
+                          <div>
+                            <p>
+                              Rolex Yacht-Master 40mm Stainless Steel Blue Dial
+                            </p>
+                            <h4>564 page views</h4>
+                          </div>
+                        </div>
+                        <div class="vieweditem">
+                          <div>
+                            <img src="img/watch.png" alt="rolex watch" />
+                          </div>
+                          <div>
+                            <p>
+                              Rolex Yacht-Master 40mm Stainless Steel Blue Dial
+                            </p>
+                            <h4>334 page views</h4>
+                          </div>
+                        </div>
+                        <div class="vieweditem">
+                          <div>
+                            <img src="img/watch.png" alt="rolex watch" />
+                          </div>
+                          <div>
+                            <p>
+                              Rolex Yacht-Master 40mm Stainless Steel Blue Dial
+                            </p>
+                            <h4>34 page views</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperDashboardFooter">
+      <div>
+        <p>
+          System Version 1.0.5. Powered by
+          <span>Stockbox</span> www.stockbox.tech
+        </p>
+      </div>
+      <div>
+        <a href="#">Report a bug</a>
+        <a href="#">Request a feature</a>
+        <a href="#">Knowledge Base</a>
+        <a href="#">Raise a Support Ticket</a>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

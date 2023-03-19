@@ -1,0 +1,2602 @@
+:root {
+  //border colors for the rolex
+  --rolexBorder-color: #006039;
+  //border colors for the stockbox
+  --stockBoxBorder-color: #7f0046;
+  //border colors for the WOS
+  --wosBorder-color: #cba66f;
+}
+//text color for the stockbox start
+$stockbox-color: #7f0046;
+.stockbox-color {
+  color: $stockbox-color;
+}
+//active nav color
+.stockboxActiveColor {
+  .activeNav {
+    a {
+      color: #7f0046 !important;
+    }
+  }
+}
+//text color for the stockbox end
+
+//text color for the rolex start
+$rolex-color: #006039;
+//text class for the rolex
+.rolex-color {
+  color: $rolex-color;
+}
+.rolexActiveColor {
+  .activeNav {
+    a {
+      color: #006039 !important;
+    }
+  }
+}
+//text color for the rolex end
+
+//text color for the wos start
+$wos-color: #7f4c00;
+//text class for the wos
+.wos-color {
+  color: $wos-color;
+}
+.wosActiveColor {
+  .activeNav {
+    a {
+      color: #7f4c00 !important;
+    }
+  }
+}
+//text color for the wos end
+
+// fonts
+@font-face {
+  font-family: "heroNew";
+  src: url("../fonts/HeroNew-Regular.woff");
+}
+@font-face {
+  font-family: "heroNewBold";
+  src: url("../fonts/HeroNew-Bold.woff");
+}
+// fonts end
+
+// def code
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "heroNew", sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+img {
+  max-width: 100%;
+}
+// def code end
+
+// packages css start
+.logoHolder {
+  padding-top: 99px;
+  text-align: center;
+  margin-bottom: 123px;
+}
+.logoHolderPackage {
+  padding-top: 99px;
+  text-align: center;
+  margin-bottom: 123px;
+}
+.boxes {
+  margin-bottom: 112px;
+  .wrapper {
+    h1 {
+      text-align: center;
+      font-size: 20px;
+      line-height: 27.98px;
+      font-weight: 400;
+      margin-bottom: 65px;
+    }
+    .boxHolder {
+      display: flex;
+      gap: 26px;
+      justify-content: center;
+      .box {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #7f0046;
+        border-radius: 6px;
+        width: 310px;
+        height: 170px;
+        padding: 23px 19px 13px 19px;
+        p:nth-child(1) {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          color: #000000;
+        }
+        p:nth-child(2) {
+          color: #000000;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22.38px;
+        }
+        div {
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          background-color: #507be9;
+          border-radius: 6px 0px;
+          width: 128px;
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            color: #ffffff !important;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 600;
+          }
+        }
+        &:hover {
+          background-color: #7f0046;
+          transition: all 0.25s ease-in;
+          p {
+            color: #ffffff;
+          }
+        }
+      }
+      .selectedBox {
+        background-color: #7f0046;
+        transition: all 0.25s ease-in;
+        p {
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+}
+// packages css end
+
+// global css start
+.progressBars {
+  .wrapper {
+    .progressHolder {
+      p {
+        text-align: center;
+        color: #507be9;
+        padding-bottom: 39px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      width: 478px;
+      margin: auto;
+      .bars {
+        display: flex;
+        gap: 9px;
+        justify-content: center;
+        margin-bottom: 41px;
+        .activeProgress {
+          background: #507be9;
+        }
+        div {
+          width: 113px;
+          height: 15px;
+          background: #f4f4f4;
+          border-radius: 6px;
+        }
+      }
+    }
+    a {
+      float: right;
+      color: #000000;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+.leftDecoration {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.topDec {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+// global css end
+// signup1 css start
+.logoHolder1 {
+  padding-top: 99px;
+  text-align: center;
+  margin-bottom: 115px;
+}
+.formSignUp1 {
+  .wrapper {
+    .formHolder1 {
+      width: 482px;
+      margin: auto;
+      h2 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        margin-bottom: 27px;
+      }
+      label {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+      }
+      input[type="text"] {
+        width: 479px;
+        height: 65px;
+        border: 1px solid #7f0046;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        padding-left: 10px;
+        margin-bottom: 39px;
+        margin-top: 18px;
+      }
+      select {
+        width: 479px;
+        height: 65px;
+        border: 1px solid #7f0046;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        padding-left: 37px;
+        margin-bottom: 39px;
+        margin-top: 18px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        background-image: url("../img/selectArrow.png");
+        background-repeat: no-repeat;
+        background-position-x: 96%;
+        background-position-y: 50%;
+        &:focus {
+          outline: none;
+        }
+      }
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 75px;
+        .radio {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: #000000;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          padding-left: 50px;
+          cursor: pointer;
+          margin-bottom: 18px;
+          p {
+            height: 31px;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .radio input[type="radio"] {
+          display: none;
+        }
+        .radio span {
+          height: 29px;
+          width: 29px;
+          border-radius: 50%;
+          border: 1px solid #7f0046;
+          display: block;
+          position: absolute;
+          left: 0px;
+          top: 2px;
+        }
+        .radio span::after {
+          content: "";
+          height: 22px;
+          width: 22px;
+          background: #7f0046;
+          display: block;
+          position: absolute;
+          left: 52%;
+          top: 48%;
+          transform: translate(-52%, -48%) scale(0);
+          border-radius: 50%;
+          transition: 250ms ease-in-out 0s;
+        }
+        .radio input[type="radio"]:checked ~ span:after {
+          transform: translate(-52%, -48%) scale(1);
+        }
+      }
+    }
+  }
+}
+
+// signup1 css end
+
+// signup2 css start
+.logoHolder2 {
+  padding-top: 99px;
+  text-align: center;
+  margin-bottom: 61px;
+}
+.formSignUp2 {
+  .wrapper {
+    .formHolder2 {
+      width: 482px;
+      margin: auto;
+      label {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+      }
+      input[type="text"] {
+        width: 479px;
+        height: 65px;
+        border: 1px solid #7f0046;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        padding-left: 10px;
+        margin-top: 18px;
+        margin-bottom: 39px;
+      }
+      input[type="email"] {
+        width: 479px;
+        height: 65px;
+        border: 1px solid #7f0046;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        padding-left: 10px;
+        margin-top: 18px;
+        margin-bottom: 39px;
+      }
+      .passwordBox {
+        position: relative;
+        margin-bottom: 51px;
+        input[type="password"] {
+          width: 479px;
+          height: 65px;
+          border: 1px solid #7f0046;
+          border-radius: 6px;
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 400;
+          margin-top: 18px;
+          padding-left: 10px;
+        }
+        img {
+          position: absolute;
+          top: 35px;
+          right: 17px;
+          cursor: pointer;
+        }
+      }
+      h2 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        margin-bottom: 27px;
+      }
+
+      .containerBox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 51px;
+        .checkbox {
+          position: relative;
+          display: block;
+          label {
+            min-height: 20px;
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &:first-child {
+              margin-bottom: 18px;
+            }
+            input[type="checkbox"] {
+              position: absolute;
+              margin: 0px 0 0;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              outline: 1px solid #7f0046 !important;
+              border-radius: 6px;
+              width: 29px;
+              height: 29px;
+              outline-offset: 0px !important;
+              border: 1px solid transparent;
+              transform: translate3d(0);
+              transition: all 0.25s ease-in-out;
+            }
+            input[type="checkbox"]:checked {
+              box-shadow: 0 0 0 20px #7f0046 inset;
+            }
+            p {
+              padding-left: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// signup2 css end
+
+// signup3 css start
+.logoHolder3 {
+  padding-top: 99px;
+  text-align: center;
+  margin-bottom: 117px;
+}
+.formSignUp3 {
+  .wrapper {
+    .formSignUp3Box {
+      width: 560px;
+      margin: auto;
+      h2 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        margin-bottom: 27px;
+        text-align: left;
+      }
+      .sliderHolder {
+        display: flex;
+        gap: 23px;
+        justify-content: center;
+        margin-bottom: 62px;
+        .sliderBox {
+          .sliderContent {
+            border: 1px solid #7f0046;
+            border-radius: 6px;
+            width: 170px;
+            height: 163px;
+            text-align: center;
+            padding-top: 34px;
+            position: relative;
+            img {
+              margin-bottom: 14px;
+            }
+            p {
+              text-align: left;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 22px;
+              position: absolute;
+              left: 14px;
+              bottom: 4px;
+            }
+            transition: all 0.25s ease-in;
+            &:hover {
+              -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+            }
+          }
+        }
+        .selectedSlider {
+          box-shadow: 0px 2px 5px 5px rgba(127, 0, 70, 0.75);
+          -webkit-box-shadow: 0px 2px 5px 5px rgba(127, 0, 70, 0.75);
+          -moz-box-shadow: 0px 2px 5px 5px rgba(127, 0, 70, 0.75);
+        }
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        margin-bottom: 16px;
+      }
+      label {
+        margin-bottom: 14px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+      }
+      .containerBox2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 29px;
+        .checkbox2 {
+          position: relative;
+          display: block;
+          label {
+            min-height: 20px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
+            cursor: pointer;
+            input[type="checkbox"] {
+              position: absolute;
+              margin: 0px 0 0;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              outline: 1px solid #7f0046 !important;
+              border-radius: 6px;
+              width: 29px;
+              height: 29px;
+              outline-offset: 0px !important;
+              border: 1px solid transparent;
+              transform: translate3d(0);
+              transition: all 0.25s ease-in-out;
+            }
+            input[type="checkbox"]:checked {
+              box-shadow: 0 0 0 20px #7f0046 inset;
+            }
+            p {
+              padding-left: 50px;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+      input[type="text"] {
+        margin-bottom: 34px;
+        display: block;
+        width: 310px;
+        height: 65px;
+        border: 1px solid #7f0046;
+        border-radius: 6px;
+        padding-left: 27px;
+        color: #000000;
+        opacity: 0.3;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+#bars3 {
+  margin-bottom: 55px;
+}
+#domainName {
+  visibility: hidden;
+  transition: all 0.25s ease-in;
+}
+// signup3 css end
+
+// signup4 css start
+.logoHolder4 {
+  padding-top: 99px;
+  text-align: center;
+  margin-bottom: 117px;
+}
+.formSignUp4 {
+  .wrapper {
+    .formHolder4 {
+      width: 479px;
+      margin: auto;
+      h2 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        margin-bottom: 19px;
+        text-align: left;
+      }
+      .summaryBox {
+        border: 1px solid #7f0046;
+        border-radius: 6px;
+        width: 310px;
+        height: 60px;
+        padding: 18px 22px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 19px;
+        h4 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+        }
+        h5 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          color: #507be9;
+        }
+      }
+      .radio-group2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 26px;
+        .radio {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: #000000;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          padding-left: 50px;
+          cursor: pointer;
+          margin-bottom: 9px;
+          p {
+            height: 31px;
+            display: flex;
+            align-items: center;
+            span {
+              padding-left: 10px;
+              background: radial-gradient(
+                50% 50% at 50% 50%,
+                #ffad39 0%,
+                #ff7376 47.4%,
+                #cb3541 100%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              font-size: 12px;
+              line-height: 17px;
+              font-family: "heroNew";
+            }
+          }
+        }
+        .selectedRadio {
+          p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: "heroNewBold";
+          }
+        }
+
+        .radio input[type="radio"] {
+          display: none;
+        }
+        .radio > span {
+          height: 29px;
+          width: 29px;
+          border-radius: 50%;
+          border: 1px solid #7f0046;
+          display: block;
+          position: absolute;
+          left: 0px;
+          top: 2px;
+        }
+        .radio > span::after {
+          content: "";
+          height: 22px;
+          width: 22px;
+          background: #7f0046;
+          display: block;
+          position: absolute;
+          left: 52%;
+          top: 48%;
+          transform: translate(-52%, -48%) scale(0);
+          border-radius: 50%;
+          transition: 250ms ease-in-out 0s;
+        }
+        .radio input[type="radio"]:checked ~ span:after {
+          transform: translate(-52%, -48%) scale(1);
+        }
+      }
+      .grayLine {
+        border-bottom: 1px solid #e3e3e3;
+        width: 310px;
+        margin-bottom: 36px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+        font-family: "heroNewBold";
+      }
+      div:nth-child(7) {
+        margin-top: 78px;
+        margin-bottom: 59px;
+        h2 {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28px;
+          color: #507be9;
+          margin-bottom: 7px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          span {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #a6a6a6;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        background: #507be9;
+        border-radius: 6px;
+        width: 310px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        transition: all 0.25s ease-in;
+        border: 1px solid #507be9;
+        &:hover {
+          color: #507be9;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+// signup4 css end
+
+// signupSuccess css start
+.logoHolderSuccess {
+  padding-top: 99px;
+  text-align: center;
+  margin-bottom: 103px;
+}
+.formSignUp5 {
+  .wrapper {
+    text-align: center;
+    .formHolder5 {
+      width: 582px;
+      margin: auto;
+      display: flex;
+      img {
+        margin-bottom: 101px;
+        margin-right: 43px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 46px;
+        text-align: left;
+      }
+      h2 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: 0em;
+        text-align: left;
+        span {
+          font-family: "heroNewBold";
+          font-weight: 700;
+        }
+      }
+    }
+    a {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #507be9;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+// signupSuccess css end
+// dashboard css start
+
+.topDecDash {
+  position: absolute;
+  top: 6px;
+  width: 272px;
+  height: 9px;
+  right: 0px;
+  overflow: hidden;
+  transform: translateY(-6px);
+  background-image: url(../img/dashboardTopDecoration.png);
+  background-repeat: no-repeat;
+}
+.leftDecDash {
+  position: absolute;
+  width: 9px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("../img/dashboardLeftDecoration.png");
+  background-repeat: repeat-y;
+}
+.wrapperDashboard {
+  max-width: 1650px;
+  margin: auto;
+  display: flex;
+}
+.wrapperDashboardFooter {
+  max-width: 1650px;
+  margin: auto;
+  display: flex;
+}
+.navbar {
+  padding-top: 79px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  .navHolder {
+    position: relative;
+  }
+  .formobile {
+    position: absolute;
+    top: 112px;
+    left: 0px;
+    width: 230px;
+    min-height: 580px;
+    border: 1px solid #7f0046;
+    border-radius: 6px;
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+      // color: #7f0046;
+      padding: 22px 0px 5px 32px;
+      span {
+        display: none;
+      }
+    }
+    ul {
+      padding-left: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      li {
+        display: block;
+        border-bottom: 1px solid #efe8ec;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        position: relative;
+        ul {
+          li {
+            a {
+              padding-top: 0px;
+              padding-bottom: 15px;
+              padding-left: 52px;
+            }
+          }
+        }
+        .messages {
+          position: absolute;
+          right: 25px;
+          top: 17px;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          background: #b7ffd4;
+          padding: 5px 8px;
+          margin-left: 50px;
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            color: #44945b;
+            padding: 0px 0px 0px 0px;
+          }
+        }
+        a {
+          color: #000;
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          padding-top: 20px;
+          padding-bottom: 25px;
+          padding-left: 32px;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      li:nth-child(7) {
+        position: relative;
+      }
+    }
+  }
+}
+.boldDropdown {
+  a {
+    font-weight: 700;
+  }
+}
+.activeNav {
+  a {
+    font-weight: 700;
+    font-family: "heroNewBold";
+  }
+  .triangleForNav {
+    display: block !important;
+  }
+}
+
+.triangleForNav {
+  display: none !important;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%) !important;
+  width: 10px !important;
+  height: 10px !important;
+  transform: rotate(270deg) !important;
+  border-radius: unset !important;
+  margin-left: unset !important;
+  padding: unset !important;
+  position: absolute;
+  right: 0px;
+  top: 25px;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown:before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 26px;
+  left: 75%;
+  background: url("../img/dropdownPolygon.png") 0 0 no-repeat;
+  transform: rotate(0deg);
+  transition: all 0.25s ease-in;
+}
+.dropdown.open:before {
+  transform: rotate(90deg) !important;
+}
+.dropdown-menu {
+  display: none;
+  background-color: transparent;
+  min-width: 160px;
+  // padding: 12px 16px;
+  li {
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+
+    a {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+#triangle {
+  background-color: #000;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 10px;
+  height: 10px;
+  transform: rotate(180deg);
+  margin-right: 12px;
+  cursor: pointer;
+}
+.dashRightHolder {
+  width: 100%;
+  .topRow {
+    margin-bottom: 54px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 53px;
+    h1 {
+      // color: #7f0046;
+      font-family: "heroNewBold";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 21px;
+      padding-top: 30px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      input {
+        width: 583px;
+        height: 59px;
+        border: 0.7px solid #c5c5c5;
+        border-radius: 6px;
+        background-image: url("../img/loop.png");
+        background-repeat: no-repeat;
+        background-position-x: 94%;
+        background-position-y: 50%;
+        margin-right: 72px;
+        padding-left: 20px;
+        font-size: 20px;
+        line-height: 21px;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        margin-right: 6px;
+        a {
+          text-decoration: none;
+          color: #000;
+          h2 {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 36px;
+            margin-right: 23px;
+          }
+        }
+        a {
+          border-radius: 50%;
+          div {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            background: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 62px;
+              height: 62px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.middleRow {
+  display: flex;
+  flex-wrap: wrap;
+
+  row-gap: 55px;
+  column-gap: 48px;
+  padding-left: 42px;
+  .activity {
+    .activityDesktop {
+      padding: 24px 27px;
+      border: 0.7px solid #e9c3c1;
+      border-radius: 6px;
+      width: 477px;
+      height: 414px;
+      h3 {
+        // color: #7f0046;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 14px;
+      }
+      div {
+        margin-bottom: 28px;
+        p {
+          color: #7c7c7c;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 21px;
+          margin-bottom: 4px;
+        }
+        h2 {
+          font-size: 16px;
+          font-weight: 400;
+          span {
+            font-family: "heroNewBold";
+            font-weight: 700;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+  .dailyPerformance {
+    .dailyPerfDesktop {
+      width: 477px;
+      height: 414px;
+      border: 0.7px solid #e9c3c1;
+      border-radius: 6px;
+      div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 33px;
+        padding: 23px 28px 0px 31px;
+
+        h3 {
+          // color: #7f0046;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 25px;
+        }
+        img {
+          cursor: pointer;
+        }
+      }
+      div {
+        padding: 0px 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 41px;
+        h4 {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 29px;
+          width: 45%;
+          span {
+            font-family: "heroNewBold";
+            font-weight: 700;
+            font-size: 24px;
+          }
+        }
+      }
+      div:nth-child(3) {
+        margin-bottom: 48px;
+      }
+      div:nth-child(4) {
+        align-items: center;
+        justify-content: space-around;
+        border-top: 0.7px solid #e9c3c1;
+        height: 121px;
+        margin-bottom: 0px;
+        padding: unset;
+        h4 {
+          padding-top: 4px;
+          width: unset;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .tipsandtricks {
+    .tipsDesktop {
+      padding: 26px 17px 24px 27px;
+      background: #f9faff;
+      border: 0.7px solid #e9c3c1;
+      border-radius: 6px;
+      height: 414px;
+      width: 312px;
+      h3 {
+        // color: #7f0046;
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+      div {
+        margin-bottom: 39px;
+        h4 {
+          font-weight: 500;
+          font-size: 16px;
+          font-family: "heroNewBold";
+          line-height: 23px;
+          margin-bottom: 5px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+  .customerActivity {
+    .customerDesktop {
+      width: 656px;
+      height: 414px;
+      border: 0.7px solid #e9c3c1;
+      border-radius: 6px;
+      padding: 24px 29px 24px 26px;
+      margin-right: 2px;
+      div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 23px;
+        h3 {
+          // color: #7f0046;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 25px;
+        }
+        img {
+          cursor: pointer;
+        }
+      }
+      div {
+        margin-bottom: 36px;
+        p {
+          font-weight: 400;
+          font-size: 12px;
+          color: #7c7c7c;
+          line-height: 21px;
+        }
+        h4 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 29px;
+          margin-bottom: 3px;
+        }
+        h5 {
+          font-style: italic;
+          font-weight: 600;
+          font-size: 12px;
+          font-family: "heroNewBold";
+        }
+      }
+    }
+  }
+  .addedAndViewed {
+    .addedDesktop {
+      width: 656px;
+      height: 414px;
+      border: 0.7px solid #e9c3c1;
+      border-radius: 6px;
+      padding: 24px 38px;
+      display: flex;
+      justify-content: space-between;
+      .recentlyAdded {
+        h3 {
+          font-weight: 400;
+          font-size: 14px;
+          // color: #7f0046;
+          line-height: 25px;
+          margin-bottom: 23px;
+        }
+        .addeditem {
+          display: flex;
+          max-width: 271px;
+          margin-bottom: 22px;
+          div:nth-child(1) {
+            width: 62px !important;
+            height: 62px;
+            border: 0.354702px solid #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          div:nth-child(2) {
+            max-width: 195px;
+            padding-left: 14px;
+            padding-top: 2px;
+            p {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 17px;
+              margin-bottom: 5px;
+            }
+            h4 {
+              font-weight: 700;
+              font-size: 12px;
+              font-family: "heroNewBold";
+            }
+          }
+        }
+      }
+      .mostViewed {
+        max-width: 264px;
+        h3 {
+          font-weight: 400;
+          font-size: 14px;
+          // color: #7f0046;
+          line-height: 25px;
+          margin-bottom: 23px;
+        }
+        .vieweditem {
+          display: flex;
+          width: 265px;
+          margin-bottom: 22px;
+          div:nth-child(1) {
+            width: 62px !important;
+            height: 62px;
+            border: 0.354702px solid #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          div:nth-child(2) {
+            max-width: 195px;
+            padding-left: 12px;
+            padding-top: 2px;
+            p {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 17px;
+              margin-bottom: 5px;
+            }
+            h4 {
+              font-weight: 700;
+              font-size: 12px;
+              font-family: "heroNewBold";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.wrapperDashboardFooter {
+  justify-content: space-between;
+  padding-top: 136px;
+  padding-bottom: 32px;
+  div:nth-child(1) {
+    width: 265px;
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      span {
+        font-weight: 700;
+        font-family: "heroNewBold";
+      }
+    }
+  }
+  div:nth-child(2) {
+    a {
+      font-weight: 400;
+      font-size: 12px;
+      color: #000000;
+      line-height: 17px;
+      margin-right: 36px;
+      &:last-child {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+.middleRow .activity .activityMobile {
+  display: none;
+}
+.middleRow .dailyPerformance .dailyPrefMobile {
+  display: none;
+}
+.middleRow .tipsandtricks .tipsMobile {
+  display: none;
+}
+.middleRow .customerActivity .customerMobile {
+  display: none;
+}
+.middleRow .addedAndViewed .addedMobile {
+  display: none;
+}
+// dashboard css end
+
+//dashboard for mobile start
+.card {
+  min-width: 510px;
+  border: 0.7px solid #e9c3c1;
+  border-radius: 6px;
+  padding: 15px 0px;
+}
+.cardTitle {
+  position: relative;
+  h3 {
+    font-weight: 400;
+    font-size: 14px;
+    // color: #7f0046;
+    padding-left: 25px;
+  }
+  .triangle_icon {
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    width: 10px;
+    height: 10px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 25px;
+    top: 7px;
+    z-index: 999;
+  }
+}
+.content_opened {
+  .cardTitle {
+    .triangle_icon {
+      transform: rotate(180deg);
+    }
+  }
+  .contentShow {
+    max-height: 600px;
+  }
+}
+.contentShow {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.inside {
+  padding-top: 26px;
+  padding-bottom: 6px;
+  .activeMobContent {
+    padding: 0px 25px;
+    div {
+      margin-bottom: 28px;
+      p {
+        color: #7c7c7c;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        margin-bottom: 4px;
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: 400;
+        span {
+          font-family: "heroNewBold";
+          font-weight: 700;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .dailyMobContent {
+    padding-top: 26px;
+    div {
+      padding: 0px 31px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 41px;
+      h4 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 29px;
+        width: 45%;
+        span {
+          font-family: "heroNewBold";
+          font-weight: 700;
+          font-size: 24px;
+        }
+      }
+    }
+    div:nth-child(2) {
+      margin-bottom: 48px;
+    }
+    div:nth-child(3) {
+      align-items: center;
+      justify-content: space-around;
+      border-top: 0.7px solid #e9c3c1;
+      height: 121px;
+      margin-bottom: 0px;
+      padding: unset;
+      h4 {
+        padding-top: 4px;
+        width: unset;
+        text-align: center;
+      }
+    }
+  }
+  .tipsMobContent {
+    padding: 0px 25px;
+    padding-top: 26px;
+    div {
+      margin-bottom: 39px;
+      h4 {
+        font-weight: 500;
+        font-size: 16px;
+        font-family: "heroNewBold";
+        line-height: 23px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+  }
+  .customerMobContent {
+    padding: 0px 25px;
+    div {
+      margin-bottom: 36px;
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        color: #7c7c7c;
+        line-height: 21px;
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        margin-bottom: 3px;
+      }
+      h5 {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: "heroNewBold";
+      }
+    }
+  }
+  .addedMobContent {
+    display: flex;
+    justify-content: space-evenly;
+    .recentlyAddedMob {
+      h3 {
+        font-weight: 400;
+        font-size: 14px;
+        // color: #7f0046;
+        line-height: 25px;
+        margin-bottom: 23px;
+      }
+      .addeditem {
+        display: flex;
+        max-width: 271px;
+        margin-bottom: 22px;
+        div:nth-child(1) {
+          width: 62px !important;
+          height: 62px;
+          border: 0.354702px solid #000000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        div:nth-child(2) {
+          max-width: 195px;
+          padding-left: 14px;
+          padding-top: 2px;
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+            margin-bottom: 5px;
+          }
+          h4 {
+            font-weight: 700;
+            font-size: 12px;
+            font-family: "heroNewBold";
+          }
+        }
+      }
+    }
+    .mostViewedMob {
+      max-width: 264px;
+      h3 {
+        font-weight: 400;
+        font-size: 14px;
+        // color: #7f0046;
+        line-height: 25px;
+        margin-bottom: 23px;
+      }
+      .vieweditem {
+        display: flex;
+        width: 265px;
+        margin-bottom: 22px;
+        div:nth-child(1) {
+          width: 62px !important;
+          height: 62px;
+          border: 0.354702px solid #000000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        div:nth-child(2) {
+          max-width: 195px;
+          padding-left: 12px;
+          padding-top: 2px;
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+            margin-bottom: 5px;
+          }
+          h4 {
+            font-weight: 700;
+            font-size: 12px;
+            font-family: "heroNewBold";
+          }
+        }
+      }
+    }
+  }
+}
+// dashboard for mobile end
+//Responsive CSS:
+@media (max-width: 1750px) {
+  //responsive dashboard start
+  .wrapperDashboard {
+    width: 1400px;
+  }
+  .wrapperDashboardFooter {
+    width: 1400px;
+  }
+
+  //responsive dashboard end
+}
+@media (max-width: 1480px) {
+  //responsive packages start
+  .boxes .wrapper .boxHolder {
+    max-width: 938px;
+    margin: auto;
+  }
+  .boxes .wrapper .boxHolder .box {
+    width: 264px;
+  }
+  #packagesFix {
+    transform: translateX(-100px);
+    background-repeat: repeat;
+  }
+  //responsive packages end
+  //responsive dashboard start
+  .wrapperDashboard {
+    width: 1270px;
+  }
+  .wrapperDashboardFooter {
+    width: 1270px;
+  }
+  .middleRow {
+    row-gap: 29px;
+    -moz-column-gap: 48px;
+    column-gap: 23px;
+  }
+
+  //responsive dashboard end
+}
+@media (max-width: 1300px) {
+  //responsive dashboard start
+  .wrapperDashboard {
+    width: 1070px;
+  }
+  .wrapperDashboardFooter {
+    width: 1070px;
+  }
+  .middleRow {
+    row-gap: 29px;
+    -moz-column-gap: 48px;
+    column-gap: 10px;
+    padding-left: 30px;
+  }
+
+  .dashRightHolder .topRow div input {
+    width: 350px;
+  }
+  .dashRightHolder .topRow {
+    padding-left: 42px;
+  }
+  .middleRow .dailyPerformance .dailyPerfDesktop div h4 {
+    width: 39%;
+  }
+  .middleRow .activity .activityDesktop {
+    width: 398px;
+  }
+  .middleRow .dailyPerformance .dailyPerfDesktop {
+    width: 410px;
+  }
+  .middleRow .activity .activityDesktop div {
+    margin-bottom: 20px;
+  }
+  .middleRow .customerActivity .customerDesktop {
+    width: 494px;
+  }
+  //responsive dashboard end
+}
+@media screen and (max-width: 1100px) {
+  //responsive signup1 start
+  .wrapper {
+    max-width: 768px;
+  }
+  //responsive signup1 end
+  //responsive packages start
+  .boxes .wrapper .boxHolder {
+    flex-wrap: wrap;
+  }
+  //responsive packages end
+
+  //responsive dashboard start
+  .wrapperDashboard {
+    width: 880px;
+  }
+  .wrapperDashboardFooter {
+    width: 880px;
+  }
+  .dashRightHolder .topRow div input {
+    width: 250px;
+  }
+  .navbar .formobile {
+    width: 190px;
+  }
+  .navbar .formobile ul li {
+    font-size: 18px;
+    a {
+      padding-left: 18px;
+    }
+  }
+  .navbar .formobile ul li div {
+    margin-left: 24px;
+  }
+  .navbar {
+    width: 25%;
+  }
+  .dropdown-menu li a {
+    font-size: 16px;
+  }
+  .middleRow .activity .activityDesktop div h2 {
+    font-size: 14px;
+  }
+  .middleRow .activity .activityDesktop {
+    padding: 18px 18px;
+  }
+  .middleRow .activity .activityDesktop {
+    max-width: 330px;
+  }
+  .middleRow .dailyPerformance .dailyPerfDesktop div:nth-child(1) {
+    margin-bottom: 27px;
+    padding: 18px 18px 0px 18px;
+  }
+  .middleRow .dailyPerformance .dailyPerfDesktop div {
+    padding: 0px 18px;
+  }
+  .middleRow .dailyPerformance .dailyPerfDesktop div h4 {
+    font-size: 14px;
+  }
+  .middleRow .dailyPerformance .dailyPerfDesktop div h4 span {
+    font-size: 19px;
+  }
+  .middleRow .dailyPerformance .dailyPerfDesktop {
+    width: 334px;
+  }
+  .middleRow .activity .activityDesktop {
+    height: unset;
+    max-height: 385px;
+  }
+  .middleRow .dailyPerformance .dailyPerfDesktop {
+    height: 385px;
+  }
+  .middleRow .tipsandtricks .tipsDesktop div h4 {
+    font-size: 14px;
+  }
+  .middleRow .tipsandtricks .tipsDesktop {
+    padding: 18px 17px 18px 18px;
+    width: 274px;
+  }
+  .middleRow .customerActivity .customerDesktop {
+    padding: 15px 18px 18px 18px;
+    width: 388px;
+  }
+  .middleRow .customerActivity .customerDesktop div h4 {
+    font-size: 14px;
+  }
+  .middleRow .customerActivity .customerDesktop div {
+    margin-bottom: 28px;
+  }
+  .dashRightHolder .topRow div .profile a h2 {
+    font-size: 17px;
+  }
+  //responsive dashboard end
+}
+@media screen and (max-width: 1024px) {
+  //responsive signup1 start
+  .leftDecoration {
+    transform: translateX(-100px);
+  }
+  //responsive signup1 end
+  //responsive signup3 start
+  .formSignUp3 .wrapper .formSignUp3Box .sliderHolder {
+    display: flex;
+    gap: 14px;
+  }
+  .formSignUp3 .wrapper .formSignUp3Box {
+    width: 520px;
+  }
+  //responsive signup3 end
+}
+
+@media screen and (max-width: 992px) {
+  // signupSuccess css start
+  .formSignUp5 .wrapper .formHolder5 {
+    width: 556px;
+  }
+  // signupSuccess css end
+}
+@media screen and (max-width: 930px) {
+  //responsive dashboard start
+  .middleRow .activity .activityDesktop {
+    display: none;
+  }
+  .middleRow .dailyPerformance .dailyPerfDesktop {
+    display: none;
+  }
+  .middleRow .tipsandtricks .tipsDesktop {
+    display: none;
+  }
+  .middleRow .customerActivity .customerDesktop {
+    display: none;
+  }
+  .middleRow .addedAndViewed .addedDesktop {
+    display: none;
+  }
+  .middleRow .activity .activityMobile {
+    display: block;
+  }
+  .middleRow .dailyPerformance .dailyPrefMobile {
+    display: block;
+  }
+  .middleRow .tipsandtricks .tipsMobile {
+    display: block;
+  }
+  .middleRow .customerActivity .customerMobile {
+    display: block;
+  }
+  .middleRow .addedAndViewed .addedMobile {
+    display: block;
+  }
+  .wrapperDashboard {
+    width: 740px;
+  }
+  .wrapperDashboardFooter {
+    width: 740px;
+  }
+  .dashRightHolder .topRow div .profile a div img {
+    width: 39px;
+    height: 39px;
+  }
+  .dashRightHolder .topRow div .profile a div {
+    width: 49px;
+    height: 49px;
+  }
+  .dashRightHolder .topRow div .profile a div {
+    margin-right: 0px;
+  }
+  .dashRightHolder .topRow div .profile a h2 {
+    font-size: 18px;
+    margin-right: 9px;
+  }
+  .dashRightHolder .topRow div input {
+    display: none;
+  }
+  .navbar {
+    width: 25%;
+  }
+  .leftDecDash {
+    height: auto;
+  }
+  .dashRightHolder {
+    width: 73%;
+  }
+  .leftDecDash {
+    top: -196px;
+  }
+  .navbar .formobile {
+    top: 95px;
+  }
+  .dashRightHolder .topRow {
+    padding-left: 100px;
+  }
+  .navbar .formobile ul li {
+    font-size: 16px;
+  }
+  .inside .addedMobContent .mostViewedMob {
+    max-width: 240px;
+  }
+
+  //responsive dashboard end
+}
+
+@media screen and (max-width: 768px) {
+  //responsive packages start
+  #packagesFix {
+    transform: translateX(-215px);
+    background-repeat: repeat;
+    height: 230vh;
+  }
+  .logoHolderPackage {
+    padding-top: 71px;
+    margin-bottom: 62px;
+  }
+  //responsive packages end
+  //responsive signup1 start
+  .leftDecoration {
+    transform: translateX(-175px);
+  }
+  .topDec {
+    overflow: hidden;
+    .topDecoration {
+      transform: translate(110px, -23px);
+    }
+  }
+  .wrapper {
+    max-width: 530px;
+  }
+  .formSignUp1 .wrapper .formHolder1 {
+    width: 380px;
+  }
+  .formSignUp1 .wrapper .formHolder1 input[type="text"] {
+    width: 380px;
+  }
+  .formSignUp1 .wrapper .formHolder1 label {
+    display: block;
+  }
+  .formSignUp1 .wrapper .formHolder1 select {
+    width: 380px;
+  }
+  .progressBars .wrapper .progressHolder {
+    width: 380px;
+  }
+  //responsive signup1 end
+  //responsive signup2 start
+  .formSignUp2 .wrapper .formHolder2 input[type="text"] {
+    width: 380px;
+  }
+  .formSignUp2 .wrapper .formHolder2 label {
+    display: block;
+  }
+  .formSignUp2 .wrapper .formHolder2 input[type="email"] {
+    width: 380px;
+  }
+  .formSignUp2 .wrapper .formHolder2 .passwordBox input[type="password"] {
+    width: 380px;
+  }
+  .formSignUp2 .wrapper .formHolder2 .passwordBox {
+    max-width: 380px;
+  }
+  .formSignUp2 .wrapper {
+    max-width: 415px;
+  }
+  .formSignUp2 .wrapper .formHolder2 {
+    width: 380px;
+  }
+  //responsive signup2 end
+  //responsive signup4 start
+  .formSignUp4 .wrapper .formHolder4 {
+    width: 315px;
+  }
+  .logoHolder4 {
+    padding-top: 71px;
+    margin-bottom: 62px;
+  }
+  //responsive signup4 end
+  // signupSuccess css start
+  .logoHolderSuccess {
+    padding-top: 71px;
+    text-align: center;
+    margin-bottom: 65px;
+  }
+  .formSignUp5 .wrapper .formHolder5 {
+    flex-direction: column;
+  }
+  .formSignUp5 .wrapper .formHolder5 {
+    width: 320px;
+  }
+  .formSignUp5 .wrapper .formHolder5 img {
+    margin: auto;
+    width: 235px;
+  }
+  .formSignUp5 .wrapper .formHolder5 p {
+    padding-top: 77px;
+  }
+  .formSignUp5 .wrapper .formHolder5 h2 {
+    padding-top: 7px;
+    margin-bottom: 71px;
+  }
+  // signupSuccess css end
+  // responsive dashboard start
+  .dashRightHolder .topRow {
+    padding-left: 0px;
+    padding-top: 135px;
+    justify-content: center;
+  }
+  .dashRightHolder .topRow div .profile {
+    margin-right: 0px;
+    position: absolute;
+    right: calc(50% - 272px);
+    top: 74px;
+  }
+  .navbar {
+    position: absolute;
+    left: calc(50% - 270px);
+    padding-top: 0px;
+    top: calc(50% - 527px);
+    .navHolder {
+      img {
+        // height: 40px;
+      }
+    }
+  }
+  .navbar.active {
+    .formobile {
+      left: 0px;
+      transition: 0.6s;
+    }
+    .lines {
+      .line:first-child {
+        transform: rotate(40deg);
+        transition: 0.3s;
+      }
+      .line:nth-child(2) {
+        transform: rotate(-40deg);
+        margin-top: -5px;
+        transition: 0.3s;
+      }
+      .line:nth-child(3) {
+        transform: rotate(-40deg);
+        margin-top: -4px;
+        transition: 0.3s;
+      }
+    }
+  }
+  .lines {
+    position: absolute;
+    right: calc(50% - 198px);
+    top: 8px;
+    z-index: 999;
+    .line {
+      width: 45px;
+      height: 4px;
+      background-color: #454545;
+      margin-top: 5px;
+      transition: 0.3s;
+      border-radius: 7px;
+    }
+    .line:nth-child(2) {
+      width: 39px;
+      margin: auto;
+      margin-top: 5px;
+    }
+  }
+
+  .navbar .formobile {
+    z-index: 5;
+    top: 0px;
+    bottom: 0;
+    transform: unset;
+    right: unset;
+    position: fixed;
+    width: 254px;
+    left: -1000px;
+    display: inline-block;
+    background-color: #fff;
+    padding-top: 40px;
+    transition: 0.3s;
+
+    ul {
+      margin: 0;
+      li {
+        display: block;
+      }
+    }
+  }
+  .navbar .formobile p {
+    padding: 0px 0px 0px 32px;
+    span {
+      display: inline-block;
+    }
+  }
+  .navbar .formobile ul li a {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .navbar .formobile ul li div {
+    margin-left: 91px;
+  }
+  .dropdown:before {
+    top: 17px;
+    left: 65%;
+  }
+  .dashRightHolder {
+    width: 100%;
+  }
+  .wrapperDashboard {
+    width: 540px;
+    justify-content: center;
+  }
+  .wrapperDashboardFooter {
+    width: 540px;
+    position: relative;
+    z-index: -1;
+    flex-direction: column;
+    div:nth-child(2) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  .card {
+    min-width: 540px;
+    background: #fff;
+  }
+  .middleRow {
+    padding-left: 0px;
+  }
+  //responsive dashboard end
+}
+@media screen and (max-width: 650px) {
+  //responsive signup3 start
+  .sliderBox {
+    .sliderContent {
+      margin-right: 40px;
+      img {
+        margin: auto;
+      }
+    }
+  }
+  .logoHolder3 {
+    padding-top: 71px;
+    text-align: center;
+    margin-bottom: 62px;
+  }
+
+  .formSignUp3 {
+    position: relative;
+    overflow: hidden;
+    .wrapper {
+      .formSignUp3Box {
+        .sliderHolder {
+          width: 100%;
+          position: absolute;
+          .sliderBox {
+            .sliderContent {
+              width: 170px !important;
+              &:hover {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+              }
+            }
+          }
+          .selectedSlider {
+            box-shadow: inset 0px 2px 5px 5px rgba(127, 0, 70, 0.75);
+            -webkit-box-shadow: inset 0px 2px 5px 5px rgba(127, 0, 70, 0.75);
+            -moz-box-shadow: inset 0px 2px 5px 5px rgba(127, 0, 70, 0.75);
+          }
+        }
+        h3 {
+          padding-top: 200px;
+        }
+      }
+    }
+  }
+  .formSignUp3 .wrapper .formSignUp3Box {
+    width: 380px;
+  }
+  //responsive signup3 end
+  .topDecDash {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 610px) {
+  //dashboard
+  .wrapperDashboard {
+    width: 380px;
+  }
+  .wrapperDashboardFooter {
+    width: 380px;
+  }
+  .card {
+    min-width: 380px;
+  }
+  .inside .addedMobContent {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .inside .addedMobContent .mostViewedMob {
+    max-width: 257px;
+  }
+  .inside .activeMobContent div h2 {
+    font-size: 14px;
+  }
+  .inside .activeMobContent div {
+    margin-bottom: 20px;
+  }
+  .inside .dailyMobContent div h4 {
+    font-size: 14px;
+  }
+  .inside .dailyMobContent div h4 span {
+    font-size: 16px;
+  }
+  .inside .dailyMobContent div:nth-child(3) {
+    height: 70px;
+  }
+
+  .inside .dailyMobContent div:nth-child(2) {
+    margin-bottom: 12px;
+  }
+  .inside .dailyMobContent div {
+    margin-bottom: 23px;
+  }
+  .inside .tipsMobContent {
+    padding-top: 0px;
+  }
+  .inside .tipsMobContent div {
+    margin-bottom: 23px;
+  }
+  .inside .tipsMobContent div:last-child {
+    margin-bottom: 0px;
+  }
+  .inside .tipsMobContent div h4 {
+    font-size: 14px;
+  }
+  .inside .customerMobContent div h4 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .inside .customerMobContent div {
+    margin-bottom: 16px;
+  }
+  .inside .customerMobContent div:last-child {
+    margin-bottom: 0px;
+  }
+  .wrapperDashboardFooter div:nth-child(2) {
+    justify-content: space-between;
+  }
+  .wrapperDashboardFooter div:nth-child(2) a {
+    margin-right: 0px;
+  }
+  .navbar {
+    left: calc(50% - 191px);
+  }
+  .lines {
+    position: absolute;
+    right: calc(50% - 154px);
+  }
+  .dashRightHolder .topRow div .profile {
+    right: calc(50% - 194px);
+  }
+}
+@media screen and (max-width: 530px) {
+  .leftDecoration {
+    display: none;
+  }
+  .progressBars .wrapper a {
+    margin-bottom: 80px;
+    font-size: 18px;
+  }
+  .topDec {
+    .topDecoration {
+      transform: translate(150px, -23px);
+    }
+  }
+  //responsive signup1 start
+  .logoHolder1 {
+    padding-top: 71px;
+    margin-bottom: 60px;
+  }
+  .wrapper {
+    max-width: 350px;
+  }
+  .formSignUp1 .wrapper .formHolder1 {
+    width: 310px;
+  }
+  .formSignUp1 .wrapper .formHolder1 input[type="text"] {
+    width: 310px;
+    margin-bottom: 29px;
+  }
+  .formSignUp1 .wrapper .formHolder1 select {
+    width: 310px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .progressBars .wrapper .progressHolder {
+    width: 310px;
+  }
+  .formSignUp1 .wrapper .formHolder1 label {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .formSignUp1 .wrapper .formHolder1 h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .formSignUp1 .wrapper .formHolder1 .radio-group .radio p {
+    font-size: 18px;
+  }
+  //responsive signup1 end
+  //responsive signup2 start
+  .formSignUp2 .wrapper .formHolder2 input[type="text"] {
+    width: 310px;
+  }
+  .formSignUp2 .wrapper .formHolder2 input[type="email"] {
+    width: 310px;
+  }
+  .formSignUp2 .wrapper .formHolder2 .passwordBox input[type="password"] {
+    width: 310px;
+  }
+  .formSignUp2 .wrapper .formHolder2 .passwordBox {
+    max-width: 310px;
+  }
+  .formSignUp2 .wrapper {
+    max-width: 350px;
+  }
+  .formSignUp2 .wrapper .formHolder2 {
+    width: 310px;
+  }
+  .formSignUp2 .wrapper .formHolder2 label {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .formSignUp2 .wrapper .formHolder2 h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .logoHolder2 {
+    padding-top: 71px;
+  }
+  //responsive signup2 end
+  //responsive signup3 start
+  .formSignUp3 .wrapper .formSignUp3Box {
+    width: 300px;
+  }
+  .formSignUp3 .wrapper .formSignUp3Box h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .formSignUp3 .wrapper .formSignUp3Box h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  //responsive signup3 end
+  //responsive signup4 start
+  .formSignUp4 .wrapper .formHolder4 h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .formSignUp4 .wrapper .formHolder4 h3 {
+    font-size: 18px;
+  }
+  .formSignUp4 .wrapper .formHolder4 div:nth-child(7) h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .formSignUp4 .wrapper .formHolder4 div:nth-child(7) p {
+    font-size: 14px;
+  }
+  .formSignUp4 .wrapper .formHolder4 div:nth-child(7) p span {
+    font-size: 14px;
+  }
+  .formSignUp4 .wrapper .formHolder4 a {
+    margin-bottom: 50px;
+  }
+  //responsive signup4 end
+  //responsive success start
+  .formSignUp5 .wrapper .formHolder5 {
+    width: 290px;
+  }
+  .formSignUp5 .wrapper {
+    padding-bottom: 170px;
+  }
+  //responsive success end
+  .topDecDash {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 425px) {
+  //dashboard
+  .wrapperDashboard {
+    width: 280px;
+  }
+  .wrapperDashboardFooter {
+    width: 280px;
+  }
+  .card {
+    min-width: 280px;
+  }
+  .dashRightHolder .topRow div .profile a h2 {
+    display: none;
+  }
+  .dashRightHolder .topRow div .profile {
+    right: calc(50% - 150px);
+  }
+  .navbar {
+    left: calc(50% - 139px);
+    width: 87px;
+    top: calc(50% - 494px);
+  }
+  .lines {
+    right: calc(50% - 126px);
+    top: 0px;
+  }
+  .inside .dailyMobContent {
+    padding-top: 0px;
+  }
+  .inside .dailyMobContent div {
+    flex-direction: column;
+    align-items: start;
+  }
+  .inside .dailyMobContent div:nth-child(3) {
+    flex-direction: row;
+  }
+  .inside .dailyMobContent div h4 span {
+    font-size: 24px;
+  }
+  .inside .dailyMobContent div h4 {
+    font-size: 16px;
+    width: 100%;
+  }
+  .middleRow {
+    row-gap: 15px;
+  }
+  .cardTitle h3 {
+    padding-left: 17px;
+  }
+  .cardTitle .triangle_icon {
+    right: 17px;
+  }
+  .topDecDash .topDecoration {
+    transform: translate(167px, -6px);
+  }
+}
+@media screen and (max-width: 350px) {
+  .wrapper {
+    max-width: 310px;
+  }
+  //responsive packages start
+  .boxes {
+    margin-bottom: 70px;
+  }
+  //responsive packages end
+  //responsive signup1 start
+  .formSignUp1 .wrapper .formHolder1 {
+    width: 270px;
+  }
+  .formSignUp1 .wrapper .formHolder1 input[type="text"] {
+    width: 270px;
+    height: 45px;
+    margin-bottom: 29px;
+  }
+  .formSignUp1 .wrapper .formHolder1 select {
+    width: 270px;
+    padding-left: 20px;
+    height: 45px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .progressBars .wrapper .progressHolder {
+    width: 270px;
+  }
+  .formSignUp1 .wrapper .formHolder1 label {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .formSignUp1 .wrapper .formHolder1 h2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .formSignUp1 .wrapper .formHolder1 .radio-group .radio p {
+    font-size: 15px;
+  }
+
+  //responsive signup1 end
+  //responsive signup2 start
+  .formSignUp2 .wrapper .formHolder2 input[type="text"] {
+    width: 270px;
+    height: 45px;
+  }
+  .formSignUp2 .wrapper .formHolder2 input[type="email"] {
+    width: 270px;
+    height: 45px;
+  }
+  .formSignUp2 .wrapper .formHolder2 .passwordBox input[type="password"] {
+    width: 270px;
+    height: 45px;
+  }
+  .formSignUp2 .wrapper .formHolder2 .passwordBox {
+    max-width: 270px;
+  }
+  .formSignUp2 .wrapper {
+    max-width: 310px;
+  }
+  .formSignUp2 .wrapper .formHolder2 {
+    width: 270px;
+  }
+  .formSignUp2 .wrapper .formHolder2 label {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .formSignUp2 .wrapper .formHolder2 h2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .formSignUp2 .wrapper .formHolder2 .passwordBox img {
+    top: 25px;
+    right: 9px;
+  }
+  //responsive signup2 end
+  //responsive signup3 start
+  .formSignUp3 .wrapper .formSignUp3Box {
+    width: 270px;
+  }
+  .formSignUp3 .wrapper .formSignUp3Box h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .formSignUp3 .wrapper .formSignUp3Box h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .formSignUp3 .wrapper .formSignUp3Box .containerBox2 .checkbox2 label p {
+    font-size: 14px;
+  }
+  .formSignUp3 .wrapper .formSignUp3Box input[type="text"] {
+    width: 270px;
+    height: 45px;
+    padding-left: 10px;
+  }
+  //responsive signup3 end
+  //responsive signup4 start
+  .formSignUp4 .wrapper .formHolder4 {
+    width: 270px;
+  }
+  .formSignUp4 .wrapper .formHolder4 h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .formSignUp4 .wrapper .formHolder4 .summaryBox {
+    border: 1px solid #7f0046;
+    border-radius: 6px;
+    width: 270px;
+    height: 45px;
+    padding: 12px 10px;
+  }
+  .formSignUp4 .wrapper .formHolder4 .summaryBox h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .formSignUp4 .wrapper .formHolder4 .summaryBox h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .formSignUp4 .wrapper .formHolder4 .radio-group2 .radio p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .formSignUp4 .wrapper .formHolder4 .grayLine {
+    width: 270px;
+  }
+  .formSignUp4 .wrapper .formHolder4 h3 {
+    font-size: 16px;
+  }
+  .formSignUp4 .wrapper .formHolder4 h2 {
+    font-size: 16px;
+  }
+  .formSignUp4 .wrapper .formHolder4 div:nth-child(7) h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .formSignUp4 .wrapper .formHolder4 a {
+    width: 270px;
+    height: 45px;
+    font-size: 18px;
+  }
+  //responsive signup4 end
+  //responsive success start
+  .formSignUp5 .wrapper .formHolder5 {
+    width: 270px;
+  }
+  .formSignUp5 .wrapper .formHolder5 h2 {
+    font-size: 35px;
+  }
+  //responsive success end
+}
