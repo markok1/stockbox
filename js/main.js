@@ -76,7 +76,8 @@ if (window.location.pathname == "/signup4.html") {
 }
 if (
   window.location.pathname == "/dashboardStockbox.html" ||
-  window.location.pathname == "/dashboardRolex.html"
+  window.location.pathname == "/dashboardRolex.html" ||
+  window.location.pathname == "/dashboardWos.html"
 ) {
   $(".formobile ul li a").click(function (e) {
     if (!$(this).parent().parent().hasClass("dropdown-menu")) {
