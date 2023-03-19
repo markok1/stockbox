@@ -76,11 +76,7 @@ if ($("body").hasClass("signup4Body")) {
   });
 }
 
-if (
-  $("body").hasClass("dashboardRolexBody") ||
-  $("body").hasClass("dashboardWosBody") ||
-  $("body").hasClass("dashboardStockboxBody")
-) {
+if ($("body").hasClass("dashboardBody")) {
   $(".formobile ul li a").click(function (e) {
     if (!$(this).parent().parent().hasClass("dropdown-menu")) {
       if ($(this).parent().hasClass("boldDropdown")) {
