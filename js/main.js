@@ -1,4 +1,4 @@
-if (window.location.pathname == "/packages.html") {
+if (window.location.pathname == "/stockbox/packages.html") {
   $(".box").click(function () {
     $(".box").removeClass("selectedBox");
     $(this).addClass("selectedBox");
