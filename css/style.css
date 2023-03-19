@@ -792,13 +792,17 @@ img {
   width: 280px;
   display: flex;
   flex-direction: column;
-}
-.navbar .navHolder {
   position: relative;
+}
+.navbar img {
+  max-width: 145px;
+}
+.navbar .profile {
+  display: none;
 }
 .navbar .formobile {
   position: absolute;
-  top: 112px;
+  top: 189px;
   left: 0px;
   width: 230px;
   min-height: 580px;
@@ -953,13 +957,13 @@ img {
   justify-content: space-between;
   width: 100%;
   padding-left: 53px;
+  align-items: center;
 }
 .dashRightHolder .topRow h1 {
   font-family: "heroNewBold";
   font-weight: 700;
   font-size: 20px;
   line-height: 21px;
-  padding-top: 30px;
 }
 .dashRightHolder .topRow div {
   display: flex;
@@ -979,25 +983,26 @@ img {
   font-size: 20px;
   line-height: 21px;
 }
-.dashRightHolder .topRow div .profile {
+
+.profile {
   display: flex;
   align-items: center;
   margin-right: 6px;
 }
-.dashRightHolder .topRow div .profile a {
+.profile a {
   text-decoration: none;
   color: #000;
 }
-.dashRightHolder .topRow div .profile a h2 {
+.profile a h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   margin-right: 23px;
 }
-.dashRightHolder .topRow div .profile a {
+.profile a {
   border-radius: 50%;
 }
-.dashRightHolder .topRow div .profile a div {
+.profile a div {
   width: 76px;
   height: 76px;
   border-radius: 50%;
@@ -1006,7 +1011,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-.dashRightHolder .topRow div .profile a div img {
+.profile a div img {
   width: 62px;
   height: 62px;
 }
@@ -1682,7 +1687,7 @@ img {
   .middleRow .customerActivity .customerDesktop div {
     margin-bottom: 28px;
   }
-  .dashRightHolder .topRow div .profile a h2 {
+  .profile a h2 {
     font-size: 17px;
   }
 }
@@ -1740,18 +1745,18 @@ img {
   .wrapperDashboardFooter {
     width: 740px;
   }
-  .dashRightHolder .topRow div .profile a div img {
+  .profile a div img {
     width: 39px;
     height: 39px;
   }
-  .dashRightHolder .topRow div .profile a div {
+  .profile a div {
     width: 49px;
     height: 49px;
   }
-  .dashRightHolder .topRow div .profile a div {
+  .profile a div {
     margin-right: 0px;
   }
-  .dashRightHolder .topRow div .profile a h2 {
+  .profile a h2 {
     font-size: 18px;
     margin-right: 9px;
   }
@@ -1771,7 +1776,7 @@ img {
     top: -196px;
   }
   .navbar .formobile {
-    top: 95px;
+    top: 165px;
   }
   .dashRightHolder .topRow {
     padding-left: 100px;
@@ -1872,20 +1877,21 @@ img {
   }
   .dashRightHolder .topRow {
     padding-left: 0px;
-    padding-top: 135px;
+    padding-top: 39px;
     justify-content: center;
   }
-  .dashRightHolder .topRow div .profile {
-    margin-right: 0px;
-    position: absolute;
-    right: calc(50% - 272px);
-    top: 74px;
+  .dashRightHolder .topRow div {
+    display: none;
   }
   .navbar {
-    position: absolute;
-    left: calc(50% - 270px);
-    padding-top: 0px;
-    top: 85px;
+    flex-direction: row;
+    width: 176px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar .profile {
+    display: flex;
   }
   .navbar.active .formobile {
     left: 0px;
@@ -1904,12 +1910,6 @@ img {
     transform: rotate(-40deg);
     margin-top: -4px;
     transition: 0.3s;
-  }
-  .lines {
-    position: absolute;
-    right: calc(50% - 198px);
-    top: 8px;
-    z-index: 999;
   }
   .lines .line {
     width: 45px;
@@ -1967,6 +1967,7 @@ img {
   .wrapperDashboard {
     width: 540px;
     justify-content: center;
+    flex-direction: column;
   }
   .wrapperDashboardFooter {
     width: 540px;
@@ -1986,6 +1987,9 @@ img {
   }
   .middleRow {
     padding-left: 0px;
+  }
+  .navbar .formobile ul li .messages {
+    top: 9px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -2096,15 +2100,11 @@ img {
   .wrapperDashboardFooter div:nth-child(2) a {
     margin-right: 0px;
   }
-  .navbar {
-    left: calc(50% - 191px);
+  .navbar img {
+    max-width: 95px;
   }
-  .lines {
-    position: absolute;
-    right: calc(50% - 154px);
-  }
-  .dashRightHolder .topRow div .profile {
-    right: calc(50% - 194px);
+  .profile a h2 {
+    display: none;
   }
   .wrapperDashboardFooter div:nth-child(2) a {
     width: 48%;
@@ -2239,21 +2239,6 @@ img {
   .card {
     min-width: 280px;
   }
-  .dashRightHolder .topRow div .profile a h2 {
-    display: none;
-  }
-  .dashRightHolder .topRow div .profile {
-    right: calc(50% - 150px);
-  }
-  .navbar {
-    left: calc(50% - 139px);
-    width: 87px;
-    top: 85px;
-  }
-  .lines {
-    right: calc(50% - 126px);
-    top: 0px;
-  }
   .inside .dailyMobContent {
     padding-top: 0px;
   }
@@ -2282,6 +2267,9 @@ img {
   }
   .topDecDash .topDecoration {
     transform: translate(167px, -6px);
+  }
+  .navbar .formobile {
+    width: 194px;
   }
 }
 @media screen and (max-width: 350px) {

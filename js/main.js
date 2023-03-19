@@ -120,10 +120,23 @@ if ($("body").hasClass("dashboardBody")) {
     }
   });
   $(".navbar .lines").click(function () {
-    if ($(this).parent().parent().hasClass("active")) {
-      $(this).parent().parent().removeClass("active");
+    if ($(this).parent().hasClass("active")) {
+      $(this).parent().removeClass("active");
     } else {
-      $(this).parent().parent().addClass("active");
+      $(this).parent().addClass("active");
     }
+  });
+
+  $(document).ready(function () {
+    // Hide mobile navbar when user clicks away from it
+    $(document).click(function (event) {
+      var clickTarget = $(event.target);
+      if (
+        !clickTarget.closest(".navbar").length &&
+        !clickTarget.closest(".lines").length
+      ) {
+        $(".navbar").removeClass("active");
+      }
+    });
   });
 }
