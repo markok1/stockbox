@@ -1885,7 +1885,7 @@ img {
     position: absolute;
     left: calc(50% - 270px);
     padding-top: 0px;
-    top: calc(50% - 527px);
+    top: 85px;
   }
   .navbar.active .formobile {
     left: 0px;
@@ -2106,6 +2106,13 @@ img {
   .dashRightHolder .topRow div .profile {
     right: calc(50% - 194px);
   }
+  .wrapperDashboardFooter div:nth-child(2) a {
+    width: 48%;
+    margin-bottom: 9px;
+  }
+  .wrapperDashboardFooter div:nth-child(2) {
+    justify-content: left;
+  }
 }
 @media screen and (max-width: 530px) {
   .leftDecoration {
@@ -2241,7 +2248,7 @@ img {
   .navbar {
     left: calc(50% - 139px);
     width: 87px;
-    top: calc(50% - 494px);
+    top: 85px;
   }
   .lines {
     right: calc(50% - 126px);
