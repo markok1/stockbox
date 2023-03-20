@@ -26,7 +26,6 @@ if ($("body").hasClass("signup3Body")) {
         breakpoint: 650,
         settings: {
           initialSlide: 0,
-          // slidesToShow: 2,
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: "0px 40px",
