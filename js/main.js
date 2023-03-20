@@ -78,6 +78,7 @@ if ($("body").hasClass("signup4Body")) {
 
 if ($("body").hasClass("dashboardBody")) {
   $(".formobile ul li a").click(function (e) {
+    e.preventDefault();
     if (!$(this).parent().parent().hasClass("dropdown-menu")) {
       if ($(this).parent().hasClass("boldDropdown")) {
         $(".formobile ul li").removeClass("boldDropdown");
