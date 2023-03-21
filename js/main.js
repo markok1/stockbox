@@ -89,11 +89,19 @@ if ($("body").hasClass("dashboardBody")) {
         $(".formobile ul li").removeClass("activeNav");
         $(this).parent().addClass("activeNav");
       } else {
-        if ($(this).parent().hasClass("open")) {
-          $(this).parent().removeClass("open");
+        if ($(this).next().hasClass("open")) {
+          $(this).next().removeClass("open");
+          $(this).next().css("max-height", "0px");
         } else {
-          $(".dropdown").removeClass("open");
-          $(this).parent().toggleClass("open");
+          $(".dropdown-menu").removeClass("open");
+          // $(this).parent().toggleClass("open");
+          $(".dropdown-menu").css("max-height", "0px");
+          $(".open").removeClass("open");
+          $(this).next().addClass("open");
+          var heightinside = $(this).next().find("li").height() + 190;
+          $(this)
+            .next()
+            .css("max-height", heightinside + "px");
         }
       }
     }

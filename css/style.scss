@@ -875,7 +875,6 @@ img {
       font-weight: 400;
       font-size: 14px;
       line-height: 25px;
-      // color: #7f0046;
       padding: 22px 0px 5px 32px;
       span {
         display: none;
@@ -952,6 +951,13 @@ img {
     display: block !important;
   }
 }
+.open {
+  .activeNav {
+    .triangleForNav {
+      top: 2px;
+    }
+  }
+}
 
 .triangleForNav {
   display: none !important;
@@ -980,14 +986,19 @@ img {
   transform: rotate(0deg);
   transition: all 0.25s ease-in;
 }
-.dropdown.open:before {
+.dropdown.boldDropdown:before {
   transform: rotate(90deg) !important;
 }
 .dropdown-menu {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   background-color: transparent;
   min-width: 160px;
-  // padding: 12px 16px;
   li {
     border-bottom: none !important;
     padding-bottom: 0px !important;
@@ -1024,12 +1035,10 @@ img {
     padding-left: 53px;
     align-items: center;
     h1 {
-      // color: #7f0046;
       font-family: "heroNewBold";
       font-weight: 700;
       font-size: 20px;
       line-height: 21px;
-      // padding-top: 30px;
     }
     div {
       display: flex;
@@ -1905,7 +1914,9 @@ img {
   .inside .addedMobContent .mostViewedMob {
     max-width: 240px;
   }
-
+  .triangleForNav {
+    top: 21px;
+  }
   //responsive dashboard end
 }
 
@@ -2131,6 +2142,9 @@ img {
   }
   .navbar .formobile ul li .messages {
     top: 9px;
+  }
+  .triangleForNav {
+    top: 16px;
   }
   //responsive dashboard end
 }

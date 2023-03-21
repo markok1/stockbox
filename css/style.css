@@ -882,6 +882,10 @@ img {
   display: block !important;
 }
 
+.open .activeNav .triangleForNav {
+  top: 2px;
+}
+
 .triangleForNav {
   display: none !important;
   -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%) !important;
@@ -913,12 +917,14 @@ img {
   transition: all 0.25s ease-in;
 }
 
-.dropdown.open:before {
+.dropdown.boldDropdown:before {
   transform: rotate(90deg) !important;
 }
 
 .dropdown-menu {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.25s ease;
   background-color: transparent;
   min-width: 160px;
 }
@@ -1787,6 +1793,9 @@ img {
   .inside .addedMobContent .mostViewedMob {
     max-width: 240px;
   }
+  .triangleForNav {
+    top: 21px;
+  }
 }
 @media screen and (max-width: 768px) {
   #packagesFix {
@@ -1990,6 +1999,9 @@ img {
   }
   .navbar .formobile ul li .messages {
     top: 9px;
+  }
+  .triangleForNav {
+    top: 16px;
   }
 }
 @media screen and (max-width: 650px) {
