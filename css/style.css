@@ -112,13 +112,13 @@ img {
   height: 170px;
   padding: 23px 19px 13px 19px;
 }
-.boxes .wrapper .boxHolder .box p:nth-child(1) {
+.boxes .wrapper .boxHolder .box .topText {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   color: #000000;
 }
-.boxes .wrapper .boxHolder .box p:nth-child(2) {
+.boxes .wrapper .boxHolder .box .bottomBold {
   color: #000000;
   font-size: 16px;
   font-weight: 600;
@@ -663,23 +663,23 @@ img {
   color: #000000;
   font-family: "heroNewBold";
 }
-.formSignUp4 .wrapper .formHolder4 div:nth-child(7) {
+.formSignUp4 .wrapper .formHolder4 .billedBox {
   margin-top: 78px;
   margin-bottom: 59px;
 }
-.formSignUp4 .wrapper .formHolder4 div:nth-child(7) h2 {
+.formSignUp4 .wrapper .formHolder4 .billedBox h2 {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   color: #507be9;
   margin-bottom: 7px;
 }
-.formSignUp4 .wrapper .formHolder4 div:nth-child(7) p {
+.formSignUp4 .wrapper .formHolder4 .billedBox p {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.formSignUp4 .wrapper .formHolder4 div:nth-child(7) p span {
+.formSignUp4 .wrapper .formHolder4 .billedBox p span {
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -866,7 +866,7 @@ img {
 .navbar .formobile ul li:last-child {
   border-bottom: none;
 }
-.navbar .formobile ul li:nth-child(7) {
+.navbar .formobile ul .msgBox {
   position: relative;
 }
 
@@ -1068,19 +1068,19 @@ img {
   border: 0.7px solid #e9c3c1;
   border-radius: 6px;
 }
-.middleRow .dailyPerformance .dailyPerfDesktop div:nth-child(1) {
+.middleRow .dailyPerformance .dailyPerfDesktop .dailyHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 33px;
   padding: 23px 28px 0px 31px;
 }
-.middleRow .dailyPerformance .dailyPerfDesktop div:nth-child(1) h3 {
+.middleRow .dailyPerformance .dailyPerfDesktop .dailyHeader h3 {
   font-size: 14px;
   font-weight: 400;
   line-height: 25px;
 }
-.middleRow .dailyPerformance .dailyPerfDesktop div:nth-child(1) img {
+.middleRow .dailyPerformance .dailyPerfDesktop .dailyHeader img {
   cursor: pointer;
 }
 .middleRow .dailyPerformance .dailyPerfDesktop div {
@@ -1101,10 +1101,10 @@ img {
   font-weight: 700;
   font-size: 24px;
 }
-.middleRow .dailyPerformance .dailyPerfDesktop div:nth-child(3) {
+.middleRow .dailyPerformance .dailyPerfDesktop .dailyBeforeFooter {
   margin-bottom: 48px;
 }
-.middleRow .dailyPerformance .dailyPerfDesktop div:nth-child(4) {
+.middleRow .dailyPerformance .dailyPerfDesktop .dailyFooter {
   align-items: center;
   justify-content: space-around;
   border-top: 0.7px solid #e9c3c1;
@@ -1112,7 +1112,7 @@ img {
   margin-bottom: 0px;
   padding: unset;
 }
-.middleRow .dailyPerformance .dailyPerfDesktop div:nth-child(4) h4 {
+.middleRow .dailyPerformance .dailyPerfDesktop .dailyFooter h4 {
   padding-top: 4px;
   width: unset;
   text-align: center;
@@ -1153,18 +1153,18 @@ img {
   padding: 24px 29px 24px 26px;
   margin-right: 2px;
 }
-.middleRow .customerActivity .customerDesktop div:nth-child(1) {
+.middleRow .customerActivity .customerDesktop .customerHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 23px;
 }
-.middleRow .customerActivity .customerDesktop div:nth-child(1) h3 {
+.middleRow .customerActivity .customerDesktop .customerHeader h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
 }
-.middleRow .customerActivity .customerDesktop div:nth-child(1) img {
+.middleRow .customerActivity .customerDesktop .customerHeader img {
   cursor: pointer;
 }
 .middleRow .customerActivity .customerDesktop div {
@@ -1208,7 +1208,7 @@ img {
   max-width: 271px;
   margin-bottom: 22px;
 }
-.middleRow .addedAndViewed .addedDesktop .recentlyAdded .addeditem div:nth-child(1) {
+.middleRow .addedAndViewed .addedDesktop .recentlyAdded .addeditem .addedPicture {
   width: 62px !important;
   height: 62px;
   border: 0.354702px solid #000000;
@@ -1216,18 +1216,18 @@ img {
   justify-content: center;
   align-items: center;
 }
-.middleRow .addedAndViewed .addedDesktop .recentlyAdded .addeditem div:nth-child(2) {
+.middleRow .addedAndViewed .addedDesktop .recentlyAdded .addeditem .addedDetails {
   max-width: 195px;
   padding-left: 14px;
   padding-top: 2px;
 }
-.middleRow .addedAndViewed .addedDesktop .recentlyAdded .addeditem div:nth-child(2) p {
+.middleRow .addedAndViewed .addedDesktop .recentlyAdded .addeditem .addedDetails p {
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
   margin-bottom: 5px;
 }
-.middleRow .addedAndViewed .addedDesktop .recentlyAdded .addeditem div:nth-child(2) h4 {
+.middleRow .addedAndViewed .addedDesktop .recentlyAdded .addeditem .addedDetails h4 {
   font-weight: 700;
   font-size: 12px;
   font-family: "heroNewBold";
@@ -1246,7 +1246,7 @@ img {
   width: 265px;
   margin-bottom: 22px;
 }
-.middleRow .addedAndViewed .addedDesktop .mostViewed .vieweditem div:nth-child(1) {
+.middleRow .addedAndViewed .addedDesktop .mostViewed .vieweditem .viewedPicture {
   width: 62px !important;
   height: 62px;
   border: 0.354702px solid #000000;
@@ -1254,18 +1254,18 @@ img {
   justify-content: center;
   align-items: center;
 }
-.middleRow .addedAndViewed .addedDesktop .mostViewed .vieweditem div:nth-child(2) {
+.middleRow .addedAndViewed .addedDesktop .mostViewed .vieweditem .viewedDetails {
   max-width: 195px;
   padding-left: 12px;
   padding-top: 2px;
 }
-.middleRow .addedAndViewed .addedDesktop .mostViewed .vieweditem div:nth-child(2) p {
+.middleRow .addedAndViewed .addedDesktop .mostViewed .vieweditem .viewedDetails p {
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
   margin-bottom: 5px;
 }
-.middleRow .addedAndViewed .addedDesktop .mostViewed .vieweditem div:nth-child(2) h4 {
+.middleRow .addedAndViewed .addedDesktop .mostViewed .vieweditem .viewedDetails h4 {
   font-weight: 700;
   font-size: 12px;
   font-family: "heroNewBold";
@@ -1276,26 +1276,26 @@ img {
   padding-top: 136px;
   padding-bottom: 32px;
 }
-.wrapperDashboardFooter div:nth-child(1) {
+.wrapperDashboardFooter .footerLeft {
   width: 265px;
 }
-.wrapperDashboardFooter div:nth-child(1) p {
+.wrapperDashboardFooter .footerLeft p {
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
 }
-.wrapperDashboardFooter div:nth-child(1) p span {
+.wrapperDashboardFooter .footerLeft p span {
   font-weight: 700;
   font-family: "heroNewBold";
 }
-.wrapperDashboardFooter div:nth-child(2) a {
+.wrapperDashboardFooter .footerRight a {
   font-weight: 400;
   font-size: 12px;
   color: #000000;
   line-height: 17px;
   margin-right: 36px;
 }
-.wrapperDashboardFooter div:nth-child(2) a:last-child {
+.wrapperDashboardFooter .footerRight a:last-child {
   margin-right: 6px;
 }
 
@@ -1323,11 +1323,11 @@ img {
   min-width: 510px;
   border: 0.7px solid #e9c3c1;
   border-radius: 6px;
-  padding: 15px 0px;
 }
 
 .cardTitle {
   position: relative;
+  padding: 15px 0px;
 }
 .cardTitle h3 {
   font-weight: 400;
@@ -1342,7 +1342,7 @@ img {
   transform: rotate(90deg);
   position: absolute;
   right: 25px;
-  top: 7px;
+  top: 19px;
   z-index: 999;
 }
 
@@ -1406,10 +1406,10 @@ img {
   font-weight: 700;
   font-size: 24px;
 }
-.inside .dailyMobContent div:nth-child(2) {
+.inside .dailyMobContent .dailyBeforeFooter {
   margin-bottom: 48px;
 }
-.inside .dailyMobContent div:nth-child(3) {
+.inside .dailyMobContent .dailyFooter {
   align-items: center;
   justify-content: space-around;
   border-top: 0.7px solid #e9c3c1;
@@ -1417,7 +1417,7 @@ img {
   margin-bottom: 0px;
   padding: unset;
 }
-.inside .dailyMobContent div:nth-child(3) h4 {
+.inside .dailyMobContent .dailyFooter h4 {
   padding-top: 4px;
   width: unset;
   text-align: center;
@@ -1480,7 +1480,7 @@ img {
   max-width: 271px;
   margin-bottom: 22px;
 }
-.inside .addedMobContent .recentlyAddedMob .addeditem div:nth-child(1) {
+.inside .addedMobContent .recentlyAddedMob .addeditem .addedPicture {
   width: 62px !important;
   height: 62px;
   border: 0.354702px solid #000000;
@@ -1488,18 +1488,18 @@ img {
   justify-content: center;
   align-items: center;
 }
-.inside .addedMobContent .recentlyAddedMob .addeditem div:nth-child(2) {
+.inside .addedMobContent .recentlyAddedMob .addeditem .addedDetails {
   max-width: 195px;
   padding-left: 14px;
   padding-top: 2px;
 }
-.inside .addedMobContent .recentlyAddedMob .addeditem div:nth-child(2) p {
+.inside .addedMobContent .recentlyAddedMob .addeditem .addedDetails p {
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
   margin-bottom: 5px;
 }
-.inside .addedMobContent .recentlyAddedMob .addeditem div:nth-child(2) h4 {
+.inside .addedMobContent .recentlyAddedMob .addeditem .addedDetails h4 {
   font-weight: 700;
   font-size: 12px;
   font-family: "heroNewBold";
@@ -1518,7 +1518,7 @@ img {
   width: 265px;
   margin-bottom: 22px;
 }
-.inside .addedMobContent .mostViewedMob .vieweditem div:nth-child(1) {
+.inside .addedMobContent .mostViewedMob .vieweditem .viewedPicture {
   width: 62px !important;
   height: 62px;
   border: 0.354702px solid #000000;
@@ -1526,18 +1526,18 @@ img {
   justify-content: center;
   align-items: center;
 }
-.inside .addedMobContent .mostViewedMob .vieweditem div:nth-child(2) {
+.inside .addedMobContent .mostViewedMob .vieweditem .viewedDetails {
   max-width: 195px;
   padding-left: 12px;
   padding-top: 2px;
 }
-.inside .addedMobContent .mostViewedMob .vieweditem div:nth-child(2) p {
+.inside .addedMobContent .mostViewedMob .vieweditem .viewedDetails p {
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
   margin-bottom: 5px;
 }
-.inside .addedMobContent .mostViewedMob .vieweditem div:nth-child(2) h4 {
+.inside .addedMobContent .mostViewedMob .vieweditem .viewedDetails h4 {
   font-weight: 700;
   font-size: 12px;
   font-family: "heroNewBold";
@@ -1653,7 +1653,7 @@ img {
   .middleRow .activity .activityDesktop {
     max-width: 330px;
   }
-  .middleRow .dailyPerformance .dailyPerfDesktop div:nth-child(1) {
+  .middleRow .dailyPerformance .dailyPerfDesktop .dailyHeader {
     margin-bottom: 27px;
     padding: 18px 18px 0px 18px;
   }
@@ -1771,6 +1771,7 @@ img {
   }
   .navbar {
     width: 25%;
+    min-height: 670px;
   }
   .leftDecDash {
     height: auto;
@@ -1898,6 +1899,7 @@ img {
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    min-height: auto !important;
   }
   .navbar .profile {
     display: flex;
@@ -1984,7 +1986,7 @@ img {
     z-index: -1;
     flex-direction: column;
   }
-  .wrapperDashboardFooter div:nth-child(2) {
+  .wrapperDashboardFooter .footerRight {
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
@@ -2075,10 +2077,10 @@ img {
   .inside .dailyMobContent div h4 span {
     font-size: 16px;
   }
-  .inside .dailyMobContent div:nth-child(3) {
+  .inside .dailyMobContent .dailyFooter {
     height: 70px;
   }
-  .inside .dailyMobContent div:nth-child(2) {
+  .inside .dailyMobContent .dailyBeforeFooter {
     margin-bottom: 12px;
   }
   .inside .dailyMobContent div {
@@ -2106,23 +2108,18 @@ img {
   .inside .customerMobContent div:last-child {
     margin-bottom: 0px;
   }
-  .wrapperDashboardFooter div:nth-child(2) {
-    justify-content: space-between;
-  }
-  .wrapperDashboardFooter div:nth-child(2) a {
-    margin-right: 0px;
-  }
   .navbar img {
     max-width: 95px;
   }
   .profile a h2 {
     display: none;
   }
-  .wrapperDashboardFooter div:nth-child(2) a {
+  .wrapperDashboardFooter .footerRight a {
     width: 48%;
     margin-bottom: 9px;
+    margin-right: 0px;
   }
-  .wrapperDashboardFooter div:nth-child(2) {
+  .wrapperDashboardFooter .footerRight {
     justify-content: left;
   }
 }
@@ -2218,14 +2215,14 @@ img {
   .formSignUp4 .wrapper .formHolder4 h3 {
     font-size: 18px;
   }
-  .formSignUp4 .wrapper .formHolder4 div:nth-child(7) h2 {
+  .formSignUp4 .wrapper .formHolder4 .billedBox h2 {
     font-size: 18px;
     line-height: 26px;
   }
-  .formSignUp4 .wrapper .formHolder4 div:nth-child(7) p {
+  .formSignUp4 .wrapper .formHolder4 .billedBox p {
     font-size: 14px;
   }
-  .formSignUp4 .wrapper .formHolder4 div:nth-child(7) p span {
+  .formSignUp4 .wrapper .formHolder4 .billedBox p span {
     font-size: 14px;
   }
   .formSignUp4 .wrapper .formHolder4 a {
@@ -2258,7 +2255,7 @@ img {
     flex-direction: column;
     align-items: start;
   }
-  .inside .dailyMobContent div:nth-child(3) {
+  .inside .dailyMobContent .dailyFooter {
     flex-direction: row;
   }
   .inside .dailyMobContent div h4 span {
@@ -2407,7 +2404,7 @@ img {
   .formSignUp4 .wrapper .formHolder4 h2 {
     font-size: 16px;
   }
-  .formSignUp4 .wrapper .formHolder4 div:nth-child(7) h2 {
+  .formSignUp4 .wrapper .formHolder4 .billedBox h2 {
     font-size: 16px;
     line-height: 20px;
   }
