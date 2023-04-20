@@ -13,10 +13,10 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://harvesthq.github.io/chosen/chosen.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css"
     />
     <!-- multibox Marketing -->
-    <script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
     <!-- touch jquery events -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"></script>
     <!-- slick slider -->
@@ -57,7 +57,7 @@
           </a>
         </div>
         <div
-          style="border: 1px solid var(--stockBoxBorder-color)"
+          style="border-color: var(--stockBoxBorder-color)"
           class="formobile"
         >
           <p class="stockbox-color">Welcome <span>Elliott</span></p>
@@ -503,19 +503,13 @@ This 2018 Rolex Yacht-Master 40mm features a chocolate round index dial, a diamo
                 <label class="categoriesLabel">Attribute Set</label>
                 <div id="output"></div>
 
-                <select
-                  data-placeholder="Choose attributes"
-                  name="tags[]"
-                  multiple
-                  class="chosen-select"
-                >
-                  <option value="Option1">Option1</option>
-                  <option value="Option2">Option2</option>
-                  <option value="Watch1">Watch1</option>
-                  <option value="Watch2">Watch2</option>
-                  <option value="Watch3">Watch3</option>
-                  <option value="Rolex">Rolex</option>
-                  <option value="Rolex2">Rolex2</option>
+                <select class="multipleSelect2" multiple="true">
+                  <option value="1">Watches</option>
+                  <option value="2">Option1</option>
+                  <option value="3">Rolex</option>
+                  <option value="4">Watch2</option>
+                  <option value="5">Option2</option>
+                  <option value="6">Ring</option>
                 </select>
               </div>
               <div class="decritpionBottomBoxes">

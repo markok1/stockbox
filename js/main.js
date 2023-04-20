@@ -207,6 +207,7 @@ if ($("body").hasClass("dashboardBodyProduct")) {
     infinite: false,
   });
   //seo keywords
-  document.getElementById("output").innerHTML = location.search;
-  $(".chosen-select").chosen();
+  $(".multipleSelect2").select2({
+    placeholder: "Search for attributes", //placeholder
+  });
 }
