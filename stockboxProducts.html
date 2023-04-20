@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stockbox - Products</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <!-- touch jquery events -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="dashboardBody dashboardBodyProduct">
+    <div class="leftDecDash"></div>
+    <div class="topDecDash"></div>
+
+    <div class="wrapperDashboard">
+      <nav class="navbar">
+        <img src="img/logo.png" alt="Logo" />
+        <div class="lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="profile">
+          <div id="triangle"></div>
+          <a href="#">
+            <h2>Ellliott</h2>
+          </a>
+
+          <a href="#">
+            <div>
+              <img src="img/profilePhoto1.png" alt="Profile Photo" />
+            </div>
+          </a>
+        </div>
+        <div
+          style="border: 1px solid var(--stockBoxBorder-color)"
+          class="formobile"
+        >
+          <p class="stockbox-color">Welcome <span>Elliott</span></p>
+          <ul class="stockboxActiveColor">
+            <li>
+              <a href="dashboardStockBox.html">Dashboard</a>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+              <div
+                style="background-color: var(--stockBoxBorder-color)"
+                class="triangleForNav"
+              ></div>
+            </li>
+            <li class="activeNav" class="dropdown">
+              <a href="#">Products</a>
+              <div
+                style="background-color: var(--stockBoxBorder-color)"
+                class="triangleForNav"
+              ></div>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Product1</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Product2</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Product3</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Customers</a>
+              <div
+                style="background-color: var(--stockBoxBorder-color)"
+                class="triangleForNav"
+              ></div>
+            </li>
+            <li class="dropdown">
+              <a href="#">Orders</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Sales</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Point Of Sale</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Buy In</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Repairs</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Marketing</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Marketing1</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Marketing2</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+              </ul>
+            </li>
+            <li class="msgBox">
+              <a href="#">Messages</a>
+              <div
+                style="background-color: var(--stockBoxBorder-color)"
+                class="triangleForNav"
+              ></div>
+              <div class="messages"><p>3</p></div>
+            </li>
+            <li class="dropdown">
+              <a href="#">Settings</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Settings1</a>
+                </li>
+                <li>
+                  <a href="#">Settings2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="dashRightHolder">
+        <div class="topRow">
+          <h1 class="stockbox-color">Products</h1>
+          <div>
+            <input type="text" />
+            <div class="profile">
+              <div id="triangle"></div>
+              <a href="#">
+                <h2>Ellliott</h2>
+              </a>
+
+              <a href="#">
+                <div>
+                  <img src="img/profilePhoto1.png" alt="Profile Photo" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="middleRow middleTabs">
+          <ul class="tabs">
+            <li data-tab-target="#firsttabProducts" class="activeTabs tab">
+              Products
+            </li>
+            <li data-tab-target="#secondtabProducts" class="tab">Brands</li>
+            <li data-tab-target="#thirdtabProducts" class="tab">Third</li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="firsttabProducts" data-tab-content class="activeTabs">
+              <div class="productDesktop">
+                <div class="productsTopSection">
+                  <div class="filters">
+                    <a class="filtersLink" href="#"
+                      ><img src="img/filters.png" alt="Filters" /> Filters</a
+                    >
+                    <div class="filtersDesktop">
+                      <div class="filtersInside">
+                        <p>Showing</p>
+                        <select class="productDropdown">
+                          <option value="" hidden>All Brands</option>
+                          <option value="option1">Option1</option>
+                          <option value="option2">Option2</option>
+                          <option value="option3">Option3</option>
+                          <option value="option4">Option4</option>
+                        </select>
+                        <select class="productDropdown">
+                          <option value="" hidden>All Categories</option>
+                          <option value="option1">Option1</option>
+                          <option value="option2">Option2</option>
+                          <option value="option3">Option3</option>
+                          <option value="option4">Option4</option>
+                        </select>
+                        <select class="productDropdown">
+                          <option value="" hidden>In Stock</option>
+                          <option value="option1">Option1</option>
+                          <option value="option2">Option2</option>
+                          <option value="option3">Option3</option>
+                          <option value="option4">Option4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productBtn">
+                    <a href="#">
+                      <img
+                        class="mobilePlus"
+                        src="img/newProductAdd.png"
+                        alt="Plus"
+                      />
+                      New Product</a
+                    >
+                  </div>
+                </div>
+                <div class="productDesktopHolder">
+                  <table class="productTable">
+                    <thead>
+                      <tr>
+                        <th>SKU</th>
+                        <th>Product</th>
+                        <th>Brand</th>
+                        <th>Price / Sale</th>
+                        <th>Location</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr onclick="window.location.href='productDetails.html';">
+                        <td>
+                          <div class="insideProductTable"><p>prod_235</p></div>
+                        </td>
+                        <td>
+                          <div class="insideProductTableProduct">
+                            <p>
+                              Rolex Daytona 40mm 18ct White Gold Black
+                              Oysterflex Strap 116519LN 2023
+                            </p>
+
+                            <img
+                              src="img/desktopProduct.png"
+                              alt="Product Image"
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <p>Rolex</p>
+                        </td>
+                        <td>
+                          <div class="insideProductTable">
+                            <p><span>£9,520.00</span></p>
+                            <p>£9,120.00</p>
+                          </div>
+                        </td>
+                        <td><p>Shop Front</p></td>
+                        <td>
+                          <div class="insideProductTableAction">
+                            <p>added 4 hours ago</p>
+                            <div class="productInStock">
+                              <p>In Stock</p>
+                            </div>
+                            <div class="productAdditionalBox">
+                              <a href="#">
+                                <img src="img/productEdit.png" alt="Edit icon"
+                              /></a>
+                              <a href="#">
+                                <img src="img/productLink.png" alt="Link icon"
+                              /></a>
+                              <a href="#">
+                                <img
+                                  src="img/productTrash.png"
+                                  alt="Trash icon"
+                              /></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr onclick="window.location.href='productDetails.html';">
+                        <td>
+                          <div class="insideProductTable">
+                            <p>prod_235</p>
+                            <img
+                              class="productCloud"
+                              src="img/productCloud.png"
+                              alt="cloud"
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="insideProductTableProduct">
+                            <p>
+                              Rolex Daytona 40mm 18ct White Gold Black
+                              Oysterflex Strap 116519LN 2023
+                            </p>
+
+                            <img
+                              src="img/desktopProduct.png"
+                              alt="Product Image"
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <p>Rolex</p>
+                        </td>
+                        <td>
+                          <div class="insideProductTable">
+                            <p>£9,120.00</p>
+                          </div>
+                        </td>
+                        <td><p>Shop Front</p></td>
+                        <td>
+                          <div class="insideProductTableAction">
+                            <p>added 2 days ago</p>
+                            <div class="productInOutOfStock">
+                              <p>Out Of Stock</p>
+                            </div>
+                            <div class="productAdditionalBox">
+                              <a href="#">
+                                <img src="img/productEdit.png" alt="Edit icon"
+                              /></a>
+                              <a href="#">
+                                <img src="img/productLink.png" alt="Link icon"
+                              /></a>
+                              <a href="#">
+                                <img
+                                  src="img/productTrash.png"
+                                  alt="Trash icon"
+                              /></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr onclick="window.location.href='productDetails.html';">
+                        <td>
+                          <div class="insideProductTable"><p>prod_235</p></div>
+                        </td>
+                        <td>
+                          <div class="insideProductTableProduct">
+                            <p>
+                              Rolex Daytona 40mm 18ct White Gold Black
+                              Oysterflex Strap 116519LN 2023
+                            </p>
+
+                            <img
+                              src="img/desktopProduct.png"
+                              alt="Product Image"
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <p>Rolex</p>
+                        </td>
+                        <td>
+                          <div class="insideProductTable">
+                            <p><span>£9,520.00</span></p>
+                            <p>£9,120.00</p>
+                          </div>
+                        </td>
+                        <td><p>Shop Front</p></td>
+                        <td>
+                          <div class="insideProductTableAction">
+                            <p>added 4 hours ago</p>
+                            <div class="productUnlisted">
+                              <p>Unlisted</p>
+                            </div>
+                            <div class="productAdditionalBox">
+                              <a href="#">
+                                <img src="img/productEdit.png" alt="Edit icon"
+                              /></a>
+                              <a href="#">
+                                <img src="img/productLink.png" alt="Link icon"
+                              /></a>
+                              <a href="#">
+                                <img
+                                  src="img/productTrash.png"
+                                  alt="Trash icon"
+                              /></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr onclick="window.location.href='productDetails.html';">
+                        <td>
+                          <div class="insideProductTable"><p>prod_235</p></div>
+                        </td>
+                        <td>
+                          <div class="insideProductTableProduct">
+                            <p>
+                              Rolex Daytona 40mm 18ct White Gold Black
+                              Oysterflex Strap 116519LN 2023
+                            </p>
+
+                            <img
+                              src="img/desktopProduct.png"
+                              alt="Product Image"
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <p>Rolex</p>
+                        </td>
+                        <td>
+                          <div class="insideProductTable">
+                            <p><span>£9,520.00</span></p>
+                            <p>£9,120.00</p>
+                          </div>
+                        </td>
+                        <td><p>Shop Front</p></td>
+                        <td>
+                          <div class="insideProductTableAction">
+                            <p>added 4 hours ago</p>
+                            <div class="productInStock">
+                              <p>In Stock</p>
+                            </div>
+                            <div class="productAdditionalBox">
+                              <a href="#">
+                                <img src="img/productEdit.png" alt="Edit icon"
+                              /></a>
+                              <a href="#">
+                                <img src="img/productLink.png" alt="Link icon"
+                              /></a>
+                              <a href="#">
+                                <img
+                                  src="img/productTrash.png"
+                                  alt="Trash icon"
+                              /></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <span class="paginationdots">...</span>
+                    <a href="#">35</a>
+                  </div>
+                </div>
+                <div class="productMobileHolder">
+                  <div class="productSwipe">
+                    <div class="productMobile">
+                      <div class="productImage">
+                        <img src="img/productsMobile1.png" alt="Watch" />
+                      </div>
+                      <div class="productContent">
+                        <h5>
+                          Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold
+                        </h5>
+                        <div class="productContentInfo">
+                          <p>SKU/3023</p>
+                          <p>£5,500</p>
+                          <p>In Stock</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swipeShow">
+                      <div>
+                        <img src="img/productEdit.png" alt="Edit" />
+                        <p>Edit</p>
+                      </div>
+                      <div>
+                        <img src="img/productTrash.png" alt="Delete" />
+                        <p>Delete</p>
+                      </div>
+                      <div>
+                        <img src="img/productLink.png" alt="View" />
+                        <p>View</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productSwipe">
+                    <div class="productMobile">
+                      <div class="productImage">
+                        <img src="img/productsMobile2.png" alt="Watch" />
+                      </div>
+                      <div class="productContent">
+                        <h5>Cartier Santos De Cartier</h5>
+                        <div class="productContentInfo">
+                          <p>SKU/3023</p>
+                          <p>£5,500</p>
+                          <p>In Stock</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swipeShow">
+                      <div>
+                        <img src="img/productEdit.png" alt="Edit" />
+                        <p>Edit</p>
+                      </div>
+                      <div>
+                        <img src="img/productTrash.png" alt="Delete" />
+                        <p>Delete</p>
+                      </div>
+                      <div>
+                        <img src="img/productLink.png" alt="View" />
+                        <p>View</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productSwipe">
+                    <div class="productMobile">
+                      <div class="productImage">
+                        <img src="img/productsMobile3.png" alt="Watch" />
+                      </div>
+                      <div class="productContent">
+                        <h5>
+                          Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold
+                        </h5>
+                        <div class="productContentInfo">
+                          <p>SKU/3023</p>
+                          <p>£5,500</p>
+                          <p>In Stock</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swipeShow">
+                      <div>
+                        <img src="img/productEdit.png" alt="Edit" />
+                        <p>Edit</p>
+                      </div>
+                      <div>
+                        <img src="img/productTrash.png" alt="Delete" />
+                        <p>Delete</p>
+                      </div>
+                      <div>
+                        <img src="img/productLink.png" alt="View" />
+                        <p>View</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productSwipe">
+                    <div class="productMobile">
+                      <div class="productImage">
+                        <img src="img/productsMobile4.png" alt="Watch" />
+                      </div>
+                      <div class="productContent">
+                        <h5>Rolex Submariner 41mm Steel and Gold Black Dial</h5>
+                        <div class="productContentInfo">
+                          <p>SKU/3023</p>
+                          <p>£5,500</p>
+                          <p>In Stock</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swipeShow">
+                      <div>
+                        <img src="img/productEdit.png" alt="Edit" />
+                        <p>Edit</p>
+                      </div>
+                      <div>
+                        <img src="img/productTrash.png" alt="Delete" />
+                        <p>Delete</p>
+                      </div>
+                      <div>
+                        <img src="img/productLink.png" alt="View" />
+                        <p>View</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productSwipe">
+                    <div class="productMobile">
+                      <div class="productImage">
+                        <img src="img/productsMobile5.png" alt="Watch" />
+                      </div>
+                      <div class="productContent">
+                        <h5>Rolex Day Date 18CT Yellow Gold 18048</h5>
+                        <div class="productContentInfo">
+                          <p>SKU/3023</p>
+                          <p>£5,500</p>
+                          <p>In Stock</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swipeShow">
+                      <div>
+                        <img src="img/productEdit.png" alt="Edit" />
+                        <p>Edit</p>
+                      </div>
+                      <div>
+                        <img src="img/productTrash.png" alt="Delete" />
+                        <p>Delete</p>
+                      </div>
+                      <div>
+                        <img src="img/productLink.png" alt="View" />
+                        <p>View</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobilePagination">
+                  <a href="#">Load More (325)</a>
+                  <img src="img/blackSelectArrow.png" alt="arrow down" />
+                </div>
+              </div>
+            </div>
+            <div id="secondtabProducts" data-tab-content>
+              <div class="newContent">
+                <p>Content to be added</p>
+              </div>
+            </div>
+            <div id="thirdtabProducts" data-tab-content>
+              <div class="newContent">
+                <p>Content to be added</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperDashboardFooter">
+      <div class="footerLeft">
+        <p>
+          System Version 1.0.5. Powered by
+          <span>Stockbox</span> www.stockbox.tech
+        </p>
+      </div>
+      <div class="footerRight">
+        <a href="#">Report a bug</a>
+        <a href="#">Request a feature</a>
+        <a href="#">Knowledge Base</a>
+        <a href="#">Raise a Support Ticket</a>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

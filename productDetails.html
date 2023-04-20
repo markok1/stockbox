@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stockbox - Product Details</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://harvesthq.github.io/chosen/chosen.css"
+    />
+    <!-- multibox Marketing -->
+    <script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+    <!-- touch jquery events -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"></script>
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="dashboardBody dashboardBodyProduct">
+    <div class="leftDecDash"></div>
+    <div class="topDecDash"></div>
+
+    <div class="wrapperDashboard">
+      <nav class="navbar">
+        <img src="img/logo.png" alt="Logo" />
+        <div class="lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="profile">
+          <div id="triangle"></div>
+          <a href="#">
+            <h2>Ellliott</h2>
+          </a>
+
+          <a href="#">
+            <div>
+              <img src="img/profilePhoto1.png" alt="Profile Photo" />
+            </div>
+          </a>
+        </div>
+        <div
+          style="border: 1px solid var(--stockBoxBorder-color)"
+          class="formobile"
+        >
+          <p class="stockbox-color">Welcome <span>Elliott</span></p>
+          <ul class="stockboxActiveColor">
+            <li>
+              <a href="dashboardStockBox.html">Dashboard</a>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+              <div
+                style="background-color: var(--stockBoxBorder-color)"
+                class="triangleForNav"
+              ></div>
+            </li>
+            <li class="activeNav" class="dropdown">
+              <a href="#">Products</a>
+              <div
+                style="background-color: var(--stockBoxBorder-color)"
+                class="triangleForNav"
+              ></div>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Product1</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Product2</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Product3</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Customers</a>
+              <div
+                style="background-color: var(--stockBoxBorder-color)"
+                class="triangleForNav"
+              ></div>
+            </li>
+            <li class="dropdown">
+              <a href="#">Orders</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Sales</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Point Of Sale</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Buy In</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Repairs</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Marketing</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Marketing1</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+                <li>
+                  <a href="#">Marketing2</a>
+                  <div
+                    style="background-color: var(--stockBoxBorder-color)"
+                    class="triangleForNav"
+                  ></div>
+                </li>
+              </ul>
+            </li>
+            <li class="msgBox">
+              <a href="#">Messages</a>
+              <div
+                style="background-color: var(--stockBoxBorder-color)"
+                class="triangleForNav"
+              ></div>
+              <div class="messages"><p>3</p></div>
+            </li>
+            <li class="dropdown">
+              <a href="#">Settings</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Settings1</a>
+                </li>
+                <li>
+                  <a href="#">Settings2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="dashRightHolder">
+        <div class="topRow">
+          <h1 class="stockbox-color">Products</h1>
+          <div>
+            <input type="text" />
+            <div class="profile">
+              <div id="triangle"></div>
+              <a href="#">
+                <h2>Ellliott</h2>
+              </a>
+
+              <a href="#">
+                <div>
+                  <img src="img/profilePhoto1.png" alt="Profile Photo" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="middleRow detailedProductTabs">
+          <ul class="tabs">
+            <li data-tab-target="#firsttabProducts" class="activeTabs tab">
+              Product
+            </li>
+            <li data-tab-target="#secondtabProducts" class="tab">
+              Description
+            </li>
+            <li data-tab-target="#thirdtabProducts" class="tab">Marketing</li>
+          </ul>
+          <div class="dateAndIconsDetailed">
+            <p>Added on 14th March 2023</p>
+            <div class="iconsDetailed">
+              <img src="img/productEdit.png" alt="Edit" />
+              <img src="img/productLink.png" alt="Link" />
+              <img src="img/productTrash.png" alt="Delete" />
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="firsttabProducts" data-tab-content class="activeTabs">
+              <div class="productNameAndCheck">
+                <div class="skuProduct">
+                  <p>SKU</p>
+                  <p><span>prod_235</span></p>
+                </div>
+                <div class="productName">
+                  <label for="productName">Product Name</label>
+                  <textarea name="productName" id="productName">
+Rolex Daytona 40mm 18ct White Gold Black Oysterflex Strap 116519LN 2023</textarea
+                  >
+                </div>
+                <div class="productVisibilityAndStatus">
+                  <div class="productVisibility">
+                    <label for="productVisibility">Visibility</label>
+                    <select
+                      id="productVisibility"
+                      class="productDropdownDetails"
+                    >
+                      <option value="" hidden>In Stock</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                      <option value="option3">Option3</option>
+                      <option value="option4">Option4</option>
+                    </select>
+                  </div>
+                  <div class="productStatus">
+                    <label id="productStatus" for="productName"
+                      >Sell Status</label
+                    >
+                    <select id="productStatus" class="productDropdownDetails">
+                      <option value="" hidden>Sell as Standard</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                      <option value="option3">Option3</option>
+                      <option value="option4">Option4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="grayBreakLine">
+                <p>Financials</p>
+                <span class="grayLineFinancial"></span>
+              </div>
+              <div class="detailedProductPrices">
+                <div class="productPrice">
+                  <label for="priceInput">Price</label>
+                  <div>
+                    <input type="text" id="priceInput" value="5,500" />
+                    <p>£</p>
+                  </div>
+                </div>
+                <div class="productSalePrice">
+                  <label for="salepriceInput">Sale Price</label>
+                  <div>
+                    <input type="text" id="salepriceInput" value="5,400" />
+                    <p>£</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grayBreakLine imagesBreak">
+                <p>Images</p>
+                <span class="grayLineFinancial"></span>
+              </div>
+              <div class="imageSlider">
+                <div class="imagesSliderHolder">
+                  <div class="imageSlide">
+                    <img src="img/imagesSlider1.png" alt="Product Image" />
+                  </div>
+                  <p>main image</p>
+                </div>
+                <div class="imagesSliderHolder">
+                  <div class="imageSlide">
+                    <img src="img/imagesSlider2.png" alt="Product Image" />
+                  </div>
+                </div>
+                <div class="imagesSliderHolder">
+                  <div class="imageSlide">
+                    <img src="img/imagesSlider3.png" alt="Product Image" />
+                  </div>
+                </div>
+                <div class="imagesSliderHolder">
+                  <div class="imageSlide">
+                    <img src="img/imagesSlider4.png" alt="Product Image" />
+                  </div>
+                </div>
+                <div class="imagesSliderHolder">
+                  <div class="imageSlide">
+                    <img src="img/imagesSlider5.png" alt="Product Image" />
+                  </div>
+                </div>
+                <div class="imagesSliderHolder">
+                  <div class="imageSlide">
+                    <img src="img/imageSliderUpload.png" alt="Product Image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="secondtabProducts" data-tab-content>
+              <div class="descriptionTop">
+                <img src="img/imagesSlider1.png" alt="Slider Image" />
+                <p>Rolex Lady DateJust26mm Steel & 18ct Yellow Gold</p>
+              </div>
+              <div class="descriptionAndBrand">
+                <div class="productDescription">
+                  <label for="productDest">Product Description</label>
+                  <textarea id="productDest">
+This 2018 Rolex Yacht-Master 40mm features a chocolate round index dial, a diamond set stainless steel and 18ct everose oyster bracelet and an 18ct everose bidirectional rotatable bezel.The Rolex Yacht-Master and Yacht-Master II models embody the spirit of the...</textarea
+                  >
+                </div>
+                <div class="productBrand">
+                  <label for="productBrandDrop">Brand</label>
+                  <select id="productBrandDrop" class="productDropdownDetails">
+                    <option value="" hidden>Rolex</option>
+                    <option value="option1">Option1</option>
+                    <option value="option2">Option2</option>
+                    <option value="option3">Option3</option>
+                    <option value="option4">Option4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="categoriesAndLocation">
+                <div class="productCategories">
+                  <label class="categoriesLabel">Categories</label>
+                  <fieldset class="multibox">
+                    <ul>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="watches"
+                            checked
+                          />Watches</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="audemars"
+                            checked
+                          />Audemars Piguet</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="breitling"
+                          />Breitling</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="bulgari"
+                          />Bulgari</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="watch2"
+                          />Watch2</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="watch3"
+                            checked
+                          />Watch3</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="watch4"
+                          />Watch4</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="watch5"
+                          />Watch5</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="watch6"
+                          />Watch6</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="watch7"
+                            checked
+                          />Watch7</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="watch8"
+                          />Watch8</label
+                        >
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="productLocation">
+                  <label class="categoriesLabel">Location</label>
+                  <fieldset class="multibox">
+                    <ul>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="watches"
+                            checked
+                          />London</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="audemars"
+                            checked
+                          />Desk Front</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="breitling"
+                          />Safe 2</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="fc"
+                            value="bulgari"
+                          />Warehouse3</label
+                        >
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="productAttribudeSet">
+                <label class="categoriesLabel">Attribute Set</label>
+                <div id="output"></div>
+
+                <select
+                  data-placeholder="Choose attributes"
+                  name="tags[]"
+                  multiple
+                  class="chosen-select"
+                >
+                  <option value="Option1">Option1</option>
+                  <option value="Option2">Option2</option>
+                  <option value="Watch1">Watch1</option>
+                  <option value="Watch2">Watch2</option>
+                  <option value="Watch3">Watch3</option>
+                  <option value="Rolex">Rolex</option>
+                  <option value="Rolex2">Rolex2</option>
+                </select>
+              </div>
+              <div class="decritpionBottomBoxes">
+                <div class="leftDecritpionBoxes">
+                  <div class="descBoxes">
+                    <label for="templateInput">Template</label>
+                    <input id="templateInput" type="text" value="23245 Yacht" />
+                  </div>
+                  <div class="descBoxes">
+                    <label for="modelInput">Model</label>
+                    <input id="modelInput" type="text" value="23245 Yacht" />
+                  </div>
+                  <div class="descBoxes">
+                    <label for="paperworkInput"
+                      >Original <br />
+                      Paperwork</label
+                    >
+                    <select
+                      id="paperworkInput"
+                      class="productDropdownDescription"
+                    >
+                      <option value="" hidden>Yes</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                      <option value="option3">Option3</option>
+                      <option value="option4">Option4</option>
+                    </select>
+                  </div>
+                  <div class="descBoxes">
+                    <label for="lifetimeInput"
+                      >Lifetime Limited <br />
+                      Warranty</label
+                    >
+                    <select
+                      id="lifetimeInput"
+                      class="productDropdownDescription"
+                    >
+                      <option value="" hidden>Yes</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                      <option value="option3">Option3</option>
+                      <option value="option4">Option4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="rightDecritpionBoxes">
+                  <div class="descBoxes">
+                    <label for="genderInput">Gender</label>
+                    <select id="genderInput" class="productDropdownDescription">
+                      <option value="" hidden>Female</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                      <option value="option3">Option3</option>
+                      <option value="option4">Option4</option>
+                    </select>
+                  </div>
+                  <div class="descBoxes">
+                    <label for="movementInput">Movement</label>
+                    <select
+                      id="movementInput"
+                      class="productDropdownDescription"
+                    >
+                      <option value="" hidden>Automatic</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                      <option value="option3">Option3</option>
+                      <option value="option4">Option4</option>
+                    </select>
+                  </div>
+                  <div class="descBoxes">
+                    <label for="modelNoInput">Model No.</label>
+                    <input id="modelNoInput" type="text" value="5513" />
+                  </div>
+                  <div class="descBoxes">
+                    <label for="autenticBox">Box</label>
+                    <select id="autenticBox" class="productDropdownDescription">
+                      <option value="" hidden>Authentic Box</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                      <option value="option3">Option3</option>
+                      <option value="option4">Option4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="thirdtabProducts" data-tab-content>
+              <div class="descriptionTop">
+                <img src="img/imagesSlider1.png" alt="Slider Image" />
+                <p>Rolex Lady DateJust26mm Steel & 18ct Yellow Gold</p>
+              </div>
+              <div class="multiselect_custom">
+                <div class="left">
+                  <label>Upsell Products</label>
+                  <input id="filter" type="text" placeholder="Find.." />
+                  <div class="dropdown_finder">
+                    <p
+                      imgUrl="img/imagesSlider1.png"
+                      price="$11.195"
+                      xicon="img/crossCricle.png"
+                    >
+                      Rolex Lady DateJust26mm Steel & 18ct Yellow Gold
+                    </p>
+                    <p
+                      imgUrl="img/imagesSlider1.png"
+                      price="$25.111"
+                      xicon="img/crossCricle.png"
+                    >
+                      Rolex 2
+                    </p>
+                    <p
+                      imgUrl="img/imagesSlider1.png"
+                      price="$25.111"
+                      xicon="img/crossCricle.png"
+                    >
+                      Rolex 3
+                    </p>
+                    <p
+                      imgUrl="img/imagesSlider1.png"
+                      price="$25.111"
+                      xicon="img/crossCricle.png"
+                    >
+                      Option 1
+                    </p>
+                    <p
+                      imgUrl="img/imagesSlider1.png"
+                      price="$25.111"
+                      xicon="img/crossCricle.png"
+                    >
+                      Option2
+                    </p>
+                    <p
+                      imgUrl="img/imagesSlider1.png"
+                      price="$25.111"
+                      xicon="img/crossCricle.png"
+                    >
+                      Option3
+                    </p>
+                  </div>
+                </div>
+                <div class="right"></div>
+              </div>
+              <div class="grayBreakLineGoogleShopping">
+                <p class="pSeo">SEO</p>
+                <span class="grayLineSEO"></span>
+              </div>
+              <div class="marketingAttribudeSet">
+                <label class="categoriesLabel">SEO Title</label>
+                <div class="marketingAttribute">
+                  <div id="attributeBox"></div>
+                </div>
+              </div>
+              <div class="labelWithTextArea">
+                <label for="labelTemplate">Product Name</label>
+                <textarea name="textAreaTemplate" id="labelTemplate">
+This 2018 Rolex Yacht-Master 40mm features a chocolate round index dial, a diamond</textarea
+                >
+              </div>
+              <div class="grayBreakLineGoogleShopping">
+                <p>Google Shopping</p>
+                <span class="grayLineShopping"></span>
+              </div>
+              <div class="shoppingSection">
+                <div class="shoppingCategory">
+                  <div class="labelWithDropdown">
+                    <label for="productVisibility"
+                      >Google Shopping Category</label
+                    >
+                    <select id="productVisibility" class="dropDownTemplate">
+                      <option value="" hidden>Watches</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                      <option value="option3">Option3</option>
+                      <option value="option4">Option4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="shoppingCondition">
+                  <div class="labelWithDropdown">
+                    <label>Google Shopping Condition</label>
+                    <select class="dropDownTemplate">
+                      <option value="" hidden>Used</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                      <option value="option3">Option3</option>
+                      <option value="option4">Option4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="shoppingNumber">
+                  <div class="labelAndText">
+                    <label for="templateInput">GTIN Number</label>
+                    <input
+                      id="templateInput"
+                      type="text"
+                      value="65834839923134"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="tabs bottomTabs">
+            <li data-tab-target="#firsttabProducts" class="activeTabs tab">
+              Product
+            </li>
+            <li data-tab-target="#secondtabProducts" class="tab">
+              Description
+            </li>
+            <li data-tab-target="#thirdtabProducts" class="tab">Marketing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperDashboardFooter">
+      <div class="footerLeft">
+        <p>
+          System Version 1.0.5. Powered by
+          <span>Stockbox</span> www.stockbox.tech
+        </p>
+      </div>
+      <div class="footerRight">
+        <a href="#">Report a bug</a>
+        <a href="#">Request a feature</a>
+        <a href="#">Knowledge Base</a>
+        <a href="#">Raise a Support Ticket</a>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/multibox.js"></script>
+  </body>
+</html>
