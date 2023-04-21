@@ -1563,6 +1563,10 @@ img {
 }
 .bottomTabs .tab {
   border-radius: 0px 0px 6px 6px !important;
+  border-top: none;
+  border-left: 1px solid #3e4244;
+  border-right: 1px solid #3e4244;
+  border-bottom: 1px solid #3e4244;
 }
 
 [data-tab-content] {
@@ -1597,7 +1601,10 @@ img {
   color: #474747;
   transition: all 0.25s ease-in;
   background: #fff;
-  border: 1px solid #3e4244;
+  border-top: 1px solid #3e4244;
+  border-left: 1px solid #3e4244;
+  border-right: 1px solid #3e4244;
+  border-bottom: none;
   border-radius: 6px 6px 0px 0px;
   min-width: 175px !important;
   text-align: center;
