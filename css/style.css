@@ -1677,9 +1677,18 @@ img {
   background-position-x: 95%;
   background-position-y: 50%;
   box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.07);
+  font-family: "heroNew";
 }
 #firsttabProducts .productsTopSection .filters .filtersDesktop .filtersInside .productDropdown:focus {
   outline: none;
+}
+#firsttabProducts .productsTopSection .filters .filtersDesktop .filtersInside .productDropdown::before {
+  font-size: 14px;
+  font-family: "heroNew";
+  line-height: 25px;
+  font-weight: 400;
+  padding-left: 21px;
+  color: red;
 }
 #firsttabProducts .productsTopSection .productBtn {
   width: 20%;
@@ -2007,13 +2016,16 @@ img {
   padding: 11px 26px;
   font-size: 16px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 500;
   width: 468px;
   font-family: "heroNew";
 }
 .productNameAndCheck .productVisibilityAndStatus {
   display: flex;
   gap: 29px;
+}
+.productNameAndCheck .productVisibilityAndStatus .custom-select {
+  width: 223px;
 }
 .productNameAndCheck .productVisibilityAndStatus .productVisibility {
   display: flex;
@@ -2230,6 +2242,9 @@ img {
   font-weight: 400;
   margin-bottom: 10px;
 }
+.descriptionAndBrand .productBrand .custom-select {
+  width: 223px;
+}
 
 .categoriesAndLocation {
   padding-top: 47px;
@@ -2283,6 +2298,7 @@ img {
   overflow-x: hidden;
   width: 521px;
   border-radius: 6px;
+  padding-top: 20px;
 }
 .multibox ul::-webkit-scrollbar-track {
   padding: 2px 0;
@@ -2657,30 +2673,85 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-}
-.decritpionBottomBoxes .leftDecritpionBoxes .descBoxes .productDropdownDescription,
-.decritpionBottomBoxes .rightDecritpionBoxes .descBoxes .productDropdownDescription {
   width: 230px;
-  height: 43px;
-  border: 0.5px solid #e3e3e3;
-  background: #fafafa;
-  border-radius: 6px;
-  font-size: 14px;
-  font-family: "heroNew";
-  line-height: 25px;
-  font-weight: 400;
-  padding-left: 21px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("../img/blackSelectArrow.png");
-  background-repeat: no-repeat;
-  background-position-x: 95%;
-  background-position-y: 50%;
-  box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.07);
 }
-.decritpionBottomBoxes .leftDecritpionBoxes .descBoxes .productDropdownDescription:focus,
-.decritpionBottomBoxes .rightDecritpionBoxes .descBoxes .productDropdownDescription:focus {
-  outline: none;
+.decritpionBottomBoxes .leftDecritpionBoxes .descBoxes .custom-select,
+.decritpionBottomBoxes .rightDecritpionBoxes .descBoxes .custom-select {
+  width: 230px;
+  background: #fafafa;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 155px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #fafafa;
+  border: 0.5px solid #e3e3e3 !important;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25.33px;
+  font-family: "heroNew";
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 60%;
+  transform: translateY(-60%);
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border: 7px solid transparent;
+  border-color: #374957 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent #374957 transparent transparent;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fafafa;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fafafa;
+  border: 0.5px solid #e3e3e3;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #3e4244;
+  color: #fff;
+  transition: all 0.25s ease-in;
 }
 
 .labelWithTextArea {
@@ -2773,6 +2844,9 @@ img {
   padding-top: 20px;
   flex-wrap: wrap;
   margin-bottom: 40px;
+}
+.shoppingSection .custom-select {
+  width: 230px;
 }
 
 @media (max-width: 1750px) {
@@ -3007,6 +3081,12 @@ img {
   }
   .descriptionAndBrand {
     flex-direction: column;
+  }
+  #firsttabProducts .productsTopSection .filters .filtersDesktop .filtersInside {
+    gap: 10px;
+  }
+  #firsttabProducts .productsTopSection .filters .filtersDesktop .filtersInside .select-selected {
+    padding: 8px 8px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -3802,6 +3882,17 @@ img {
   }
   .productAttribudeSet .select2 {
     width: 100% !important;
+  }
+  .descriptionAndBrand .productBrand .custom-select {
+    width: 100%;
+  }
+  .decritpionBottomBoxes .leftDecritpionBoxes .descBoxes .custom-select,
+  .decritpionBottomBoxes .rightDecritpionBoxes .descBoxes .custom-select {
+    width: calc(100% - 105px);
+    background: #fafafa;
+  }
+  .shoppingSection .custom-select {
+    width: 100%;
   }
 }
 @media screen and (max-width: 375px) {

@@ -1751,6 +1751,7 @@ img {
             color: #7f0046;
             font-size: 14px;
           }
+          // to be deleted, new custom dropdown is made .custom-select
           .productDropdown {
             width: 155px;
             height: 43px;
@@ -1769,8 +1770,17 @@ img {
             background-position-x: 95%;
             background-position-y: 50%;
             box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.07);
+            font-family: "heroNew";
             &:focus {
               outline: none;
+            }
+            &::before {
+              font-size: 14px;
+              font-family: "heroNew";
+              line-height: 25px;
+              font-weight: 400;
+              padding-left: 21px;
+              color: red;
             }
           }
         }
@@ -2119,7 +2129,7 @@ img {
       padding: 11px 26px;
       font-size: 16px;
       line-height: 28px;
-      font-weight: 600;
+      font-weight: 500;
       width: 468px;
       font-family: "heroNew";
     }
@@ -2127,6 +2137,9 @@ img {
   .productVisibilityAndStatus {
     display: flex;
     gap: 29px;
+    .custom-select {
+      width: 223px;
+    }
     .productVisibility {
       display: flex;
       flex-direction: column;
@@ -2151,6 +2164,7 @@ img {
     }
   }
 }
+// to be deleted, new custom dropdown is made .custom-select
 .productDropdownDetails {
   width: 223px;
   height: 43px;
@@ -2330,6 +2344,9 @@ img {
       font-weight: 400;
       margin-bottom: 10px;
     }
+    .custom-select {
+      width: 223px;
+    }
   }
 }
 .categoriesAndLocation {
@@ -2386,6 +2403,7 @@ img {
     overflow-x: hidden;
     width: 521px;
     border-radius: 6px;
+    padding-top: 20px;
   }
   ul::-webkit-scrollbar-track {
     padding: 2px 0;
@@ -2780,35 +2798,93 @@ img {
         font-size: 16px;
         font-weight: 400;
         line-height: 28px;
-      }
-      .productDropdownDescription {
         width: 230px;
-        height: 43px;
-        border: 0.5px solid #e3e3e3;
+      }
+      .custom-select {
+        width: 230px;
         background: #fafafa;
-        border-radius: 6px;
-        font-size: 14px;
-        font-family: "heroNew";
-        line-height: 25px;
-        font-weight: 400;
-        padding-left: 21px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        // background: transparent;
-        background-image: url("../img/blackSelectArrow.png");
-        background-repeat: no-repeat;
-        background-position-x: 95%;
-        background-position-y: 50%;
-        box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.07);
-        &:focus {
-          outline: none;
-        }
       }
     }
   }
 }
 //Boxes on the bottom of description end
 // dashboard products Details end
+
+// new template for custom dropdown start
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 155px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #fafafa;
+  border: 0.5px solid #e3e3e3 !important;
+  // box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.07) !important;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25.33px;
+  font-family: "heroNew";
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 60%;
+  transform: translateY(-60%);
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border: 7px solid transparent;
+  border-color: #374957 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent #374957 transparent transparent;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fafafa;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fafafa;
+  border: 0.5px solid #e3e3e3;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #3e4244;
+  color: #fff;
+  transition: all 0.25s ease-in;
+}
+// new template for custom dropdown end
 
 // template for label and textarea
 .labelWithTextArea {
@@ -2903,6 +2979,9 @@ img {
   padding-top: 20px;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  .custom-select {
+    width: 230px;
+  }
 }
 //marketing shoping section end
 //Responsive CSS:
@@ -3193,6 +3272,24 @@ img {
   }
 
   //responsive products > descriptions responsive end
+
+  //stockboxProducts dropdowns start
+  #firsttabProducts
+    .productsTopSection
+    .filters
+    .filtersDesktop
+    .filtersInside {
+    gap: 10px;
+  }
+  #firsttabProducts
+    .productsTopSection
+    .filters
+    .filtersDesktop
+    .filtersInside
+    .select-selected {
+    padding: 8px 8px;
+  }
+  //stockboxProducts dropdown end
 }
 @media screen and (max-width: 1024px) {
   //responsive signup1 start
@@ -4093,6 +4190,20 @@ img {
   .productAttribudeSet .select2 {
     width: 100% !important;
   }
+  //dashboard products > marketing end
+  //responsive select for products start
+  .descriptionAndBrand .productBrand .custom-select {
+    width: 100%;
+  }
+  .decritpionBottomBoxes .leftDecritpionBoxes .descBoxes .custom-select,
+  .decritpionBottomBoxes .rightDecritpionBoxes .descBoxes .custom-select {
+    width: calc(100% - 105px);
+    background: #fafafa;
+  }
+  .shoppingSection .custom-select {
+    width: 100%;
+  }
+  //responsive select(dropdown) for products end
 }
 @media screen and (max-width: 375px) {
   //products dashboard responsive start
