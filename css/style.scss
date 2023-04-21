@@ -893,6 +893,10 @@ img {
         font-weight: 400;
         line-height: 20px;
         position: relative;
+        &:hover {
+          box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.08);
+          transition: all 0.25s ease-in;
+        }
         ul {
           li {
             a {
@@ -954,7 +958,7 @@ img {
     display: block !important;
   }
 }
-.open {
+.openMenu {
   .activeNav {
     .triangleForNav {
       top: 2px;
@@ -1005,7 +1009,9 @@ img {
   li {
     border-bottom: none !important;
     padding-bottom: 0px !important;
-
+    &:hover {
+      box-shadow: unset !important;
+    }
     a {
       font-size: 20px;
       font-weight: 400;
@@ -1013,8 +1019,10 @@ img {
     }
   }
 }
-
-.dropdown.open .dropdown-menu {
+.openMenu {
+  max-height: 225px;
+}
+.dropdown.openMenu .dropdown-menu {
   display: block;
 }
 
@@ -1650,19 +1658,19 @@ img {
 
 // dashboard products
 /* tabs */
-.bottomTabs {
-  display: none !important;
-  margin-top: 40px;
-  border-bottom: 0px solid transparent !important;
-  border-top: 1px solid #d3d3d3;
-  .tab {
-    border-radius: 0px 0px 6px 6px !important;
-    border-top: none;
-    border-left: 1px solid #3e4244;
-    border-right: 1px solid #3e4244;
-    border-bottom: 1px solid #3e4244;
-  }
-}
+// .bottomTabs {
+//   display: none !important;
+//   margin-top: 40px;
+//   border-bottom: 0px solid transparent !important;
+//   border-top: 1px solid #d3d3d3;
+//   .tab {
+//     border-radius: 0px 0px 6px 6px !important;
+//     border-top: none;
+//     border-left: 1px solid #3e4244;
+//     border-right: 1px solid #3e4244;
+//     border-bottom: 1px solid #3e4244;
+//   }
+// }
 [data-tab-content] {
   display: none;
 }
@@ -2990,7 +2998,135 @@ img {
     width: 230px;
   }
 }
-//marketing shoping section end
+// product marketing shoping section end
+// marketing > google start
+.marketingGoogleMobile {
+  display: none;
+}
+.middleRowMarketingGoogle {
+  gap: 26px;
+  flex-direction: column;
+}
+.marketingGoogleShopping {
+  .marketingGoogleDesktop {
+    p {
+      color: #7f0046;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: "heroNew";
+      line-height: 25px;
+      margin-bottom: 23px;
+    }
+    .googleDesktopHolder {
+      border: 0.7px solid #e9c3c1;
+      border-radius: 6px;
+      width: 1266px;
+      height: 239px;
+      display: flex;
+      align-items: center;
+      .googleDesktopBox {
+        padding-left: 47px;
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 16px;
+          color: #000;
+          margin-bottom: 16px;
+        }
+        .inputWithIcon {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          .googleInput {
+            position: relative;
+            input {
+              border: 0.7px solid #000000;
+              border-radius: 6px;
+              width: 445px;
+              height: 63px;
+              background: #fff;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 16px;
+              padding: 24px 28px;
+            }
+            a {
+              position: absolute;
+              top: 23px;
+              left: 28px;
+              color: #4a61b1;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 16px;
+            }
+            p {
+              position: absolute;
+              top: 26px;
+              right: 28px;
+              font-style: italic;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.googleMobContent {
+  .googleDesktopBox {
+    padding: 0px 25px;
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #000;
+      margin-bottom: 16px;
+    }
+    .inputWithIcon {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 38px;
+      .googleInput {
+        position: relative;
+        input {
+          border: 0.7px solid #000000;
+          border-radius: 6px;
+          width: 445px;
+          height: 63px;
+          background: #fff;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 16px;
+          padding: 24px 28px;
+        }
+        a {
+          position: absolute;
+          top: 23px;
+          left: 28px;
+          color: #4a61b1;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 16px;
+        }
+        p {
+          position: absolute;
+          top: 26px;
+          right: 28px;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}
+// marketing > google end
+
 //Responsive CSS:
 @media (max-width: 1750px) {
   //responsive dashboard start
@@ -3008,6 +3144,11 @@ img {
     flex-wrap: wrap;
   }
   // responsive product > product end
+  // marketing > google start
+  .marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder {
+    width: 100%;
+  }
+  // marketing > google end
 }
 @media (max-width: 1480px) {
   //responsive packages start
@@ -3515,8 +3656,18 @@ img {
   .productNameAndCheck .productName textarea {
     width: 100%;
   }
-
   //responsive products > products end
+  //marketing > google start
+  .googleDesktopHolder .googleDesktopBox {
+    padding-left: 8px !important;
+  }
+
+  .inputWithIcon .googleInput input {
+    border: 0.7px solid #000000;
+    border-radius: 6px;
+    width: 420px !important;
+  }
+  //marketing > google end
 }
 
 @media screen and (max-width: 768px) {
@@ -3761,10 +3912,18 @@ img {
       padding-left: 30px;
     }
   }
-  .bottomTabs {
-    display: flex !important;
-  }
+  // .bottomTabs {
+  //   display: flex !important;
+  // }
   //products end
+  // marketing > google start
+  .marketingGoogleMobile {
+    display: block;
+  }
+  .marketingGoogleDesktop {
+    display: none;
+  }
+  //marketing > google end
 }
 @media screen and (max-width: 650px) {
   //responsive signup3 start
@@ -3930,6 +4089,18 @@ img {
     width: 100%;
   }
   //responsive marketing end
+  // marketing > google start
+  .inputWithIcon .googleInput input {
+    width: 100% !important;
+  }
+  .googleMobContent .googleDesktopBox .inputWithIcon .googleInput {
+    position: relative;
+    width: 100%;
+  }
+  .googleMobContent .googleDesktopBox .inputWithIcon {
+    flex-direction: column;
+  }
+  // marketing > google end
 }
 @media screen and (max-width: 530px) {
   .leftDecoration {
@@ -4211,6 +4382,22 @@ img {
     width: 100%;
   }
   //responsive select(dropdown) for products end
+  // marketing > google start
+  .googleMobContent .googleDesktopBox .inputWithIcon .googleInput p {
+    right: 10px;
+    font-size: 9px;
+  }
+  .googleMobContent .googleDesktopBox .inputWithIcon .googleInput a {
+    left: 10px;
+    font-size: 12px;
+  }
+  .googleMobContent .googleDesktopBox p {
+    font-size: 14px;
+  }
+  .googleMobContent .googleDesktopBox .inputWithIcon .googleInput input {
+    font-size: 15px;
+  }
+  // marketing > google end
 }
 @media screen and (max-width: 375px) {
   //products dashboard responsive start

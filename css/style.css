@@ -833,6 +833,10 @@ img {
   line-height: 20px;
   position: relative;
 }
+.navbar .formobile ul li:hover {
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease-in;
+}
 .navbar .formobile ul li ul li a {
   padding-top: 0px;
   padding-bottom: 15px;
@@ -885,7 +889,7 @@ img {
   display: block !important;
 }
 
-.open .activeNav .triangleForNav {
+.openMenu .activeNav .triangleForNav {
   top: 2px;
 }
 
@@ -935,13 +939,20 @@ img {
   border-bottom: none !important;
   padding-bottom: 0px !important;
 }
+.dropdown-menu li:hover {
+  box-shadow: unset !important;
+}
 .dropdown-menu li a {
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
 }
 
-.dropdown.open .dropdown-menu {
+.openMenu {
+  max-height: 225px;
+}
+
+.dropdown.openMenu .dropdown-menu {
   display: block;
 }
 
@@ -1555,20 +1566,6 @@ img {
 }
 
 /* tabs */
-.bottomTabs {
-  display: none !important;
-  margin-top: 40px;
-  border-bottom: 0px solid transparent !important;
-  border-top: 1px solid #d3d3d3;
-}
-.bottomTabs .tab {
-  border-radius: 0px 0px 6px 6px !important;
-  border-top: none;
-  border-left: 1px solid #3e4244;
-  border-right: 1px solid #3e4244;
-  border-bottom: 1px solid #3e4244;
-}
-
 [data-tab-content] {
   display: none;
 }
@@ -2856,6 +2853,129 @@ img {
   width: 230px;
 }
 
+.marketingGoogleMobile {
+  display: none;
+}
+
+.middleRowMarketingGoogle {
+  gap: 26px;
+  flex-direction: column;
+}
+
+.marketingGoogleShopping .marketingGoogleDesktop p {
+  color: #7f0046;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "heroNew";
+  line-height: 25px;
+  margin-bottom: 23px;
+}
+.marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder {
+  border: 0.7px solid #e9c3c1;
+  border-radius: 6px;
+  width: 1266px;
+  height: 239px;
+  display: flex;
+  align-items: center;
+}
+.marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder .googleDesktopBox {
+  padding-left: 47px;
+}
+.marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder .googleDesktopBox p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  margin-bottom: 16px;
+}
+.marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder .googleDesktopBox .inputWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder .googleDesktopBox .inputWithIcon .googleInput {
+  position: relative;
+}
+.marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder .googleDesktopBox .inputWithIcon .googleInput input {
+  border: 0.7px solid #000000;
+  border-radius: 6px;
+  width: 445px;
+  height: 63px;
+  background: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 24px 28px;
+}
+.marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder .googleDesktopBox .inputWithIcon .googleInput a {
+  position: absolute;
+  top: 23px;
+  left: 28px;
+  color: #4a61b1;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+.marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder .googleDesktopBox .inputWithIcon .googleInput p {
+  position: absolute;
+  top: 26px;
+  right: 28px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.googleMobContent .googleDesktopBox {
+  padding: 0px 25px;
+}
+.googleMobContent .googleDesktopBox p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  margin-bottom: 16px;
+}
+.googleMobContent .googleDesktopBox .inputWithIcon {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 38px;
+}
+.googleMobContent .googleDesktopBox .inputWithIcon .googleInput {
+  position: relative;
+}
+.googleMobContent .googleDesktopBox .inputWithIcon .googleInput input {
+  border: 0.7px solid #000000;
+  border-radius: 6px;
+  width: 445px;
+  height: 63px;
+  background: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 24px 28px;
+}
+.googleMobContent .googleDesktopBox .inputWithIcon .googleInput a {
+  position: absolute;
+  top: 23px;
+  left: 28px;
+  color: #4a61b1;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+.googleMobContent .googleDesktopBox .inputWithIcon .googleInput p {
+  position: absolute;
+  top: 26px;
+  right: 28px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
 @media (max-width: 1750px) {
   .wrapperDashboard {
     width: 1400px;
@@ -2867,6 +2987,9 @@ img {
     justify-content: unset;
     gap: 20px;
     flex-wrap: wrap;
+  }
+  .marketingGoogleShopping .marketingGoogleDesktop .googleDesktopHolder {
+    width: 100%;
   }
 }
 @media (max-width: 1480px) {
@@ -3289,6 +3412,14 @@ img {
   .productNameAndCheck .productName textarea {
     width: 100%;
   }
+  .googleDesktopHolder .googleDesktopBox {
+    padding-left: 8px !important;
+  }
+  .inputWithIcon .googleInput input {
+    border: 0.7px solid #000000;
+    border-radius: 6px;
+    width: 420px !important;
+  }
 }
 @media screen and (max-width: 768px) {
   #packagesFix {
@@ -3510,8 +3641,11 @@ img {
     margin-bottom: 40px;
     padding-left: 30px;
   }
-  .bottomTabs {
-    display: flex !important;
+  .marketingGoogleMobile {
+    display: block;
+  }
+  .marketingGoogleDesktop {
+    display: none;
   }
 }
 @media screen and (max-width: 650px) {
@@ -3655,6 +3789,16 @@ img {
   }
   .labelWithTextArea textarea {
     width: 100%;
+  }
+  .inputWithIcon .googleInput input {
+    width: 100% !important;
+  }
+  .googleMobContent .googleDesktopBox .inputWithIcon .googleInput {
+    position: relative;
+    width: 100%;
+  }
+  .googleMobContent .googleDesktopBox .inputWithIcon {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 530px) {
@@ -3900,6 +4044,20 @@ img {
   }
   .shoppingSection .custom-select {
     width: 100%;
+  }
+  .googleMobContent .googleDesktopBox .inputWithIcon .googleInput p {
+    right: 10px;
+    font-size: 9px;
+  }
+  .googleMobContent .googleDesktopBox .inputWithIcon .googleInput a {
+    left: 10px;
+    font-size: 12px;
+  }
+  .googleMobContent .googleDesktopBox p {
+    font-size: 14px;
+  }
+  .googleMobContent .googleDesktopBox .inputWithIcon .googleInput input {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 375px) {
