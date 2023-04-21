@@ -1059,7 +1059,7 @@ img {
         height: 59px;
         border: 0.7px solid #c5c5c5;
         border-radius: 6px;
-        background-image: url("../img/loop.png");
+        background-image: url("../img/loop.svg");
         background-repeat: no-repeat;
         background-position-x: 94%;
         background-position-y: 50%;
@@ -2941,6 +2941,7 @@ img {
     font-weight: 400;
     margin-bottom: 10px;
   }
+  // to be deleted use new template .custom
   .dropDownTemplate {
     width: 223px;
     height: 43px;
