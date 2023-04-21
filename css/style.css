@@ -4058,6 +4058,7 @@ img {
   }
   .googleMobContent .googleDesktopBox .inputWithIcon .googleInput input {
     font-size: 15px;
+    padding: 24px 13px;
   }
 }
 @media screen and (max-width: 375px) {
