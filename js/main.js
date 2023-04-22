@@ -174,10 +174,9 @@ if ($("body").hasClass("dashboardBodyProduct")) {
       $(this).next().removeClass("filters_opened");
       $(this).next().css("max-height", "0px");
     } else {
-      $(".filtersDesktop").find(".filtersInside").css("max-height", "0px");
       $(".filters_opened").removeClass("content_opened");
       $(this).next().addClass("filters_opened");
-      var heightinside = $(this).next().find(".filtersInside").height() + 50;
+      var heightinside = $(this).next().find(".filtersInside").height() + 500;
       $(this)
         .next()
         .css("max-height", heightinside + "px");
