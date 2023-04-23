@@ -841,8 +841,8 @@ img {
   transition: all 0.25s ease-in;
 }
 .navbar .formobile ul li ul li a {
-  padding-top: 0px;
-  padding-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 52px;
 }
 .navbar .formobile ul li ul li:last-child a {
@@ -871,8 +871,8 @@ img {
   text-decoration: none;
   display: block;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   padding-left: 32px;
 }
 .navbar .formobile ul li:last-child {
@@ -1807,11 +1807,21 @@ img {
   opacity: 0.6;
   transition: all 0.25s ease-in;
 }
+#firsttabProducts .productDesktopHolder .paginationHolder {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#firsttabProducts .productDesktopHolder .paginationHolder p {
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+}
 #firsttabProducts .productDesktopHolder .pagination {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding-top: 50px;
   gap: 9px;
 }
 #firsttabProducts .productDesktopHolder .pagination a {

@@ -194,6 +194,25 @@ if ($("body").hasClass("dashboardBodyProduct")) {
   function handler4(event) {
     $(this).addClass("swipeActive");
   }
+}
+if ($("body").hasClass("dashboardBodyProductDetails")) {
+  //tabs
+  const tabs = document.querySelectorAll("[data-tab-target]");
+  const tabContents = document.querySelectorAll("[data-tab-content]");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = document.querySelector(tab.dataset.tabTarget);
+      tabContents.forEach((tabContent) => {
+        tabContent.classList.remove("activeTabs");
+      });
+      tabs.forEach((tab) => {
+        tab.classList.remove("activeTabs");
+      });
+      tab.classList.add("activeTabs");
+      target.classList.add("activeTabs");
+    });
+  });
 
   //slider for detailed products
   $(".imageSlider").slick({

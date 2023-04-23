@@ -903,8 +903,8 @@ img {
         ul {
           li {
             a {
-              padding-top: 0px;
-              padding-bottom: 23px;
+              padding-top: 12px;
+              padding-bottom: 12px;
               padding-left: 52px;
             }
             &:last-child {
@@ -937,8 +937,8 @@ img {
           text-decoration: none;
           display: block;
           width: 100%;
-          padding-top: 20px;
-          padding-bottom: 25px;
+          padding-top: 23px;
+          padding-bottom: 23px;
           padding-left: 32px;
         }
         &:last-child {
@@ -1928,11 +1928,21 @@ img {
         }
       }
     }
+    .paginationHolder {
+      padding-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-size: 12px;
+        line-height: 21px;
+        font-weight: 400;
+      }
+    }
     .pagination {
       display: flex;
       justify-content: end;
       align-items: center;
-      padding-top: 50px;
       gap: 9px;
       a {
         display: block;
