@@ -1,0 +1,109 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+
+<div class="body-left-shape theme-one"></div>
+<div class="body-top-shape theme-one"></div>
+
+<!-- Dashboard Main Wrapper Start -->
+<div class="main-wrapper">
+  @@include('../partial-html/_header.html')
+
+  <div class="main-content-wrapper">
+    <div class="main-content-wrapper__left">
+      @@include('../partial-html/_dash-sidebar.html')
+    </div>
+
+    <div class="main-content-wrapper__right gap-0">
+      <h4 class="page-title text-center text--base fs--20px mb-5 d-lg-none">Messages</h4>
+
+      <div class="filter-area w-100">
+        <div class="filter-top-area d-flex justify-content-between w-100" style="gap: 10px 40px;">
+          <div class="filter-top-left customer-filter">
+            <div class="form-devider-wrapper mb-4 d-flex align-items-center d-none d-xl-flex">
+              <span class=" text--dark fs--12px messageViewDate">06-04-2023 12:42 PM</span>
+              <span class="border"></span>
+            </div>
+            <div class="d-flex justify-content-between mb-4 pb-2 d-xl-none">
+              <a href=""><img src="assets/images/icons/caret-left.svg" alt="got back"></a>
+              <a href=""><img src="assets/images/icons/trash.svg" alt="Trash"></a>
+            </div>
+          </div>
+          <div class="filter-top-right flex-shrink-0 d-none d-xl-block">
+            <div class="d-flex gap-3" style="transform: translateY(50%);">
+              <a href="#">
+                <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-view-wrapper d-none d-xl-block">
+        <div class="row gy-4 align-items-center" style="max-width: 1080px;">
+          <div class="col-md-3">
+            <div class="messageViewPicture text-center">
+                <img src="assets/images/products/messageView.png" alt="Item 1">
+            </div>
+          </div>
+          <div class="col-md-3 mt-0">
+            <label for="" class="form-label">Product Name</label>
+            <p class="mb-0 fs--14px fw-semibold">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</p>
+          </div>
+          <div class="col-md-3 mt-0">
+            <label for="" class="form-label">Email</label>
+            <p class="mb-0 fs--14px">chrislordbrown@gmail.com</p>
+          </div>
+          <div class="col-md-3 mt-0">
+            <label for="" class="form-label">Phone</label>
+            <p class="mb-0 fs--14px">07770760674</p>
+          </div>
+        </div>
+
+        <div class="d-xl-block d-none" style="margin-top: 100px;"></div>
+
+        <div class="form-devider-wrapper mb-4 d-flex align-items-center">
+          <span class="text text--dark fs--12px">Message Body</span>
+          <span class="border"></span>
+        </div>
+        <div style="max-width:860px;">
+            <p class="mb-0 fs--14px">Good afternoon Would you consider a part exchange for this watch? I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch, box and papers, excellent condition. Kind regards Chris Lord-Brown</p>
+        </div>
+      </div>
+      <div class="d-block d-xl-none">
+        <div class="filter-top-area d-flex justify-content-between w-100" style="gap: 10px 40px;">
+            <div class="filter-top-left customer-filter">
+              <div class="form-devider-wrapper mb-4 d-flex align-items-center d-flex d-xl-none">
+                <span class="message-id-mobile text--secondary fs--12px">#205</span>
+                <span class="border"></span>
+                <span class="text--secondary fs--12px messageViewDate text-end">06-04-2023 12:42 PM</span>
+              </div>
+            </div>
+          </div>
+          <div class="message-view-contact-info">
+            <span class="text--dark fs--10px">Email</span>
+            <p class="text--dark fs--16px">chrislordbrown@gmail.com</p>
+            <span class="text--dark fs--10px">Phone</span>
+            <p class="text--dark fs--16px">07770760674</p>
+          </div>
+          <div class="form-devider-wrapper mb-4 d-flex align-items-center">
+            <span class="text text--secondary fs--12px">Message</span>
+            <span class="border"></span>
+          </div>
+          <div class="d-flex align-items-center mb-4 message-mobile-title" style="gap:10px;">
+            <img src="assets/images/products/messageView.png" alt="Item 1">
+            <p class="pb-0 fs--16px fw-semibold">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</p>
+          </div>
+          <p class="mb-0 fs--14px">Good afternoon Would you consider a part exchange for this watch? I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch, box and papers, excellent condition. Kind regards Chris Lord-Brown</p>
+      </div>
+    </div>
+  </div>
+
+
+  @@include('../partial-html/_footer.html')
+
+</div>
+<!-- Dashboard Main Wrapper End -->
+
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

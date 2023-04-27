@@ -1,0 +1,451 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+
+<div class="body-left-shape theme-one"></div>
+<div class="body-top-shape theme-one"></div>
+
+<!-- Dashboard Main Wrapper Start -->
+<div class="main-wrapper">
+  @@include('../partial-html/_header.html')
+
+  <div class="main-content-wrapper">
+    <div class="main-content-wrapper__left">
+      @@include('../partial-html/_dash-sidebar.html')
+    </div>
+
+    <div class="main-content-wrapper__right gap-0">
+      <h4 class="page-title text-center text--base fs--20px mb-5 d-lg-none">Messages</h4>
+
+      <ul class="filter-tabs nav-tabs nav d-flex border-0 d-md-none">
+        <li><a href="#tab1" data-bs-toggle="tab" class="active">All</a></li>
+        <li><a href="#tab2" data-bs-toggle="tab">Product Enquiry</a></li>
+        <li><a href="#tab3" data-bs-toggle="tab">Other Enquiry</a></li>
+      </ul>
+
+      <div class="filter-area w-100">
+        <div class="filter-top-area d-flex justify-content-between w-100" style="gap: 10px 40px">
+          <div class="filter-top-left">
+            <ul class="filter-tabs nav-tabs nav d-flex border-0 d-none d-md-flex">
+              <li><a href="#tab1" data-bs-toggle="tab" class="active">All</a></li>
+              <li><a href="#tab2" data-bs-toggle="tab">Product Enquiry</a></li>
+              <li><a href="#tab3" data-bs-toggle="tab">Other Enquiry</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="filter-bottom-area">
+          <div class="d-flex justify-content-between align-items-center d-lg-none mb-4 gap-2">
+            <form action="" class="search-form d-lg-none">
+              <div class="form-group">
+                <input type="text" class="form-control form--control bg-transparent" style="height: 45px;">
+                <img src="assets/images/icons/search.svg" alt="search icon" class="search-icon">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1">
+
+          <table class="messages-table custom-table d-none d-xl-table">
+
+            <tbody>
+              <tr>
+                <td>
+                    <div class="pictureWithTitle d-flex align-items-center" style="gap: 10px">
+                        <div class="messageImage"><img src="assets/images/products/p2.png" alt="Item 1"></div>
+                        <div class="messagesTitle overflow-hidden">
+                            <h6 class="fs--10px mb-0">#205</h6>
+                            <h4 class="fs--16px mb-0">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</h4>
+                            <p class="fs--10px mb-0">16-04-2023 12:42 PM</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="messageText overflow-hidden">
+                        <p class="fs--14px mb-0">
+                            Good afternoon Would you consider a part exchange for this watch?
+                            I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch,
+                            box and papers, excellent condition. Kind regards Chris Lord-Brown
+                        </p>
+                    </div>
+                </td>
+                <td>
+                        <p class="fs--14px mb-0">chrislordbrown@gmail.com</p>
+                        <p class="fs--14px mb-0">07770760674</p>
+                </td>
+                <td>
+                  <div class="iconsDetailed d-flex justify-content-end messageIcons" style="gap: 30px;">
+                    <a href="message-view1.html">
+                      <img src="assets/images/icons/eyeWithoutCross.svg" alt="Preview" class="mw-100">
+                    </a>
+                    <a href="">
+                      <img src="assets/images/icons/trash.svg" alt="Delete" class="mw-100">
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="pictureWithTitle d-flex align-items-center" style="gap: 10px">
+                        <div class="messageImage"><img src="assets/images/products/p2.png" alt="Item 1"></div>
+                        <div class="messagesTitle overflow-hidden">
+                            <h6 class="fs--10px mb-0">#205</h6>
+                            <h4 class="fs--16px mb-0">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</h4>
+                            <p class="fs--10px mb-0">16-04-2023 12:42 PM</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="messageText overflow-hidden">
+                        <p class="fs--14px mb-0">
+                            Good afternoon Would you consider a part exchange for this watch?
+                            I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch,
+                            box and papers, excellent condition. Kind regards Chris Lord-Brown
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <p class="fs--14px mb-0">chrislordbrown@gmail.com</p>
+                    <p class="fs--14px mb-0">07770760674</p>
+                </td>
+                <td>
+                  <div class="iconsDetailed d-flex justify-content-end messageIcons" style="gap: 30px;">
+                    <a href="message-view1.html">
+                      <img src="assets/images/icons/eyeWithoutCross.svg" alt="Edit" class="mw-100">
+                    </a>
+                    <a href="">
+                      <img src="assets/images/icons/trash.svg" alt="Delete" class="mw-100">
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="pictureWithTitle d-flex align-items-center" style="gap: 10px">
+                        <div class="messageImage"><img src="assets/images/products/p2.png" alt="Item 1"></div>
+                        <div class="messagesTitle overflow-hidden">
+                            <h6 class="fs--10px mb-0">#205</h6>
+                            <h4 class="fs--16px mb-0">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</h4>
+                            <p class="fs--10px mb-0">16-04-2023 12:42 PM</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="messageText overflow-hidden">
+                        <p class="fs--14px mb-0">
+                            Good afternoon Would you consider a part exchange for this watch?
+                            I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch,
+                            box and papers, excellent condition. Kind regards Chris Lord-Brown
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <p class="fs--14px mb-0">chrislordbrown@gmail.com</p>
+                    <p class="fs--14px mb-0">07770760674</p>
+                </td>
+                <td>
+                  <div class="iconsDetailed d-flex justify-content-end messageIcons" style="gap: 30px;">
+                    <a href="message-view1.html">
+                      <img src="assets/images/icons/eyeWithoutCross.svg" alt="Edit" class="mw-100">
+                    </a>
+                    <a href="">
+                      <img src="assets/images/icons/trash.svg" alt="Delete" class="mw-100">
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="pictureWithTitle d-flex align-items-center" style="gap: 10px">
+                        <div class="messageImage"><img src="assets/images/products/p2.png" alt="Item 1"></div>
+                        <div class="messagesTitle overflow-hidden">
+                            <h6 class="fs--10px mb-0">#205</h6>
+                            <h4 class="fs--16px mb-0">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</h4>
+                            <p class="fs--10px mb-0">16-04-2023 12:42 PM</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="messageText overflow-hidden">
+                        <p class="fs--14px mb-0">
+                            Good afternoon Would you consider a part exchange for this watch?
+                            I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch,
+                            box and papers, excellent condition. Kind regards Chris Lord-Brown
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <p class="fs--14px mb-0">chrislordbrown@gmail.com</p>
+                    <p class="fs--14px mb-0">07770760674</p>
+                </td>
+                <td>
+                  <div class="iconsDetailed d-flex justify-content-end messageIcons" style="gap: 30px;">
+                    <a href="message-view1.html">
+                      <img src="assets/images/icons/eyeWithoutCross.svg" alt="Preview" class="mw-100">
+                    </a>
+                    <a href="">
+                      <img src="assets/images/icons/trash.svg" alt="Delete" class="mw-100">
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="pictureWithTitle d-flex align-items-center" style="gap: 10px">
+                        <div class="messageImage"><img src="assets/images/products/p2.png" alt="Item 1"></div>
+                        <div class="messagesTitle overflow-hidden">
+                            <h6 class="fs--10px mb-0">#205</h6>
+                            <h4 class="fs--16px mb-0">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</h4>
+                            <p class="fs--10px mb-0">16-04-2023 12:42 PM</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="messageText overflow-hidden">
+                        <p class="fs--14px mb-0">
+                            Good afternoon Would you consider a part exchange for this watch?
+                            I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch,
+                            box and papers, excellent condition. Kind regards Chris Lord-Brown
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <p class="fs--14px mb-0">chrislordbrown@gmail.com</p>
+                    <p class="fs--14px mb-0">07770760674</p>
+                </td>
+                <td>
+                  <div class="iconsDetailed d-flex justify-content-end messageIcons" style="gap: 30px;">
+                    <a href="message-view1.html">
+                      <img src="assets/images/icons/eyeWithoutCross.svg" alt="Edit" class="mw-100">
+                    </a>
+                    <a href="">
+                      <img src="assets/images/icons/trash.svg" alt="Delete" class="mw-100">
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="pictureWithTitle d-flex align-items-center" style="gap: 10px">
+                        <div class="messageImage"><img src="assets/images/products/p2.png" alt="Item 1"></div>
+                        <div class="messagesTitle overflow-hidden">
+                            <h6 class="fs--10px mb-0">#205</h6>
+                            <h4 class="fs--16px mb-0">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</h4>
+                            <p class="fs--10px mb-0">16-04-2023 12:42 PM</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="messageText overflow-hidden">
+                        <p class="fs--16px mb-0">
+                            Good afternoon Would you consider a part exchange for this watch?
+                            I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch,
+                            box and papers, excellent condition. Kind regards Chris Lord-Brown
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="messageContact">
+                        <p class="fs--14px mb-0">chrislordbrown@gmail.com</p>
+                        <p class="fs--14px mb-0">07770760674</p>
+                    </div>
+                </td>
+                <td>
+                  <div class="iconsDetailed d-flex justify-content-end messageIcons" style="gap: 30px;">
+                    <a href="message-view1.html">
+                      <img src="assets/images/icons/eyeWithoutCross.svg" alt="Edit" class="mw-100">
+                    </a>
+                    <a href="">
+                      <img src="assets/images/icons/trash.svg" alt="Delete" class="mw-100">
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="moblie-items-wrapper d-xl-none">
+            <li>
+              <div class="message-item-mobile">
+                <div class="message-content">
+                    <div class="mb-3 d-flex justify-content-between">
+                        <p class="fw-bold mb-0 fs--10px">#205</p> <p class="mb-0 fs--10px">16-04-2023 12:42 PM</p>
+                    </div>
+                    <div class="mb-3 d-flex overflow-hidden" style="gap:10px">
+                        <div class="message-mobile-preview"><img src="assets/images/products/p2.png" alt="Item 1"></div>
+                        <div class="mobileTitleAndMessage">
+                            <h4 class="fs--16px">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</h4>
+                            <p class="mb-0 fs--14px">Good afternoon Would you consider a part exchange for this watch?
+                                I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch,
+                                box and papers, excellent condition. Kind regards Chris Lord-Brown</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="fw-semibold mb-0 fs--14px">chrislordbrown@gmail.com</p>
+                        <p class="fw-semibold mb-0 fs--14px">07770760674</p>
+                    </div>
+                </div>
+                <div class="edit-options flex-shrink-0">
+                  <ul class="d-flex gap-5 justify-content-center">
+                    <li>
+                      <a href="message-view1.html" class="text-center">
+                        <img src="assets/images/icons/eyeWithoutCross.svg" alt="View" width="20" height="20" style="object-fit: contain;">
+                        <p class="fs--12px mb-0 mt-2">View</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-center">
+                        <img src="assets/images/icons/trash.svg" alt="Delete" width="20" height="20" style="object-fit: contain;">
+                        <p class="fs--12px mb-0 mt-2">Delete</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="message-item-mobile">
+                <div class="message-content">
+                    <div class="mb-3 d-flex justify-content-between">
+                        <p class="fw-bold mb-0 fs--10px">#205</p> <p class="mb-0 fs--10px">16-04-2023 12:42 PM</p>
+                    </div>
+                    <h4 class="customer-name fw-semibold mb-2">Eric Jones</h4>
+                    <p class="messageText fs--14px">
+                        Hi, my friend, I'm a Chinese watchmaker The following are the brands I represent: 1. Gucci 2.
+                        Tag Heuer 3. Tissot 4. Hugo's boss 5. Fossils 6. Diesel 7. Michael Kors 8. Emporio Armani 9. BURBERRY
+                        (BURBERRY registered trademark) 10. Maserati 11. Marc Jacobs 12. Tommy Hilfiger 13. Rolex 14. Guess 15.
+                        MOVADO If you are interested, please feel free to contact me WhatsApp: + 8618176937752 E-mail :qiuqiu922035@126.com 
+                        If you disturb, please forgive me!
+                    </p>
+                    <p class="fw-semibold mb-0 fs--14px">chrislordbrown@gmail.com</p>
+                    <p class="fw-semibold mb-0 fs--14px">07770760674</p>
+                </div>
+                <div class="edit-options flex-shrink-0">
+                  <ul class="d-flex gap-5 justify-content-center">
+                    <li>
+                      <a href="message-view2.html" class="text-center">
+                        <img src="assets/images/icons/eyeWithoutCross.svg" alt="View" width="20" height="20" style="object-fit: contain;">
+                        <p class="fs--12px mb-0 mt-2">View</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-center">
+                        <img src="assets/images/icons/trash.svg" alt="Delete" width="20" height="20" style="object-fit: contain;">
+                        <p class="fs--12px mb-0 mt-2">Delete</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="message-item-mobile">
+                  <div class="message-content">
+                      <div class="mb-3 d-flex justify-content-between">
+                          <p class="fw-bold mb-0 fs--10px">#205</p> <p class="mb-0 fs--10px">16-04-2023 12:42 PM</p>
+                      </div>
+                      <div class="mb-3 d-flex overflow-hidden" style="gap:10px">
+                          <div class="message-mobile-preview"><img src="assets/images/products/p2.png" alt="Item 1"></div>
+                          <div class="mobileTitleAndMessage">
+                              <h4 class="fs--16px">Rolex Explorer II 40mm Stainless Steel Oyster 16570 2007</h4>
+                              <p class="mb-0 fs--14px">Good afternoon Would you consider a part exchange for this watch?
+                                  I have a 2020 114300 Rolex Oyster Perpetual 39mm white dial. UK watch,
+                                  box and papers, excellent condition. Kind regards Chris Lord-Brown</p>
+                          </div>
+                      </div>
+                      <div>
+                          <p class="fw-semibold mb-0 fs--14px">chrislordbrown@gmail.com</p>
+                          <p class="fw-semibold mb-0 fs--14px">07770760674</p>
+                      </div>
+                  </div>
+                  <div class="edit-options flex-shrink-0">
+                    <ul class="d-flex gap-5 justify-content-center">
+                      <li>
+                        <a href="message-view1.html" class="text-center">
+                          <img src="assets/images/icons/eyeWithoutCross.svg" alt="View" width="20" height="20" style="object-fit: contain;">
+                          <p class="fs--12px mb-0 mt-2">View</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-center">
+                          <img src="assets/images/icons/trash.svg" alt="Delete" width="20" height="20" style="object-fit: contain;">
+                          <p class="fs--12px mb-0 mt-2">Delete</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="message-item-mobile">
+                  <div class="message-content">
+                      <div class="mb-3 d-flex justify-content-between">
+                          <p class="fw-bold mb-0 fs--10px">#205</p> <p class="mb-0 fs--10px">16-04-2023 12:42 PM</p>
+                      </div>
+                      <h4 class="customer-name fw-semibold mb-2">Eric Jones</h4>
+                      <p class="messageText fs--14px">
+                          Hi, my friend, I'm a Chinese watchmaker The following are the brands I represent: 1. Gucci 2.
+                          Tag Heuer 3. Tissot 4. Hugo's boss 5. Fossils 6. Diesel 7. Michael Kors 8. Emporio Armani 9. BURBERRY
+                          (BURBERRY registered trademark) 10. Maserati 11. Marc Jacobs 12. Tommy Hilfiger 13. Rolex 14. Guess 15.
+                          MOVADO If you are interested, please feel free to contact me WhatsApp: + 8618176937752 E-mail :qiuqiu922035@126.com 
+                          If you disturb, please forgive me!
+                      </p>
+                      <p class="fw-semibold mb-0 fs--14px">chrislordbrown@gmail.com</p>
+                      <p class="fw-semibold mb-0 fs--14px">07770760674</p>
+                  </div>
+                  <div class="edit-options flex-shrink-0">
+                    <ul class="d-flex gap-5 justify-content-center">
+                      <li>
+                        <a href="message-view2.html" class="text-center">
+                          <img src="assets/images/icons/eyeWithoutCross.svg" alt="View" width="20" height="20" style="object-fit: contain;">
+                          <p class="fs--12px mb-0 mt-2">View</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-center">
+                          <img src="assets/images/icons/trash.svg" alt="Delete" width="20" height="20" style="object-fit: contain;">
+                          <p class="fs--12px mb-0 mt-2">Delete</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+          </ul>
+
+          <div class="text-center mt-4 d-xl-none">
+            <a href="" class="fs--14px fw-bold lh-1">Load More (325)</a>
+            <br>
+            <img src="assets/images/icons/caret-down.svg" alt="caret down" class="mw-100" style="transform: translateY(-6px);">
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-between customers-pagination d-none d-lg-flex">
+            <p class="fs--12px" style="align-self: end;">Showing 1 to 10 of 3,254 entries</p>
+            <div class="pagination">
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><span style="transform: translateY(15px)">...</span></li>
+              <li class="page-item"><a class="page-link" href="#">35</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  @@include('../partial-html/_footer.html')
+
+</div>
+<!-- Dashboard Main Wrapper End -->
+
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

@@ -1,0 +1,739 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockbox</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+    
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/semantic.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+<div class="body-left-shape theme-one"></div>
+<div class="body-top-shape theme-one"></div>
+
+<!-- Dashboard Main Wrapper Start -->
+<div class="main-wrapper">
+   <!-- Dashboard Top Header Start -->
+ <header class="dashboard-top-header">
+    <div class="dashboard-top-header__left">
+      <a href="" class="logo">
+        <img src="assets/images/logo-stockbox.svg" alt="stockbox">
+      </a>
+    </div>
+    <div class="sidebar-toggler d-lg-none">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    <div class="dashboard-top-header__right justify-content-end justify-content-lg-between">
+      <div class="dashboard-top-header__right-title text--base fs--20px fw-bold  d-none d-lg-block">Dashboard</div>
+      <div class="profile-and-search">
+        <form action="" class="search-form d-none d-lg-block">
+          <div class="form-group">
+            <input type="text" class="form-control form--control bg-transparent">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+        </form>
+        <div class="dropdown">
+            <div class="profile-thumb-toggler dropdown-toggle" data-bs-toggle="dropdown">
+              <span class="profile-name fw-bold fs--20px d-none d-sm-inline-block">Elliott</span>
+              <img src="assets/images/profile-thumb.png" alt="profile-thumb" class="profile-thumb">
+            </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">My Profile</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+   </header>
+   <!-- Dashboard Top Header End -->
+
+  <div class="main-content-wrapper">
+    <div class="main-content-wrapper__left">
+      <!-- Dashboard Sidebar Start -->
+<div class="dashboard-sidebar-wrapper">
+  <span class="title fs--14px text--base">Welcome</span>
+  <ul class="sidebar-menu">
+    <li><a href="dashboardStockbox.html">Dashboard</a></li>
+    <li><a href="#0">Pages</a></li>
+    <li>
+      <a href="#0">Products</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Product 1</a>
+        </li>
+        <li>
+          <a href="#0">Product 2</a>
+        </li>
+        <li>
+          <a href="#0">Product 3</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="customers.html">Customers</a></li>
+    <li>
+      <a href="#0">Orders</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Product 1</a>
+        </li>
+        <li>
+          <a href="#0">Product 2</a>
+        </li>
+        <li>
+          <a href="#0">Product 3</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="">Marketing</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Marketing 1</a>
+        </li>
+        <li>
+          <a href="#0">Marketing 2</a>
+        </li>
+        <li>
+          <a href="#0">Marketing 3</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="">Messages <span class="badge message-badge">3</span></a></li>
+    <li>
+      <a href="">Settings</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Marketing 1</a>
+        </li>
+        <li>
+          <a href="#0">Marketing 2</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+<!-- Dashboard Sidebar End -->
+    </div>
+
+    <div class="main-content-wrapper__right gap-0">
+      <h4 class="page-title text-center text--base fs--20px mb-5 d-lg-none">Products</h4>
+      <ul class="filter-tabs nav-tabs nav d-flex border-0 d-md-none">
+        <li><a href="#tab1" data-bs-toggle="tab" class="active">Products</a></li>
+        <li><a href="#tab2" data-bs-toggle="tab">Description</a></li>
+        <li><a href="#tab3" data-bs-toggle="tab">Marketing</a></li>
+      </ul>
+
+      <div class="filter-area w-100">
+        <div class="filter-top-area d-flex justify-content-between w-100" style="gap: 10px 40px">
+          <div class="filter-top-left">
+            <ul class="filter-tabs nav-tabs nav d-flex border-0 d-none d-md-flex">
+              <li><a href="#tab1" data-bs-toggle="tab" class="active">Products</a></li>
+              <li><a href="#tab2" data-bs-toggle="tab">Description</a></li>
+              <li><a href="#tab3" data-bs-toggle="tab">Marketing</a></li>
+            </ul>
+          </div>
+          <div class="filter-top-right flex-shrink-0 d-none d-lg-block">
+            <div class="d-flex gap-3" style="transform: translateY(50%);">
+              <a href="#">
+                <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/file.svg" alt="File icon"></a>
+              <a href="#">
+                <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/link.svg" alt="Link icon"></a>
+              <a href="#">
+                <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+            </div>
+          </div>
+        </div>
+        <div class="filter-bottom-area mw-100 d-flex justify-content-between align-items-center">
+          <p class="fs--10px mb-0 text-left text--dark fw-bold">Added on 14th March 2023</p>
+          <div class="d-flex gap-3 d-lg-none">
+            <a href="#">
+              <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/file.svg" alt="File icon"></a>
+            <a href="#">
+              <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/link.svg" alt="Link icon"></a>
+            <a href="#">
+              <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content product-tab-content">
+        <div class="tab-pane show fade active" id="tab1">
+          <div class="product-content-area">
+            <form action="">
+              <div class="row product-content-row gy-sm-4 gy-3">
+                <div class="col-xxl-2 col-xl-6 col-lg-12 col-md-6">
+                  <span class="fw-bold fs--12px" style="margin-top: -25px">SKU/3023</span>
+                  <P class="fw-bold mb-0 d-none d-lg-block">prod_234</P>
+                </div>
+                <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                  <label for="" class="form-label">Product Name</label>
+                  <textarea class="form-control form--control" rows="10">Rolex Daytona 40mm 18ct White Gold Black Oysterflex Strap 116519LN 2023</textarea>
+                </div>
+                <div class="col-xxl-3 col-xl-6 col-lg-6 col-6">
+                  <label for="" class="form-label">Visibility</label>
+                  <select name="" id="" class="form-select form--control fs--14px px-4">
+                    <option value="">In Stock</option>
+                    <option value="">Out of Stock</option>
+                  </select>
+                </div>
+                <div class="col-xxl-3 col-xl-6 col-lg-6 col-6">
+                  <label for="" class="form-label">Sell Status</label>
+                  <select name="" id="" class="form-select form--control fs--14px px-4">
+                    <option value="">Sell as standard</option>
+                    <option value="">Sell as none</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-devider-wrapper d-flex align-items-center">
+                <span class="text text--dark fs--12px">Financials</span>
+                <span class="border"></span>
+              </div>
+
+              <div class="row product-content-row gy-sm-4 gy-3">
+                <div class="col-xxl-3 col-xl-6 col-lg-6 col-6">
+                  <label for="" class="form-label">Price</label>
+                  <div class="input-group">
+                    <span class="input-group-text fw-bold bg-transparent border-0">£</span>
+                    <input type="text" class="form-control form--control" value="5,500">
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-xl-6 col-lg-6 col-6">
+                  <label for="" class="form-label">Sale Price</label>
+                  <div class="input-group">
+                    <span class="input-group-text fw-bold bg-transparent border-0">£</span>
+                    <input type="text" class="form-control form--control" value="5,400">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-devider-wrapper d-flex align-items-center">
+                <span class="text text--dark fs--12px">Images</span>
+                <span class="border"></span>
+              </div>
+
+              <div class="image-upload-area" id="dropBox">
+                <ul class="uploaded-images d-grid" id="gallery">
+                  <li><img src="assets/images/thumbs/u1.png" alt="upload image"></li>
+                  <li><img src="assets/images/thumbs/u2.png" alt="upload image"></li>
+                  <li><img src="assets/images/thumbs/u3.png" alt="upload image"></li>
+                  <li><img src="assets/images/thumbs/u4.png" alt="upload image"></li>
+                  <li><img src="assets/images/thumbs/u5.png" alt="upload image"></li>
+                  <li class="order-last position-relative">
+                    <img src="assets/images/thumbs/u6.png" alt="upload image">
+                    <form class="imgUploader">
+                      <input type="file" id="imgUpload" multiple accept="image/*" onchange="filesManager(this.files)">
+                      <label class="button" for="imgUpload" id="imgUploadArea"></label>
+                    </form>
+                  </li>
+                </ul>
+                <p class="fs--10px mb-0 mt-2 fw-bold">main image</p>
+                <p class="fs--14px text--danger mb-0 mt-1 fw-bold text-center d-none" id="errorShow"></p>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="tab-pane show fade" id="tab2">
+          <div class="product-description-area">
+            <div class="product-item mb-4">
+              <div class="product-item__thumb">
+                <img src="assets/images/thumbs/u1.png" alt="product">
+              </div>
+              <div class="product-item__content">
+                <h6 class="fs--14px fw-normal"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+              </div>
+            </div>
+
+            <div class="row product-content-row gy-sm-4 gy-3">
+              <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-6">
+                <label for="" class="form-label">Product Description</label>
+                <textarea class="form-control form--control"
+                  rows="10">This 2018 Rolex Yacht-Master 40mm features a chocolate round index dial, a diamond set stainless steel and 18ct everose oyster bracelet and an 18ct everose bidirectional rotatable bezel.The Rolex Yacht-Master and Yacht-Master II models embody the spirit of the...</textarea>
+              </div>
+              <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6">
+                <label for="" class="form-label">Brand</label>
+                <select name="" id="" class="form-select form--control fs--14px px-4">
+                  <option value="">Rolex</option>
+                  <option value="">Rado</option>
+                  <option value="">Casio</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="" class="form-label">Categories</label>
+                <ul class="multiselect">
+                  <li class="multi-title fw-bold">Watches</li>
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Rolex</span>
+                      <input type="checkbox">
+                    </label>
+                  </li>
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Rado</span>
+                      <input type="checkbox">
+                    </label>
+                  </li>
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Casio</span>
+                      <input type="checkbox">
+                    </label>
+                  </li>
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Audemars Piguet</span>
+                      <input type="checkbox">
+                    </label>
+                  </li>
+
+                  <li class="multi-title fw-bold">Another Category</li>
+
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Audemars Piguet</span>
+                      <input type="checkbox">
+                    </label>
+                  </li>
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Breitling</span>
+                      <input type="checkbox">
+                    </label>
+                  </li>
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Bulgari</span>
+                      <input type="checkbox">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <label for="" class="form-label">Location</label>
+                <ul class="multiselect">
+                  <li class="multi-title fw-bold">London</li>
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Desk Front</span>
+                      <input type="checkbox">
+
+                    </label>
+                  </li>
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Safe 2</span>
+                      <input type="checkbox">
+
+                    </label>
+                  </li>
+                  <li class="multi-select-item">
+                    <label>
+                      <span>Warehouse 3</span>
+                      <input type="checkbox">
+
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xl-4 col-lg-4 col-md-6">
+                <label for="" class="form-label">Attribute Set</label>
+                <select name="skills" class="select2-auto-tokenize form-control form--control attribute-control">
+                  <option value=""></option>
+                  <option value="1">Topic 1</option>
+                  <option value="2">aopic 2</option>
+                  <option value="3">sopic 3</option>
+                  <option value="4">gopic 4</option>
+                  <option value="5">Tropic 5</option>
+                  <option value="6">Topic 6</option>
+                  <option value="7">qopic 7</option>
+                  <option value="8">qopic 8</option>
+                  <option value="9">uopic 9</option>
+                  <option value="10">Topic 10</option>
+                  <option value="11">Topic 11</option>
+                </select>
+                <div class="form-group d-none">
+                  <label for="" class="form-label">Attribute Set</label>
+                  <input type="text" class="form-control form--control">
+                </div>
+              </div>
+              <div class="col-5"></div>
+
+
+              <div class="col-xxl-5 col-lg-6 col-md-6 pe-md-5">
+                <div class="row" style="--bs-gutter-y: 35px">
+                  <div class="col-12">
+                    <div class="form-group form-sideways d-flex align-items-center">
+                      <label for="" class="form-label-two">Template</label>
+                      <input type="text" class="form-control form--control px-3" value="23245 Yacht">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group form-sideways d-flex align-items-center">
+                      <label for="" class="form-label-two">Model</label>
+                      <input type="text" class="form-control form--control px-3" value="Submariner">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group form-sideways d-flex align-items-center">
+                      <label for="" class="form-label-two">Original Paperwork</label>
+                      <select name="" id="" class="form-select form--control px-3">
+                        <option value="">Yes</option>
+                        <option value="">No</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group form-sideways d-flex align-items-center">
+                      <label for="" class="form-label-two">Lifetime Limited Warranty</label>
+                      <select name="" id="" class="form-select form--control px-3">
+                        <option value="">Yes</option>
+                        <option value="">No</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-5 col-lg-6 col-md-6 ps-md-5">
+                <div class="row" style="--bs-gutter-y: 35px">
+                  <div class="col-12">
+                    <div class="form-group form-sideways d-flex align-items-center">
+                      <label for="" class="form-label-two">Gender</label>
+                      <select name="" id="" class="form-select form--control px-3">
+                        <option value="">Femate</option>
+                        <option value="">Male</option>
+                        <option value="">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group form-sideways d-flex align-items-center">
+                      <label for="" class="form-label-two">Movement</label>
+                      <select name="" id="" class="form-select form--control px-3">
+                        <option value="">Automatic</option>
+                        <option value="">Manual</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group form-sideways d-flex align-items-center">
+                      <label for="" class="form-label-two">Model No.</label>
+                      <input type="text" class="form-control form--control px-3" value="5513">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group form-sideways d-flex align-items-center">
+                      <label for="" class="form-label-two">Box</label>
+                      <select name="" id="" class="form-select form--control px-3">
+                        <option value="">Authentic Box</option>
+                        <option value="">Authentic Box</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane show fade" id="tab3">
+          <div class="product-marketing-area">
+            <div class="product-item mb-4">
+              <div class="product-item__thumb">
+                <img src="assets/images/thumbs/u1.png" alt="product">
+              </div>
+              <div class="product-item__content">
+                <h6 class="fs--14px fw-normal"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+              </div>
+            </div>
+
+            <div class="row product-content-row gy-sm-4 gy-2">
+
+              <div class="col-md-6 col-xxl-5">
+                <label for="" class="form-label">Upsell Products</label>
+                <input type="text" class="form-control form--control px-3" value="find....">
+              </div>
+              <div class="col-md-6 col-xxl-5">
+                <div class="product-item mw-100">
+                  <div class="product-item__thumb">
+                    <img src="assets/images/thumbs/u1.png" alt="product">
+                  </div>
+                  <div class="product-item__content">
+                    <h6 class="fs--14px fw-normal"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+                    <p class="mb-0 fs--14px fw-bold">£11,195</p>
+                  </div>
+                  <img src="assets/images/icons/close.svg" alt="close" class="item-close">
+                </div>
+                <div class="product-item mw-100">
+                  <div class="product-item__thumb">
+                    <img src="assets/images/thumbs/u1.png" alt="product">
+                  </div>
+                  <div class="product-item__content">
+                    <h6 class="fs--14px fw-normal"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+                    <p class="mb-0 fs--14px fw-bold">£11,195</p>
+                  </div>
+                  <img src="assets/images/icons/close.svg" alt="close" class="item-close">
+                </div>
+                <div class="product-item mw-100 mb-4">
+                  <div class="product-item__thumb">
+                    <img src="assets/images/thumbs/u1.png" alt="product">
+                  </div>
+                  <div class="product-item__content">
+                    <h6 class="fs--14px fw-normal"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+                    <p class="mb-0 fs--14px fw-bold">£11,195</p>
+                  </div>
+                  <img src="assets/images/icons/close.svg" alt="close" class="item-close">
+                </div>
+              </div>
+
+              <div class="form-devider-wrapper d-flex align-items-center my-2">
+                <span class="text text--dark fs--12px">SEO</span>
+                <span class="border"></span>
+              </div>
+
+              <div class="col-md-6 col-xxl-5">
+                <div class="form-group">
+                  <label for="" class="form-label">SEO Title</label>
+                  <input type="text" class="form-control form--control px-3">
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xxl-5">
+                <div class="form-group">
+                  <label for="" class="form-label">SEO Keywords</label>
+                  <input type="text" class="form-control form--control tag-pick2">
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xxl-5">
+                <div class="form-group">
+                  <label for="" class="form-label">SEO Description</label>
+                  <textarea rows="5" class="form-control form--control px-3 ">This 2018 Rolex Yacht-Master 40mm features a chocolate round index dial, a diamond</textarea>
+                </div>
+              </div>
+
+              <div class="form-devider-wrapper d-flex align-items-center gap-4 mt-4 pt-2 mb-1 mb-md-3">
+                <span class="text text--dark fs--12px flex-shrink-0">Google Shopping</span>
+                <span class="border"></span>
+              </div>
+
+              <div class="col-md-6 col-xxl-4 col-lg-4">
+                <div class="form-group">
+                  <label for="" class="form-label">Google Shopping Category</label>
+                  <select name="" id="" class="form-select form--control fs--14px px-3">
+                    <option value="">Watches</option>
+                    <option value="">Watches</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xxl-4 col-lg-4">
+                <div class="form-group">
+                  <label for="" class="form-label">Google Shopping Condition</label>
+                  <select name="" id="" class="form-select form--control fs--14px px-3">
+                    <option value="">Watches</option>
+                    <option value="">Watches</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xxl-4 col-lg-4">
+                <div class="form-group">
+                  <label for="" class="form-label">GTIN Number</label>
+                  <input type="text" class="form-control form--control px-3" value="65834839923134">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="dashboard-footer d-flex flex-wrap justify-content-between gap-4">
+  <div class="dashboard-footer__left">
+    <p class="mb-0 fs--12px">System Version 1.0.5. Powered by <span class="fw-bold d-none d-sm-inline-block">Stockbox</span> <img class="ms-2 d-sm-none" src="assets/images/logo-stockbox.svg" alt="stockbox" style="max-width: 60px;"></p>
+    <a class="fs--12px" href="">www.stockbox.tech</a>
+  </div>
+  <div class="dashboard-footer__right">
+    <ul class="footer-links fs--12px d-flex flex-wrap" style="gap: 10px 40px">
+      <li><a href="" class="text-decoration-underline">Report a bug</a></li>
+      <li><a href="" class="text-decoration-underline">Request a feature</a></li>
+      <li><a href="" class="text-decoration-underline">Knowledge Base</a></li>
+      <li><a href="" class="text-decoration-underline">Raise a Support Ticket</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Modal Start -->
+
+
+</div>
+<!-- Dashboard Main Wrapper End -->
+
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+<script src="assets/js/lib/semantic.min.js"></script>
+
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+
+<script>
+  let dropBox = document.getElementById('dropBox');
+
+  // modify all of the event types needed for the script so that the browser
+  // doesn't open the image in the browser tab (default behavior)
+  ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(evt => {
+    dropBox.addEventListener(evt, prevDefault, false);
+  });
+  function prevDefault(e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+
+  // remove and add the hover class, depending on whether something is being
+  // actively dragged over the box area
+  ['dragenter', 'dragover'].forEach(evt => {
+    dropBox.addEventListener(evt, hover, false);
+  });
+  ['dragleave', 'drop'].forEach(evt => {
+    dropBox.addEventListener(evt, unhover, false);
+  });
+  function hover(e) {
+    dropBox.classList.add('hover');
+  }
+  function unhover(e) {
+    dropBox.classList.remove('hover');
+  }
+
+  // the DataTransfer object holds the data being dragged. it's accessible
+  // from the dataTransfer property of drag events. the files property has
+  // a list of all the files being dragged. put it into the filesManager function
+  dropBox.addEventListener('drop', mngDrop, false);
+  function mngDrop(e) {
+    let dataTrans = e.dataTransfer;
+    let files = dataTrans.files;
+    filesManager(files);
+  }
+
+  // use FormData browser API to create a set of key/value pairs representing
+  // form fields and their values, to send using XMLHttpRequest.send() method.
+  // Uses the same format a form would use with multipart/form-data encoding
+  function upFile(file) {
+    //only allow images to be dropped
+    let imageType = /image.*/;
+    if (file.type.match(imageType)) {
+      let url = 'HTTP/HTTPS URL TO SEND THE DATA TO';
+      // create a FormData object
+      let formData = new FormData();
+      // add a new value to an existing key inside a FormData object or add the
+      // key if it doesn't exist. the filesManager function will loop through
+      // each file and send it here to be added
+      formData.append('file', file);
+
+      // standard file upload fetch setup
+      fetch(url, {
+        method: 'put',
+        body: formData
+      })
+        .then(response => response.json())
+        .then(result => { console.log('Success:', result); })
+        .catch(error => { console.error('Error:', error); });
+    } else {
+      console.error("Only images are allowed!", file);
+    }
+  }
+
+
+  // use the FileReader API to get the image data, create an img element, and add
+  // it to the gallery div. The API is asynchronous so onloadend is used to get the
+  // result of the API function
+  function previewFile(file) {
+    // only allow images to be dropped
+    let imageType = /image.*/;
+    if (file.type.match(imageType)) {
+      let fReader = new FileReader();
+      let gallery = document.getElementById('gallery');
+      // reads the contents of the specified Blob. the result attribute of this
+      // with hold a data: URL representing the file's data
+      fReader.readAsDataURL(file);
+      // handler for the loadend event, triggered when the reading operation is
+      // completed (whether success or failure)
+      fReader.onloadend = function () {
+        let wrap = document.createElement('li');
+        let img = document.createElement('img');
+
+        var galleryLen = $('#gallery li').length
+        console.log(galleryLen);
+        if (galleryLen < 15) {
+
+        } else if (galleryLen >= 15) {
+          $('#errorShow').removeClass('d-none')
+          $('#errorShow').text("Max 15 images are allowed!")
+          return false
+        }
+        $('#errorShow').addClass('d-none')
+
+        // set the img src attribute to the file's contents (from read operation)
+        img.src = fReader.result;
+        // let imgCapt = document.createElement('p');
+        // the name prop of the file contains the file name, and the size prop
+        // the file size. convert bytes to KB for the file size
+        let fSize = (file.size / 1000) + ' KB';
+        // imgCapt.innerHTML = `<span class="fName">${file.name}</span><span class="fSize">${fSize}</span><span class="fType">${file.type}</span>`;
+        gallery.appendChild(wrap).appendChild(img);
+        // gallery.appendChild(wrap).appendChild(imgCapt);
+      }
+    } else {
+      $('#errorShow').text("Only images are allowed!")
+    }
+  }
+
+  function filesManager(files) {
+    // spread the files array from the DataTransfer.files property into a new
+    // files array here
+    files = [...files];
+    // send each element in the array to both the upFile and previewFile
+    // functions
+    files.forEach(upFile);
+    files.forEach(previewFile);
+  }
+</script>
+
+</body>
+
+</html>

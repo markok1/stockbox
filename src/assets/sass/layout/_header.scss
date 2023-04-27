@@ -1,0 +1,158 @@
+.logo {
+  img {
+    max-width: 160px;
+    @include breakpoint(max-sm) {
+      max-width: 90px;
+    }
+  }
+  &.logo-waches {
+    img {
+      max-width: 256px;
+      @include breakpoint(max-sm) {
+        max-width: 90px;
+      }
+    }
+  }
+  &.logo-rolex {
+    img {
+      width: 150px;
+      @include breakpoint(max-sm) {
+        width: 95px;
+      }
+    }
+  }
+}
+
+// Dashboard Header Start
+.dashboard-top-header {
+  width: 100%;
+  @extend %flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  @include breakpoint(max-md) {
+    margin-bottom: 30px;
+  }
+  &__left {
+    max-width: 230px;
+    width: 100%;
+    @include breakpoint(max-md) {
+      max-width: max-content;
+    }
+  }
+  &__right {
+    @include breakpoint(lg) {
+      width: calc(100% - 230px);
+      padding-left: 63px;
+    }
+
+    @extend %flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile-and-search {
+    display: flex;
+    gap: 70px;
+  }
+}
+
+.profile-thumb-toggler {
+  cursor: pointer;
+  padding-left: 20px;
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 48%;
+    transform: translateY(-50%);
+    border-width: 0.35rem;
+  }
+  .profile-thumb {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 7px solid hsl(var(--light));
+    margin-left: 18px;
+    @include breakpoint(max-sm) {
+      width: 48px;
+      height: 48px;
+      margin-left: 6px;
+      border-width: 4px;
+    }
+  }
+}
+
+.sidebar-toggler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  .line {
+    width: 45px;
+    height: 4px;
+    background-color: rgb(69, 69, 69);
+    transition: all 0.3s ease 0s;
+    border-radius: 7px;
+    &:nth-child(2) {
+      width: 40px;
+      transform-origin: right;
+    }
+  }
+  &.active {
+    .line {
+      &:nth-child(1) {
+        transform: translate(-7px, 10px) rotate(40deg);
+      }
+      &:nth-child(3) {
+        transform: translate(-8px, -8px) rotate(-40deg);
+      }
+      &:nth-child(2) {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+// Dashboard Header End
+
+// Search Form Start
+.profile-and-search {
+  display: flex;
+  align-items: center;
+}
+.search-form {
+  max-width: 580px;
+  width: 100%;
+  transition: .3s;
+
+  @include min(1200px) {
+    width: 400px;
+  }
+  @include min(1400px) {
+    width: 500px;
+  }
+  @include min(1600px) {
+    width: 580px;
+  }
+  .form-group {
+    position: relative;
+    .form--control {
+      height: 60px;
+      // border-color: hsl(var(--light-77));
+    }
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      bottom: 0;
+      width: 20px;
+      height: 20px;
+      z-index: 11;
+      @include breakpoint(max-sm) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+// Search Form End

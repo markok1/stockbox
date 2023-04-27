@@ -1,0 +1,107 @@
+// Side Menu Start
+.dashboard-sidebar-wrapper {
+  border: 1px solid hsl(var(--theme-one));
+  padding-top: 24px;
+  border-radius: 6px;
+  width: 100%;
+  background-color: hsl(var(--white));
+  @include breakpoint(max-lg) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100dvh;
+    max-width: 254px;
+    transition: all 0.3s;
+    transform: translateX(-100%);
+    &.active {
+      z-index: 11;
+      left: 0;
+      border-radius: 0 6px 6px 0;
+      transform: translateX(0);
+    }
+  }
+  .title {
+    padding: 0 34px;
+  }
+}
+.sidebar-menu {
+  li {
+    &:not(:last-child) {
+      border-bottom: 1px solid hsl(var(--theme-one) / 0.1);
+    }
+    &.has-submenu {
+      > a {
+        &::after {
+          position: absolute;
+          content: "";
+          width: 11px;
+          height: 11px;
+          top: 26px;
+          left: 75%;
+          background-color: hsl(var(--light-88));
+          clip-path: polygon(70% 50%, 0 100%, 0 0);
+          transition: 0.3s;
+        }
+      }
+    }
+    a {
+      padding: 15px 34px;
+      font-size: 20px;
+      display: block;
+      position: relative;
+      .message-badge {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 13px;
+        aspect-ratio: 1;
+        background-color: hsl(var(--theme-one));
+        clip-path: polygon(30% 50%, 100% 100%, 100% 0);
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+      }
+      &.active {
+        color: hsl(var(--theme-one));
+        font-weight: bold;
+        &::before {
+          opacity: 1;
+        }
+      }
+      &:hover {
+        box-shadow: 0 4px 10px 1px hsl(var(--black) / 0.08);
+      }
+    }
+  }
+}
+.message-badge {
+  color: hsl(var(--success));
+  background-color: #b7ffd4;
+  border-radius: 50%;
+  padding: 0px;
+  line-height: 1;
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-submenu {
+  padding-left: 8px;
+  padding-bottom: 15px;
+  display: none;
+  li {
+    border: 0 !important;
+    a {
+      font-size: 16px;
+      padding: 10px 34px;
+    }
+  }
+}
+// Side Menu End

@@ -1,0 +1,243 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockbox</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+    
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/semantic.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+<div class="body-left-shape theme-one"></div>
+<div class="body-top-shape theme-one"></div>
+
+<!-- Dashboard Main Wrapper Start -->
+<div class="main-wrapper">
+   <!-- Dashboard Top Header Start -->
+ <header class="dashboard-top-header">
+    <div class="dashboard-top-header__left">
+      <a href="" class="logo">
+        <img src="assets/images/logo-stockbox.svg" alt="stockbox">
+      </a>
+    </div>
+    <div class="sidebar-toggler d-lg-none">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    <div class="dashboard-top-header__right justify-content-end justify-content-lg-between">
+      <div class="dashboard-top-header__right-title text--base fs--20px fw-bold  d-none d-lg-block">Dashboard</div>
+      <div class="profile-and-search">
+        <form action="" class="search-form d-none d-lg-block">
+          <div class="form-group">
+            <input type="text" class="form-control form--control bg-transparent">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+        </form>
+        <div class="dropdown">
+            <div class="profile-thumb-toggler dropdown-toggle" data-bs-toggle="dropdown">
+              <span class="profile-name fw-bold fs--20px d-none d-sm-inline-block">Elliott</span>
+              <img src="assets/images/profile-thumb.png" alt="profile-thumb" class="profile-thumb">
+            </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">My Profile</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+   </header>
+   <!-- Dashboard Top Header End -->
+
+  <div class="main-content-wrapper">
+    <div class="main-content-wrapper__left">
+      <!-- Dashboard Sidebar Start -->
+<div class="dashboard-sidebar-wrapper">
+  <span class="title fs--14px text--base">Welcome</span>
+  <ul class="sidebar-menu">
+    <li><a href="dashboardStockbox.html">Dashboard</a></li>
+    <li><a href="#0">Pages</a></li>
+    <li>
+      <a href="#0">Products</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Product 1</a>
+        </li>
+        <li>
+          <a href="#0">Product 2</a>
+        </li>
+        <li>
+          <a href="#0">Product 3</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="customers.html">Customers</a></li>
+    <li>
+      <a href="#0">Orders</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Product 1</a>
+        </li>
+        <li>
+          <a href="#0">Product 2</a>
+        </li>
+        <li>
+          <a href="#0">Product 3</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="">Marketing</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Marketing 1</a>
+        </li>
+        <li>
+          <a href="#0">Marketing 2</a>
+        </li>
+        <li>
+          <a href="#0">Marketing 3</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="">Messages <span class="badge message-badge">3</span></a></li>
+    <li>
+      <a href="">Settings</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Marketing 1</a>
+        </li>
+        <li>
+          <a href="#0">Marketing 2</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+<!-- Dashboard Sidebar End -->
+    </div>
+
+    <div class="main-content-wrapper__right gap-0">
+      <h4 class="page-title text-center text--base fs--20px mb-5 d-lg-none">Modals</h4>
+
+      <div class="d-flex flex-wrap gap-4">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalOne">Modal One</button>
+        <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#modalTwo">Modal Two</button>
+        <button class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#modalThree">Modal Three</button>
+      </div>
+
+      <!-- change the "modal-success" as per need to change the modal state -->
+      <div class="modal-success modal alert-modal fade" id="modalOne" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0">
+            <div class="modal-body p-0">
+              <div class="modal-content-wrapper text-center">
+                <span class="badge fs--16px">Success</span>
+                <p class="modal-text fs--14px">Lorem ipsum dolor set amet etc etc etc. Lorem ipsum dolor set amet etc etc etc </p>
+                <div class="d-flex flex-wrap gap-1 justify-content-center">
+                  <a data-bs-dismiss="modal" class="px-2 btn btn-outline-white">Go Back</a>
+                  <a data-bs-dismiss="modal" class="px-2 btn cmn-btn">Okay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
+
+      <!-- change the "modal-success" as per need to change the modal state -->
+      <div class="modal-error modal alert-modal fade" id="modalTwo" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0">
+            <div class="modal-body p-0">
+              <div class="modal-content-wrapper text-center">
+                <span class="badge fs--16px">Error</span>
+                <p class="modal-text fs--14px">Lorem ipsum dolor set amet etc etc etc. Lorem ipsum dolor set amet etc etc etc </p>
+                <div class="d-flex flex-wrap gap-1 justify-content-center">
+                  <a data-bs-dismiss="modal" class="px-2 btn btn-outline-white">Go Back</a>
+                  <a data-bs-dismiss="modal" class="px-2 btn cmn-btn">Okay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
+
+      <!-- change the "modal-success" as per need to change the modal state -->
+      <div class="modal-warning modal alert-modal fade" id="modalThree" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0">
+            <div class="modal-body p-0">
+              <div class="modal-content-wrapper text-center">
+                <span class="badge fs--16px">Warning</span>
+                <p class="modal-text fs--14px">Lorem ipsum dolor set amet etc etc etc. Lorem ipsum dolor set amet etc etc etc </p>
+                <div class="d-flex flex-wrap gap-1 justify-content-center">
+                  <a data-bs-dismiss="modal" class="px-2 btn btn-outline-white">Go Back</a>
+                  <a data-bs-dismiss="modal" class="px-2 btn cmn-btn">Okay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
+
+    </div>
+  </div>
+
+
+  <div class="dashboard-footer d-flex flex-wrap justify-content-between gap-4">
+  <div class="dashboard-footer__left">
+    <p class="mb-0 fs--12px">System Version 1.0.5. Powered by <span class="fw-bold d-none d-sm-inline-block">Stockbox</span> <img class="ms-2 d-sm-none" src="assets/images/logo-stockbox.svg" alt="stockbox" style="max-width: 60px;"></p>
+    <a class="fs--12px" href="">www.stockbox.tech</a>
+  </div>
+  <div class="dashboard-footer__right">
+    <ul class="footer-links fs--12px d-flex flex-wrap" style="gap: 10px 40px">
+      <li><a href="" class="text-decoration-underline">Report a bug</a></li>
+      <li><a href="" class="text-decoration-underline">Request a feature</a></li>
+      <li><a href="" class="text-decoration-underline">Knowledge Base</a></li>
+      <li><a href="" class="text-decoration-underline">Raise a Support Ticket</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Modal Start -->
+
+
+</div>
+<!-- Dashboard Main Wrapper End -->
+
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+<script src="assets/js/lib/semantic.min.js"></script>
+
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

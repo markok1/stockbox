@@ -1,0 +1,188 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+
+<div class="body-left-shape theme-one"></div>
+<div class="body-top-shape theme-one"></div>
+
+<!-- Dashboard Main Wrapper Start -->
+<div class="main-wrapper">
+  @@include('../partial-html/_header.html')
+
+  <div class="main-content-wrapper">
+    <div class="main-content-wrapper__left">
+      @@include('../partial-html/_dash-sidebar.html')
+    </div>
+
+    <div class="main-content-wrapper__right gap-0">
+      <h4 class="page-title text-center text--base fs--20px mb-5 d-lg-none">Pages</h4>
+
+      <div class="filter-area w-100">
+        <div class="filter-top-area d-flex justify-content-between w-100" style="gap: 10px 40px;">
+          <div class="filter-top-left customer-filter">
+            <div class="form-devider-wrapper mb-4 d-flex align-items-center d-none d-lg-flex">
+              <span class="text text--dark fs--12px">Page info</span>
+              <span class="border"></span>
+            </div>
+            <div class="d-flex justify-content-between mb-4 pb-2 d-lg-none">
+              <a href=""><img src="assets/images/icons/caret-left.svg" alt="got back"></a>
+              <div class="d-flex gap-3">
+                <button type="submit" name="customer-edit-form" class="border-0 bg-transparent p-0">
+                  <img src="assets/images/icons/save.svg" width="24" height="24" alt="save changes">
+                </button>
+                <a href="#"><img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/link.svg" alt="Copy Link"></a>
+                <a href="#"><img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+              </div>
+            </div>
+          </div>
+          <div class="filter-top-right flex-shrink-0 d-none d-lg-block">
+            <div class="d-flex gap-3" style="transform: translateY(50%);">
+              <button type="submit" name="customer-edit-form" class="border-0 bg-transparent p-0">
+                <img src="assets/images/icons/save.svg" width="24" height="24" alt="save changes">
+              </button>
+              <a href="#"><img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/link.svg" alt="Copy Link"></a>
+              <a href="#"><img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pages-edit-wrapper">
+        <form action="" id="customer-edit-form">
+
+          <div style="max-width: 1015px">
+            <div class="row pages-edit-row justify-content-between">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="" class="form-label">Title</label>
+                  <input type="text" class="form-control form--control" value="Special Offer for Readers">
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label for="" class="form-label">Page Slug</label>
+                  <div class="input-group position-relative slug-input-group">
+                    <span class="input-group-text slug-input-group-text bg-transparent border-0">/</span>
+                    <input type="text" class="form-control form--control rounded-2" value="special-offer-for-readers">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label for="" class="form-label">Status</label>
+                  <select name="" id="" class="form-select form--control">
+                    <option value="">Publish <span class="dot bg--success"></span></option>
+                    <option value="">Unpublish <span class="dot bg--success"></span></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mb-lg-0"></div>
+
+          <div class="form-devider-wrapper mb-4 d-flex align-items-center d-none d-lg-flex">
+            <span class="text text--dark fs--12px">Content</span>
+            <span class="border"></span>
+          </div>
+
+          <div class="row customer-edit-row gy-4">
+            <div class="col-12">
+              <label for="" class="form-label">Page Editor</label>
+              <div class="notepad-wrapper">
+                <div class="notepad-header">
+                  <ul class="header-optons d-flex flex-wrap" style="gap: 0px 18px">
+                    <li><a href="#0" class="text--secondary fs--13px">File</a></li>
+                    <li><a href="#0" class="text--secondary fs--13px">Edit</a></li>
+                    <li><a href="#0" class="text--secondary fs--13px">View</a></li>
+                    <li><a href="#0" class="text--secondary fs--13px">Insert</a></li>
+                    <li><a href="#0" class="text--secondary fs--13px">Format</a></li>
+                    <li><a href="#0" class="text--secondary fs--13px">Tools</a></li>
+                    <li><a href="#0" class="text--secondary fs--13px">Table</a></li>
+                    <li><a href="#0" class="text--secondary fs--13px">Help</a></li>
+                  </ul>
+                </div>
+                <div class="notepad-body">
+                  <textarea class="notepad-textarea form-control form--control rounded-0"></textarea>
+                </div>
+                <div class="notepad-footer">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mb-lg-0"></div>
+
+          <div class="form-devider-wrapper mb-4 d-flex align-items-center d-none d-lg-flex">
+            <span class="text text--dark fs--12px">Page SEO</span>
+            <span class="border"></span>
+          </div>
+
+          <div style="max-width: 1015px">
+            <div class="row customer-edit-row gy-4 pt-3 pt-lg-0">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="" class="form-label">SEO Title</label>
+                  <input type="text" class="form-control form--control fw-semibold" placeholder="Special Offer for Readers">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="" class="form-label">SEO Keywords</label>
+                  <textarea type="text" class="form-control form--control" style="height: 120px" placeholder="special-offer-for-readers"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group seo-keyword-choice">
+                  <label for="" class="form-label">SEO keywords</label>
+                  <select type="text" class="form-control form--control select2-multi-select" multiple style="height: 120px" placeholder="type more...">
+                    <option value="">Seo 1</option>
+                    <option value="">Seo 2</option>
+                    <option value="">Seo 3</option>
+                    <option value="">Seo 4</option>
+                    <option value="">Seo 1</option>
+                    <option value="">Seo 2</option>
+                    <option value="">Seo 3</option>
+                    <option value="">Seo 4</option>
+                    <option value="">Seo 1</option>
+                    <option value="">Seo 2</option>
+                    <option value="">Seo 3</option>
+                    <option value="">Seo 4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+  @@include('../partial-html/_footer.html')
+
+</div>
+<!-- Dashboard Main Wrapper End -->
+
+@@include('../partial-html/_template-bottom.html')
+
+<script>
+
+  $('#imgUpload').on('change', function () {
+    if (this.files[0]) {
+      var picture = new FileReader();
+      picture.readAsDataURL(this.files[0]);
+      picture.addEventListener('load', function (event) {
+        $('#uploadedImage').attr('src', event.target.result);
+        $('#uploadedImage').style.display = 'block';
+      });
+    }
+    $('#uploadedImage').parent().removeClass('d-none')
+  });
+</script>
+
+</body>
+
+</html>

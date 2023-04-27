@@ -1,0 +1,370 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+
+<div class="body-left-shape theme-one"></div>
+<div class="body-top-shape theme-one"></div>
+
+<!-- Dashboard Main Wrapper Start -->
+<div class="main-wrapper">
+  @@include('../partial-html/_header.html')
+
+  <div class="main-content-wrapper">
+    <div class="main-content-wrapper__left">
+      @@include('../partial-html/_dash-sidebar.html')
+    </div>
+
+    <div class="main-content-wrapper__right gap-0">
+      <h4 class="page-title text-center text--base fs--20px mb-5 d-lg-none">Products</h4>
+
+      <ul class="filter-tabs nav-tabs nav d-flex border-0 d-lg-none">
+        <li><a href="#tab1" data-bs-toggle="tab" class="active">Products</a></li>
+        <li><a href="#tab2" data-bs-toggle="tab">Brands</a></li>
+        <li><a href="#tab3" data-bs-toggle="tab">Description</a></li>
+        <li><a href="#tab3" data-bs-toggle="tab">Marketing</a></li>
+      </ul>
+
+      <div class="filter-area w-100">
+        <div class="filter-top-area d-flex justify-content-between w-100" style="gap: 10px 40px">
+          <div class="filter-top-left"></div>
+          <div class="filter-top-right flex-shrink-0 d-none d-lg-block">
+            <a href="" class="add-new-btn btn cmn-btn bg--dark fs--12px text-white px-4">New Product</a>
+          </div>
+        </div>
+        <div class="filter-bottom-area">
+          <div class="d-flex justify-content-between align-items-center d-lg-none mb-4 gap-2">
+            <!-- <a href="#0" class="filter-btn fs--10px d-flex gap-2 align-items-center"><img src="assets/images/icons/filter.svg" alt="filter" width="24" height="24" class="mw-100"> Filters</a> -->
+            <form action="" class="search-form d-lg-none">
+              <div class="form-group">
+                <input type="text" class="form-control form--control bg-transparent" style="height: 45px;">
+                <img src="assets/images/icons/search.svg" alt="search icon" class="search-icon">
+              </div>
+            </form>
+            <a href="" class="add-new-btn btn cmn-btn bg--dark fs--12px text-white d-flex flex-shrink-0 gap-2 align-items-center"><img src="assets/images/icons/add.svg" alt="filter" width="18" height="18" class="mw-100"> New Product</a>
+          </div>
+          <div class="filter-row d-none">
+            <div class="row gy-3 align-items-center " style="--bs-gutter-x: 28px">
+              <div class="col-sm-6 col-md-3">
+                <p class="mb-0 text--base fs--14px text-md-end">Showing</p>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <select name="" id="" class="form-select form--control">
+                  <option value="">All Brands</option>
+                  <option value="">Rolex</option>
+                  <option value="">Rado</option>
+                </select>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <select name="" id="" class="form-select form--control">
+                  <option value="">All Categories</option>
+                  <option value="">Rolex</option>
+                  <option value="">Rado</option>
+                </select>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <select name="" id="" class="form-select form--control">
+                  <option value="">In Stock</option>
+                  <option value="">Rolex</option>
+                  <option value="">Rado</option>
+                </select>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <table class="products-table custom-table d-none d-xl-table">
+        <thead>
+          <tr>
+            <th>SKU</th>
+            <th>Product</th>
+            <th>Brand</th>
+            <th>Price / Sale</th>
+            <th>Location</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <p class="mb-1">prod_235</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>
+                  Rolex Daytona 40mm 18ct White Gold Black <br>
+                  Oysterflex Strap 116519LN 2023
+                </p>
+
+                <img src="assets/images/products/p1.png" alt="Product Image" class="table-product-image">
+              </div>
+            </td>
+            <td>
+              <p>Rolex</p>
+            </td>
+            <td>
+              <div>
+                <p class="text-decoration-line-through text--secondary mb-0">£9,520.00</p>
+                <p>£9,120.00</p>
+              </div>
+            </td>
+            <td>
+              <p>Shop Front</p>
+            </td>
+            <td>
+              <div class="action-items-wrapper">
+                <p class="fs--12px">added 4 hours ago</p>
+
+                <p class="badge badge--active">In Stock</p>
+                <div class="d-flex gap-3">
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/pen2.svg" alt="Edit icon"></a>
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/link.svg" alt="Link icon"></a>
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p class="mb-1">prod_235</p>
+                <img class="productCloud" src="assets/images/icons/download.svg" alt="cloud">
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>
+                  Rolex Daytona 40mm 18ct White Gold Black <br>
+                  Oysterflex Strap 116519LN 2023
+                </p>
+
+                <img src="assets/images/products/p1.png" alt="Product Image" class="table-product-image">
+              </div>
+            </td>
+            <td>
+              <p>Rolex</p>
+            </td>
+            <td>
+              <p>£9,120.00</p>
+            </td>
+            <td>
+              <p>Shop Front</p>
+            </td>
+            <td>
+              <div class="action-items-wrapper">
+                <p>added 2 days ago</p>
+                <p class="badge badge--hold">Out of Stock</p>
+                <div class="d-flex gap-3">
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/pen2.svg" alt="Edit icon"></a>
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/link.svg" alt="Link icon"></a>
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p class="mb-1">prod_235</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>
+                  Rolex Daytona 40mm 18ct White Gold Black <br>
+                  Oysterflex Strap 116519LN 2023
+                </p>
+
+                <img src="assets/images/products/p1.png" alt="Product Image" class="table-product-image">
+              </div>
+            </td>
+            <td>
+              <p>Rolex</p>
+            </td>
+            <td>
+              <div>
+                <p class="text-decoration-line-through text--secondary mb-0">£9,520.00</p>
+                <p>£9,120.00</p>
+              </div>
+            </td>
+            <td>
+              <p>Shop Front</p>
+            </td>
+            <td>
+              <div class="action-items-wrapper">
+                <p class="fs--12px">added 4 hours ago</p>
+                <p class="badge badge--secondary">Unlisted</p>
+                <div class="d-flex gap-3">
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/pen2.svg" alt="Edit icon"></a>
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/link.svg" alt="Link icon"></a>
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p class="mb-1">prod_235</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>
+                  Rolex Daytona 40mm 18ct White Gold Black <br>
+                  Oysterflex Strap 116519LN 2023
+                </p>
+
+                <img src="assets/images/products/p1.png" alt="Product Image" class="table-product-image">
+              </div>
+            </td>
+            <td>
+              <p>Rolex</p>
+            </td>
+            <td>
+              <div>
+                <p class="text-decoration-line-through text--secondary mb-0">£9,520.00</p>
+                <p>£9,120.00</p>
+              </div>
+            </td>
+            <td>
+              <p>Shop Front</p>
+            </td>
+            <td>
+              <div class="action-items-wrapper">
+                <p class="fs--12px">added 4 hours ago</p>
+
+                <p class="badge badge--active">In Stock</p>
+                <div class="d-flex gap-3">
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/pen2.svg" alt="Edit icon"></a>
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/link.svg" alt="Link icon"></a>
+                  <a href="#">
+                    <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ul class="moblie-items-wrapper d-xl-none">
+        <li>
+          <div class="product-item">
+            <div class="product-item__thumb">
+              <img src="assets/images/products/p2.png" alt="product">
+            </div>
+            <div class="product-item__content">
+              <h6 class="mb-1"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+              <ul class="product-info-list d-flex flex-wrap">
+                <li><span class="sku fs--14px">SKU/3023</span></li>
+                <li><span class="price fs--14px">£2500</span></li>
+                <li><span class="stock-status fs--14px available">In Stock</span></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-item__thumb">
+              <img src="assets/images/products/p3.png" alt="product">
+            </div>
+            <div class="product-item__content">
+              <h6 class="mb-1"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+              <ul class="product-info-list d-flex flex-wrap">
+                <li><span class="sku fs--14px">SKU/3023</span></li>
+                <li><span class="price fs--14px">£2500</span></li>
+                <li><span class="stock-status fs--14px unavailable">Out of Stock</span></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-item__thumb">
+              <img src="assets/images/products/p4.png" alt="product">
+            </div>
+            <div class="product-item__content">
+              <h6 class="mb-1"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+              <ul class="product-info-list d-flex flex-wrap">
+                <li><span class="sku fs--14px">SKU/3023</span></li>
+                <li><span class="price fs--14px">£2500</span></li>
+                <li><span class="stock-status fs--14px available">In Stock</span></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-item__thumb">
+              <img src="assets/images/products/p5.png" alt="product">
+            </div>
+            <div class="product-item__content">
+              <h6 class="mb-1"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+              <ul class="product-info-list d-flex flex-wrap">
+                <li><span class="sku fs--14px">SKU/3023</span></li>
+                <li><span class="price fs--14px">£2500</span></li>
+                <li><span class="stock-status fs--14px available">In Stock</span></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-item__thumb">
+              <img src="assets/images/products/p6.png" alt="product">
+            </div>
+            <div class="product-item__content">
+              <h6 class="mb-1"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+              <ul class="product-info-list d-flex flex-wrap">
+                <li><span class="sku fs--14px">SKU/3023</span></li>
+                <li><span class="price fs--14px">£2500</span></li>
+                <li><span class="stock-status fs--14px unavailable">Out of Stock</span></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="text-center mt-3 d-xl-none">
+        <a href="" class="fs--14px fw-bold lh-1">Load More (325)</a>
+        <br>
+        <img src="assets/images/icons/caret-down.svg" alt="caret down" class="mw-100" style="transform: translateY(-6px);">
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between products-pagination d-none d-lg-flex">
+        <p class="fs--12px" style="align-self: end;">Showing 1 to 10 of 3,254 entries</p>
+        <div class="pagination">
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><span style="transform: translateY(15px)">...</span></li>
+          <li class="page-item"><a class="page-link" href="#">35</a></li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  @@include('../partial-html/_footer.html')
+
+</div>
+<!-- Dashboard Main Wrapper End -->
+
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

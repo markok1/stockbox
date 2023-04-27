@@ -1,0 +1,327 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockbox</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+    
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/semantic.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+<div class="body-left-shape theme-one"></div>
+<div class="body-top-shape theme-one"></div>
+
+<!-- Dashboard Main Wrapper Start -->
+<div class="main-wrapper">
+   <!-- Dashboard Top Header Start -->
+ <header class="dashboard-top-header">
+    <div class="dashboard-top-header__left">
+      <a href="" class="logo">
+        <img src="assets/images/logo-stockbox.svg" alt="stockbox">
+      </a>
+    </div>
+    <div class="sidebar-toggler d-lg-none">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    <div class="dashboard-top-header__right justify-content-end justify-content-lg-between">
+      <div class="dashboard-top-header__right-title text--base fs--20px fw-bold  d-none d-lg-block">Dashboard</div>
+      <div class="profile-and-search">
+        <form action="" class="search-form d-none d-lg-block">
+          <div class="form-group">
+            <input type="text" class="form-control form--control bg-transparent">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+        </form>
+        <div class="dropdown">
+            <div class="profile-thumb-toggler dropdown-toggle" data-bs-toggle="dropdown">
+              <span class="profile-name fw-bold fs--20px d-none d-sm-inline-block">Elliott</span>
+              <img src="assets/images/profile-thumb.png" alt="profile-thumb" class="profile-thumb">
+            </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">My Profile</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+   </header>
+   <!-- Dashboard Top Header End -->
+
+  <div class="main-content-wrapper">
+    <div class="main-content-wrapper__left">
+      <!-- Dashboard Sidebar Start -->
+<div class="dashboard-sidebar-wrapper">
+  <span class="title fs--14px text--base">Welcome</span>
+  <ul class="sidebar-menu">
+    <li><a href="dashboardStockbox.html">Dashboard</a></li>
+    <li><a href="#0">Pages</a></li>
+    <li>
+      <a href="#0">Products</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Product 1</a>
+        </li>
+        <li>
+          <a href="#0">Product 2</a>
+        </li>
+        <li>
+          <a href="#0">Product 3</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="customers.html">Customers</a></li>
+    <li>
+      <a href="#0">Orders</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Product 1</a>
+        </li>
+        <li>
+          <a href="#0">Product 2</a>
+        </li>
+        <li>
+          <a href="#0">Product 3</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="">Marketing</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Marketing 1</a>
+        </li>
+        <li>
+          <a href="#0">Marketing 2</a>
+        </li>
+        <li>
+          <a href="#0">Marketing 3</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="">Messages <span class="badge message-badge">3</span></a></li>
+    <li>
+      <a href="">Settings</a>
+      <ul class="sidebar-submenu">
+        <li>
+          <a href="#0">Marketing 1</a>
+        </li>
+        <li>
+          <a href="#0">Marketing 2</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+<!-- Dashboard Sidebar End -->
+    </div>
+
+    <div class="main-content-wrapper__right gap-0">
+      <h4 class="page-title text-center text--base fs--20px mb-5 d-lg-none">Customers</h4>
+
+      <div class="filter-area w-100">
+        <div class="filter-top-area d-flex justify-content-between w-100" style="gap: 10px 40px;">
+          <div class="filter-top-left customer-filter">
+            <div class="form-devider-wrapper mb-4 d-flex align-items-center d-none d-lg-flex">
+              <span class="text text--dark fs--12px">Customer Info</span>
+              <span class="border"></span>
+            </div>
+            <div class="d-flex justify-content-between mb-4 pb-2 d-lg-none">
+              <a href=""><img src="assets/images/icons/caret-left.svg" alt="got back"></a>
+              <a href="customers-edit.html"><img src="assets/images/icons/pencil.svg" alt="edit"></a>
+            </div>
+          </div>
+          <div class="filter-top-right flex-shrink-0 d-none d-lg-block">
+            <div class="d-flex gap-3" style="transform: translateY(50%);">
+              <a href="customers-edit.html">
+                <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/pencil.svg" alt="Edit"></a>
+              <a href="#">
+                <img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="customer-view-wrapper">
+        <div class="d-flex flex-wrap-reverse gap-md-3 gap-4 align-items-center mb-4 pb-1">
+          <h3 class="customer-name fw-normal ">Christopher Henry</h3>
+          <ul class="d-flex flex-wrap align-items-center" style="gap:  10px 20px">
+            <li class="order-2 order-sm-1"><span class="badge badge--active px-4 py-2">Active</span></li>
+            <li class="fs--12px text--dark order-1 order-sm-2 w-100 w-sm-auto">Registered 20th April 2023</li>
+
+            <li class="fs--12px text--dark order-3 order-sm-3"><img width="18" height="18" style="object-fit: contain;" src="assets/images/icons/mic.svg" alt="Trash icon"> Marketing Opt In</li>
+          </ul>
+        </div>
+        <div class="row gy-4" style="max-width: 950px;">
+          <div class="col-md-4">
+            <ul>
+              <li>21 Pinewood Avenue</li>
+              <li>London</li>
+              <li>United Kingdom</li>
+              <li>UB8 3LW</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li>07867243532</li>
+              <li>chris28henry@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/images/thumbs/id.svg" alt="id card">
+            <p class="fs--12px text--dark d-flex align-items-center gap-2 mt-2">ID Verfied <img src="assets/images/icons/file-check.svg" alt="file check" height="16"></p>
+          </div>
+        </div>
+
+        <div class="d-xl-block d-none" style="margin-top: 100px;"></div>
+
+        <div class="form-devider-wrapper mb-4 d-flex align-items-center">
+          <span class="text text--dark fs--12px">Order History</span>
+          <span class="border"></span>
+        </div>
+
+        <table class="products-table custom-table d-none d-xl-table mt-0">
+          <tbody>
+            <tr></tr>
+            <tr class="shadow-none">
+              <td>
+                <div>
+                  <p class="mb-1">prod_235</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>
+                    Rolex Daytona 40mm 18ct White Gold Black <br>
+                    Oysterflex Strap 116519LN 2023
+                  </p>
+
+                  <img src="assets/images/products/p1.png" alt="Product Image" class="table-product-image">
+                </div>
+              </td>
+              <td>
+                <p>Rolex</p>
+              </td>
+              <td>
+                <div>
+                  <p class="text-decoration-line-through text--secondary mb-0">£9,520.00</p>
+                  <p>£9,120.00</p>
+                </div>
+              </td>
+              <td>
+                <p>Shop Front</p>
+              </td>
+              <td>
+                <div class="action-items-wrapper">
+                  <p class="fs--12px mb-1">added 4 hours ago</p>
+                  <p class="badge badge--active mb-0">In Stock</p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="d-xl-none">
+          <div class="d-flex justify-content-between mb-4">
+            <span class="fw-bold fs--12px">#OR4284</span>
+            <span class="fs--12px">Ordered via <span class="fw-bold">Shop</span></span>
+          </div>
+          <ul class="moblie-items-wrapper customer-page-order ">
+            <li>
+              <div class="product-item">
+                <div class="product-item__thumb">
+                  <img src="assets/images/products/p2.png" alt="product">
+                </div>
+                <div class="product-item__content">
+                  <h6 class="mb-1 fw-normal"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+                  <ul class="product-info-list d-flex flex-wrap">
+                    <li class="fs--14px"><span class="sku fw-bold">SKU:</span>3023</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="product-item">
+                <div class="product-item__thumb">
+                  <img src="assets/images/products/p3.png" alt="product">
+                </div>
+                <div class="product-item__content">
+                  <h6 class="mb-1 fw-normal"><a href="">Rolex Lady DateJust 26mm Steel & 18ct Yellow Gold</a></h6>
+                  <ul class="product-info-list d-flex flex-wrap">
+                    <li class="fs--14px"><span class="sku fw-bold">SKU:</span>3023</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="mt-4">
+            <span class="fs--10px fw-bold">Total</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs--20px fw-bold mb-0">£3100</p>
+              <span class="badge px-3 py-2" style="background-color: #E6E6E6;">Paid & gone</span>
+            </div>
+            <p class="fs--12px text-end">21:37 23/02/2023</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="dashboard-footer d-flex flex-wrap justify-content-between gap-4">
+  <div class="dashboard-footer__left">
+    <p class="mb-0 fs--12px">System Version 1.0.5. Powered by <span class="fw-bold d-none d-sm-inline-block">Stockbox</span> <img class="ms-2 d-sm-none" src="assets/images/logo-stockbox.svg" alt="stockbox" style="max-width: 60px;"></p>
+    <a class="fs--12px" href="">www.stockbox.tech</a>
+  </div>
+  <div class="dashboard-footer__right">
+    <ul class="footer-links fs--12px d-flex flex-wrap" style="gap: 10px 40px">
+      <li><a href="" class="text-decoration-underline">Report a bug</a></li>
+      <li><a href="" class="text-decoration-underline">Request a feature</a></li>
+      <li><a href="" class="text-decoration-underline">Knowledge Base</a></li>
+      <li><a href="" class="text-decoration-underline">Raise a Support Ticket</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Modal Start -->
+
+
+</div>
+<!-- Dashboard Main Wrapper End -->
+
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+<script src="assets/js/lib/semantic.min.js"></script>
+
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

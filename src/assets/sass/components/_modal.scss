@@ -1,0 +1,44 @@
+// Modals Start
+.alert-modal {
+  --bs-modal-width: 350px;
+  border-radius: 6px;
+}
+.modal-success {
+  .badge {
+    background-color: var(--active);
+  }
+}
+.modal-warning {
+  .badge {
+    background-color: #F3E7AC;
+  }
+}
+.modal-error {
+  .badge {
+    background-color: var(--hold);
+  }
+}
+.modal-inactive {
+  .badge {
+    background-color: var(--inactive);
+  }
+}
+.modal-content-wrapper {
+  padding: 60px 15px 45px;
+  box-shadow: 0 4px 10px hsl(var(--black) / 0.08);
+  border: 0;
+  .modal-text {
+    margin-top: 40px;
+    margin-bottom: 48px;
+    padding-inline: 35px;
+  }
+  .badge {
+    padding: 9px 30px;
+    font-weight: 600;
+    font-family: "HeroNewSemibold";
+  }
+  .btn {
+    min-width: 155px;
+  }
+}
+// Modals Ends

@@ -1,0 +1,7 @@
+:root {
+  --theme-one: 156, 100%, 19%;
+}
+
+.common-card {
+  border-color: hsl(var(--theme-one));
+}

@@ -1,0 +1,262 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+
+<div class="body-left-shape theme-one"></div>
+<div class="body-top-shape theme-one"></div>
+
+<!-- Dashboard Main Wrapper Start -->
+<div class="main-wrapper">
+  @@include('../partial-html/_header.html')
+
+  <div class="main-content-wrapper">
+    <div class="main-content-wrapper__left">
+      @@include('../partial-html/_dash-sidebar.html')
+    </div>
+
+    <div class="main-content-wrapper__right gap-0">
+      <h4 class="page-title text-center text--base fs--20px mb-5 d-lg-none">Customers</h4>
+
+      <div class="filter-area w-100">
+        <div class="filter-top-area d-flex justify-content-between w-100" style="gap: 10px 40px;">
+          <div class="filter-top-left customer-filter">
+            <div class="form-devider-wrapper mb-4 d-flex align-items-center d-none d-lg-flex">
+              <span class="text text--dark fs--12px">Basic info</span>
+              <span class="border"></span>
+            </div>
+            <div class="d-flex justify-content-between mb-4 pb-2 d-lg-none">
+              <a href=""><img src="assets/images/icons/caret-left.svg" alt="got back"></a>
+              <div class="d-flex gap-3">
+                <button type="submit" name="customer-edit-form" class="border-0 bg-transparent p-0"><img src="assets/images/icons/save.svg" width="24" height="24" alt="save changes"></button>
+                <a href="#"><img width="24" height="24" style="object-fit: contain;" src="assets/images/icons/trash.svg" alt="Trash icon"></a>
+              </div>
+            </div>
+          </div>
+          <div class="filter-top-right flex-shrink-0 d-none d-lg-block">
+            <div class="d-flex gap-3" style="transform: translateY(50%);">
+              <button type="submit" name="customer-edit-form" class="border-0 bg-transparent p-0"><img src="assets/images/icons/save.svg" width="24" height="24" alt="save changes"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="customer-edit-wrapper">
+        <form action="" id="customer-edit-form">
+
+          <div style="max-width: 700px">
+            <div class="row customer-edit-row gy-4">
+              <div class="col-md-4 col-6">
+                <div class="form-group">
+                  <label for="" class="form-label">First Name</label>
+                  <input type="text" class="form-control form--control fs--14px" value="Christopher">
+                </div>
+              </div>
+              <div class="col-md-4 col-6">
+                <div class="form-group">
+                  <label for="" class="form-label">Last Name</label>
+                  <input type="text" class="form-control form--control fs--14px" value="Henry">
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block">
+                <div class="form-group">
+                  <label class="form-label">Customer Marketing</label>
+                  <div class="h-44px d-flex align-items-center">
+                    <div class="form-check">
+                      <input type="checkbox" id="check1" class="form-check-input shadow-none">
+                      <label for="check1" class="form-check-label fs--12px">Customer Marketing</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mb-lg-0"></div>
+
+          <div class="form-devider-wrapper mb-4 d-flex align-items-center d-none d-lg-flex">
+            <span class="text text--dark fs--12px">Contact Info</span>
+            <span class="border"></span>
+          </div>
+
+          <div style="max-width: 700px">
+            <div class="row customer-edit-row gy-4">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="" class="form-label">Email</label>
+                  <input type="text" class="form-control form--control fs--14px" value="chris28henry@gmail.com">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="" class="form-label">Phone Number</label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <div class="dropdown">
+                        <div class="lang-dropdown dropdown-toggle" style="cursor: pointer;" data-bs-toggle="dropdown">
+                          <img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2">
+                          <span class="code">+44</span>
+                        </div>
+                        <ul class="dropdown-menu" style="max-height: 220px; overflow-y: auto;">
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2"> + 44</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2"> + 91</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2"> + 88</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2"> + 34</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2"> + 41</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2"> + 48</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2"> + 24</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2"> + 84</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/flags/uk.png" alt="caret down" width="20" height="20" class="me-2"> + 34</a></li>
+                        </ul>
+                      </div>
+                    </span>
+                    <input type="text" class="form-control form--control fs--14px" value="7000 000 000">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mb-lg-0"></div>
+
+          <div class="form-devider-wrapper mb-4 d-flex align-items-center d-none d-lg-flex">
+            <span class="text text--dark fs--12px">Contact Info</span>
+            <span class="border"></span>
+          </div>
+
+          <div style="max-width: 700px">
+            <div class="row customer-edit-row gy-4">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="" class="form-label">Password</label>
+                  <input type="text" class="form-control form--control fs--14px password-field" placeholder="Enter Password">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="" class="form-label">Repeat Password</label>
+                  <input type="text" class="form-control form--control fs--14px password-field" placeholder="Enter Password Again">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mb-lg-0"></div>
+
+          <div class="form-group d-md-none">
+            <label class="form-label">Customer Marketing</label>
+            <div class="d-flex align-items-center">
+              <div class="form-check">
+                <input type="checkbox" id="check2" class="form-check-input shadow-none">
+                <label for="check2" class="form-check-label fs--12px">Customer Marketing</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-devider-wrapper mb-4 d-flex align-items-center">
+            <span class="text text--dark fs--12px">Address</span>
+            <span class="border"></span>
+          </div>
+
+          <div style="max-width: 700px">
+            <div class="row customer-edit-row gy-4">
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label for="" class="form-label">Postcode Lookup</label>
+                  <input type="text" class="form-control form--control fs--14px" value="e12 6as">
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label for="" class="form-label">Select Address</label>
+                  <select name="" id="" class="form-control form--control fs--14px form-select">
+                    <option value="">please select</option>
+                    <option value="">please select</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-4 align-self-end">
+                <div class="h-44px d-flex align-items-center">
+                  <a href="" class="fs--10px mb-0 text-decoration-underline">enter manually instead</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="max-width: 800px">
+            <div class="row gy-3 pt-4">
+              <div class="col-sm-6 col-md-3 col-12">
+                <p class="fw-bold fs--10px mb-1">Address Line 1</p>
+                <p class="mb-0">21 Pinewood Avenue</p>
+              </div>
+              <div class="col-sm-6 col-md-3 col-6">
+                <p class="fw-bold fs--10px mb-1">City</p>
+                <p class="mb-0">London</p>
+              </div>
+              <div class="col-sm-6 col-md-3 col-6">
+                <p class="fw-bold fs--10px mb-1">Country</p>
+                <p class="mb-0">United Kingdom</p>
+              </div>
+              <div class="col-sm-6 col-md-3 col-12">
+                <p class="fw-bold fs--10px mb-1">Post Code</p>
+                <p class="mb-0">UB8 3LW</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-devider-wrapper mb-4 d-flex align-items-center">
+            <span class="text text--dark fs--12px">ID Verification</span>
+            <span class="border"></span>
+          </div>
+
+          <div class="image-upload-area" id="idUpload">
+            <div class="position-relative">
+              <div class="d-flex align-items-center gap-2">
+                <img src="assets/images/icons/upload.svg" alt="upload" width="22" height="20" style="object-fit: contain;">
+                <span class="fs--12px text-decoration-underline">Upload photo ID</span>
+              </div>
+              <form class="imgUploader">
+                <input type="file" id="imgUpload">
+                <label class="button" for="imgUpload" id="imgUploadArea"></label>
+              </form>
+            </div>
+            <ul class="uploaded-images d-grid mt-3 mt-md-4 gap-4" id="gallery">
+              <li class="position-relative d-none">
+                <img src="assets/images/thumbs/id.svg" alt="preview image" id="uploadedImage">
+                <!-- Clsoe item js is below-->
+                <img src="assets/images/icons/close2.svg" alt="close-item" class="close-item w-auto">
+              </li>
+            </ul>
+
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+  @@include('../partial-html/_footer.html')
+
+</div>
+<!-- Dashboard Main Wrapper End -->
+
+@@include('../partial-html/_template-bottom.html')
+
+<script>
+
+  $('#imgUpload').on('change', function () {
+    if (this.files[0]) {
+      var picture = new FileReader();
+      picture.readAsDataURL(this.files[0]);
+      picture.addEventListener('load', function (event) {
+        $('#uploadedImage').attr('src', event.target.result);
+        $('#uploadedImage').style.display = 'block';
+      });
+    }
+    $('#uploadedImage').parent().removeClass('d-none')
+  });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "heroNew";
+  src: url("./font/HeroNew-Regular.woff");
+}
+@font-face {
+  font-family: "heroNewSemibold";
+  src: url("./font/HeroNew-SemiBold.woff");
+}
+@font-face {
+  font-family: "heroNewBold";
+  src: url("./font/HeroNew-Bold.woff");
+}
+
+:root {
+  // Fonts
+  --heading-font: "heroNewBold", sans-serif;
+  --body-font: "heroNew", sans-serif;
+
+  //Colors
+  --heading: 0 0% 0%;
+  --body: 0 0% 0%;
+  --border: 0 0% 90%;
+
+  // Base Color Shade
+  --base-h: 327;
+  --base-s: 100%;
+  --base-l: 25%;
+  --theme-one: var(--base-h) var(--base-s) var(--base-l);
+  --theme-one-100: 3 48% 84%;
+
+  // Accent Color Shade
+  --accent-h: 260;
+  --accent-s: 92%;
+  --accent-l: 10%;
+  --accent: var(--accent-h) var(--accent-s) var(--accent-l);
+
+  // Light Color Shade
+  --light-h: 0;
+  --light-s: 0%;
+  --light-l: 92%;
+  --light: var(--light-h) var(--light-s) var(--light-l);
+  --light-77: var(--light-h) var(--light-s) calc(var(--light-l) - 15%);
+  --light-83: var(--light-h) var(--light-s) calc(var(--light-l) - 9%);
+  --light-88: var(--light-h) var(--light-s) calc(var(--light-l) - 4%);
+  --light-89: var(--light-h) var(--light-s) calc(var(--light-l) - 3%);
+  --light-98: var(--light-h) var(--light-s) calc(var(--light-l) + 6%);
+
+  // Fixed Colors
+  --primary: 245 82% 67%;
+  --secondary: 0 0% 49%;
+  --success: 137 37% 42%;
+  --danger: 0 100% 79%;
+  --warning: 29 100% 63%;
+  --info: 200 90% 53%;
+  --dark: 200 5% 25%;
+  --white: 0 0% 100%;
+  --black: 0 0% 0%;
+
+  // Additional Colors
+  --hold: #ffcdcd;
+  --active: #cdffeb;
+  --pending: #fffacd;
+  --shipped: #b6d3ee;
+  --inactive: #e6e6e6;
+}

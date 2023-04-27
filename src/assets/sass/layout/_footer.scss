@@ -1,0 +1,7 @@
+.footer-links {
+  li {
+    @include breakpoint(max-sm) {
+      width: 42%;
+    }
+  }
+}

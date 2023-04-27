@@ -1,0 +1,23 @@
+.btn {
+  padding: 10px 48px;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+.cmn-btn {
+  background-color: hsl(var(--dark));
+  color: hsl(var(--white));
+  // font-weight: 600;
+  // font-family: "HeroNewSemibold";
+  &:hover {
+    border-color: hsl(var(--light-89));
+    background-color: hsl(var(--light-98));
+  }
+}
+.btn-outline-white {
+  border-color: hsl(var(--light-89));
+  background-color: hsl(var(--light-98));
+  &:hover {
+    background-color: hsl(var(--dark));
+    color: hsl(var(--white));
+  }
+}

@@ -1,0 +1,50 @@
+.badge--success {
+  background-color: #cdffeb;
+}
+.badge--danger {
+  background-color: #ffcdcd;
+}
+.badge--secondary {
+  background-color: #e6e6e6;
+}
+
+.badge--hold {
+  background-color: #ffcdcd;
+}
+
+.badge--active {
+  background-color: #CDFFEB;
+}
+
+.badge--pending {
+  background-color: #FFFACD;
+}
+
+.badge--shipped {
+  background-color: #B6D3EE;
+}
+
+.badge--inactive {
+  background-color: #E6E6E6;
+}
+
+.badge {
+  border-radius: 18px;
+  padding: 8px 8px;
+  font-family: "heroNewSemibold";
+  border-radius: 5px;
+  color: hsl(var(--black));
+  &.badge--icon {
+    padding: 6px;
+    border-radius: 5px;
+  }
+  &.badge--lg {
+    padding: 6px 16px;
+  }
+  &.badge--md {
+    padding: 4px 12px;
+  }
+  &.badge--sm {
+    padding: 3px 10px;
+  }
+}
